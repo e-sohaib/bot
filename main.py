@@ -7,7 +7,6 @@ import logging
 from database import User
 from datetime import datetime
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
-from instagram import download_instagram_content ,detect_content_type , is_valid_instagram_link
 import lzma
 import json
 import instaloader
@@ -16,8 +15,8 @@ import re
 
 
 CHANNEL_USERNAME = "@INSTACURL"
-BOT_TOKEN = "7688427632:AAH5xS-bU_frhrqntFWjFbzNnU6QknSG0Zc"
-MYSQL = "mysql+pymysql://root:root@localhost:3306/abzar_databas"
+BOT_TOKEN = "7156255717:AAHBxvvhrRqNED5ZBiO9ZOb3ZRAfu0QmQik"
+MYSQL = "mysql+pymysql://root:sohaib#1375WStr0ng@localhost:3306/abzar_databas"
 ADMIN_ID = '6040165079'
 DATA_MAX_SIZA = 30 #Megabytes
 
