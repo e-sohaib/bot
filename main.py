@@ -208,16 +208,9 @@ def ig_reply_markup(tg_id):
         
     likes_count = dic['node']["edge_media_preview_like"]['count']
     comments_count = dic['node']["edge_media_preview_comment"]['count']
-    if dic['node']["__typename"] == "GraphImage":
-        view_count = ''
-    else:
-        view_count = dic['node']["video_view_count"]
     likes=InlineKeyboardButton(f"Likes ❤️ {likes_count}", callback_data="khonsa")
     comments = InlineKeyboardButton(f"Comments 💬 {comments_count}", callback_data="khonsa")
-    views = InlineKeyboardButton(f"Views 👁‍🗨 {view_count}", callback_data="khonsa")
-    markup = InlineKeyboardMarkup([
-    [likes, comments],
-    [views],])
+    markup = InlineKeyboardMarkup([[likes, comments]])
     return markup
 #load comments
 def ig_coments(tg_id):
