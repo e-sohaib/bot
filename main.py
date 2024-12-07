@@ -90,11 +90,26 @@ loader = instaloader.Instaloader()
 def login():
     username = 'sohaibfaraji'
     password = 'Aa*#3823219'
-    if os.path.isfile(curent_dir + '/login-sohaib'):
-        loader.load_session(username, 'login-sohaib')
-    else:
-        loader.login(username, password)
-        loader.save_session_to_file('login-sohaib')
+    session_file = os.path.join(curent_dir, 'login-sohaib')
+    try:
+        if os.path.isfile(session_file):
+            print("Loading session...")
+            with open(session_file, 'r') as f:
+                content = f.read()
+                if content.strip():
+                    loader.load_session_from_file(username, session_file)
+                else:
+                    raise ValueError("Session file is empty!")
+        else:
+            print("Logging in...")
+            loader.login(username, password)
+            loader.save_session_to_file(session_file)
+            print("Session saved.")
+    except Exception as e:
+        print(f"Error during login: {e}")
+        if os.path.exists(session_file):
+            os.remove(session_file)
+
 login()
 def is_valid_instagram_link(link):
     """
