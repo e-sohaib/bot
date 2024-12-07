@@ -174,8 +174,10 @@ def download_instagram_content(link , tg_id):
         for item in all_in_dir:
             
             if item.split('.')[1] != "jpg" :
-                with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
-                    bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))
+                try:
+                    with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
+                        bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))
+                except         
             if  item.split('.')[1] != "mp4" :
                 with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
                     bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))
@@ -221,7 +223,6 @@ def ig_coments(tg_id):
         dic = json.load(m)
     listofcomments =[]
     A = dic['node']
-    B = dic['instaloader']
     ALL_COMMENTS = A['edge_media_to_parent_comment']['edges']
     for item in ALL_COMMENTS:
         listofcomments.append(item['node']['text'])
@@ -251,16 +252,14 @@ def download_ig(message , session):
         bot.send_message(user.telegram_id , f'remaing requests {user.max_requests - user.daily_requests}\nyoure data usage : {Bytes/(1024*1024)} MB')
         t1 = time.time()
         bot.send_message(ADMIN_ID , f'time elapsed: {t1 - t0}')
-        
         clear_user_files(tg_id)
-
         session.commit()
         return
     
 #size meter
 def size_meter(tg_id):
     here = os.getcwd()
-    targ = f"{here}/instadownload-{tg_id}"
+    targ = f"{here}/instadownloads-{tg_id}"
     listofdir = os.listdir(targ)
     totalsize = 0
     for item in listofdir :
