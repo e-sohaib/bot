@@ -146,6 +146,7 @@ def download_instagram_content(link , tg_id):
         loader.download_post(post, target=content_type)
         bot.send_message(tg_id,"The download was done successfully.")
     except Exception as e: 
+        login()
         bot.send_message(tg_id,f"Error downloading link.{e}")
 
 #uplaod customizig
