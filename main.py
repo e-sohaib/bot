@@ -162,7 +162,7 @@ def download_instagram_content(link , tg_id):
         post = instaloader.Post.from_shortcode(loader.context, shortcode)
         loader.filename_pattern = tg_id
         loader.dirname_pattern = f'instadownloads-{tg_id}'
-        bot.send_message(tg_id ,f'is video?:\n{post.is_video}\n{post.get_comments()}')
+        bot.send_message(tg_id ,f'is video?:\n{post.is_video}\n{post.owner_profile}')
         # دانلود محتوا
         bot.send_message(tg_id,f"Download started...")
         loader.download_post(post, target=content_type)
@@ -239,32 +239,35 @@ def download_ig(message , session):
         bot.send_message(user.telegram_id , "Wait a moment ...")
         download_instagram_content(link , str(tg_id))
         #upload too telegram
-        bot.send_message(tg_id , 'uploading to telegram')
-        all_in_dir = os.listdir(f"{curent_dir}/instadownloads-{tg_id}/")
-        media_group = []
-        for item in all_in_dir:
-            if item.split('.')[1] != "jpg" :
-                X = InputMediaPhoto(open(f"{curent_dir}/instadownloads-{tg_id}/{item}", 'rb'), caption="عکس اول")
-                media_group.append(X)
-            if  item.split('.')[1] != "mp4" :
-                Y = InputMediaVideo(open(f"{curent_dir}/instadownloads-{tg_id}/{item}", 'rb'), caption="فیلم اول")
-                media_group.append(Y)
-        
-        bot.send_media_group(tg_id, media_group)
-                          
+        bot.send_message(tg_id , 'uploading to telegram')                 
         comments = 'Some comments:\n'
         i = 1  
         for item in ig_coments(tg_id):
             comments = ''.join(f"{comments}{i} - {item}\n")
             i+=1
-        bot.send_message(user.telegram_id , comments)    
-        bot.send_message(user.telegram_id , f'remaing requests {user.max_requests - user.daily_requests}')
+        bot.send_message(user.telegram_id , comments)   
+        user.daily_requests = user.daily_requests + 1 
+        Bytes = size_meter(tg_id)
+        bot.send_message(user.telegram_id , f'remaing requests {user.max_requests - user.daily_requests}\nyoure data usage : {Bytes/(1024*1024)} MB')
         t1 = time.time()
         bot.send_message(ADMIN_ID , f'time elapsed: {t1 - t0}')
+        
         clear_user_files(tg_id)
-        user.daily_requests = user.daily_requests + 1
+
         session.commit()
         return
+    
+#size meter
+def size_meter(tg_id):
+    here = os.getcwd()
+    targ = f"{here}/instadownload-{tg_id}"
+    listofdir = os.listdir(targ)
+    totalsize = 0
+    for item in listofdir :
+        if not os.path.isdir(f'{here}\\{item}'):
+            size_bytes = os.path.getsize(f'{here}\\{item}')
+            totalsize += size_bytes     
+    return totalsize
 #clear directory of user
 def clear_user_files(tg_id):
     files = os.listdir(f"{curent_dir}/instadownloads-{tg_id}")
