@@ -227,14 +227,19 @@ def download_ig(message , session):
         #upload too telegram
         bot.send_message(tg_id , 'uploading to telegram')
         all_in_dir = os.listdir(f"{curent_dir}/instadownloads-{tg_id}/")
-        print("=++===================" , all_in_dir)
         for item in all_in_dir:
             if item.split('.')[1] == "jpg":
+                print("=++===================" , 1)
                 with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
-                    bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))        
-            if item.split('.')[1] == "mp4":  
+                    print("=++===================" , 2)
+                    bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id)) 
+                    print("=++===================" , 3)       
+            if item.split('.')[1] == "mp4": 
+                print("=++===================" , 'one') 
                 with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
+                    print("=++===================" , 'too')
                     bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))   
+                    print("=++===================" , 'tree')
                           
         comments = 'Some comments:\n'
         i = 1  
