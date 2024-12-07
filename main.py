@@ -190,7 +190,7 @@ def download_instagram_content(link , tg_id):
 def ig_caption(tg_id):
     with open(f"{curent_dir}/instadownloads-{tg_id}/{tg_id}.txt" , 'r' , encoding = 'utf-8') as cap:
         caption = cap.read()
-    return caption
+    return str(caption)
 #extract .json.xs to json
 def ig_json_dump(tg_id):
     path = f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json.xz'
