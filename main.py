@@ -80,10 +80,15 @@ def start_handling(message):
 
 """ Instagram Block """
 
-
+username = 'sohaibfaraji'
+password = 'Aa*#3823219'
 loader = instaloader.Instaloader()
-
-
+def login():
+    if os.path.isfile(curent_dir + '/login-sohaib'):
+        loader.load_session(username, 'login-sohaib')
+    else:
+        loader.login(username, password)
+        loader.save_session_to_file('login-sohaib')
 
 def is_valid_instagram_link(link):
     """

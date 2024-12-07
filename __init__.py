@@ -1,4 +1,4 @@
-import start
+import main
 import database
 import instagram
 
