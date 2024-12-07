@@ -198,7 +198,7 @@ def ig_json_dump(tg_id):
         json.dump(json_data, extracted_file, indent=4)
 #read json and prepare markup        
 def ig_reply_markup(tg_id):
-    ig_json_dump()
+    ig_json_dump(tg_id)
     with open(f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json', 'r' ,encoding='utf-8') as m:
         dic = json.load(m)
         
