@@ -95,7 +95,7 @@ def login():
     else:
         loader.login(username, password)
         loader.save_session_to_file('login-sohaib')
-
+login()
 def is_valid_instagram_link(link):
     """
     بررسی صحت لینک اینستاگرام
@@ -150,7 +150,6 @@ def download_instagram_content(link , tg_id):
         loader.download_post(post, target=content_type)
         bot.send_message(tg_id,"The download was done successfully.")
     except Exception as e: 
-        login()
         bot.send_message(tg_id,f"Error downloading link.{e}")
 
 #uplaod customizig
