@@ -163,7 +163,6 @@ def download_instagram_content(link , tg_id):
         post = instaloader.Post.from_shortcode(loader.context, shortcode)
         loader.filename_pattern = tg_id
         loader.dirname_pattern = f'instadownloads-{tg_id}'
-        bot.send_message(tg_id ,f'is video?:\n{post.is_video}\n{post.owner_profile}')
         # دانلود محتوا
         bot.send_message(tg_id,f"Download started...")
         loader.download_post(post, target=content_type)
