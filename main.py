@@ -167,6 +167,19 @@ def download_instagram_content(link , tg_id):
         bot.send_message(tg_id,f"Download started...")
         loader.download_post(post, target=content_type)
         bot.send_message(tg_id,"The download was done successfully.")
+                #upload too telegram
+        bot.send_message(tg_id , 'uploading to telegram')
+        all_in_dir = os.listdir(f"{curent_dir}/instadownloads-{tg_id}/")
+        media_group = []
+        for item in all_in_dir:
+            if item.split('.')[1] != "jpg" :
+                X = InputMediaPhoto(open(f"{curent_dir}/instadownloads-{tg_id}/{item}", 'rb'), caption="عکس اول")
+                media_group.append(X)
+            if  item.split('.')[1] != "mp4" :
+                Y = InputMediaVideo(open(f"{curent_dir}/instadownloads-{tg_id}/{item}", 'rb'), caption="فیلم اول")
+                media_group.append(Y)
+        
+        bot.send_media_group(tg_id, media_group)
     except Exception as e: 
         bot.send_message(tg_id,f"Error downloading link.{e}")
 
