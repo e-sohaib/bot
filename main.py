@@ -94,7 +94,7 @@ def login():
     try:
         if os.path.isfile(session_file):
             print("Loading session...")
-            with open(session_file, 'r') as f:
+            with open(session_file, 'rb') as f:
                 content = f.read()
                 if content.strip():
                     loader.load_session_from_file(username, session_file)
