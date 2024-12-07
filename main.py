@@ -20,10 +20,36 @@ BOT_TOKEN = dicti['bot_token']
 MYSQL = f"mysql+pymysql://root:{dicti['mysql']}@localhost:3306/abzar_database"
 ADMIN_ID = '6040165079'
 DATA_MAX_SIZA = 30 #Megabytes
-
 curent_dir = os.getcwd()
 engine = create_engine(MYSQL, echo=True)
 Session = sessionmaker(bind=engine)
+
+loader = instaloader.Instaloader()
+def login():
+    username = 'sohaibfaraji'
+    password = 'Aa*#3823219'
+    session_file = os.path.join(curent_dir, 'login-sohaib')
+    try:
+        if os.path.isfile(session_file):
+            print("Loading session...")
+            with open(session_file, 'rb') as f:
+                content = f.read()
+                if content.strip():
+                    loader.load_session_from_file(username, session_file)
+                else:
+                    raise ValueError("Session file is empty!")
+        else:
+            print("Logging in...")
+            loader.login(username, password)
+            loader.save_session_to_file(session_file)
+            print("Session saved.")
+    except Exception as e:
+        print(f"Error during login: {e}")
+        if os.path.exists(session_file):
+            os.remove(session_file)
+
+login()
+
 # Telegram Bot setup
 bot = telebot.TeleBot(BOT_TOKEN)
 logging.basicConfig(filename='Radepa.log', level=logging.INFO, format='%(asctime)s - %(message)s')
@@ -86,31 +112,7 @@ def start_handling(message):
 """ Instagram Block """
 
 
-loader = instaloader.Instaloader()
-def login():
-    username = 'sohaibfaraji'
-    password = 'Aa*#3823219'
-    session_file = os.path.join(curent_dir, 'login-sohaib')
-    try:
-        if os.path.isfile(session_file):
-            print("Loading session...")
-            with open(session_file, 'rb') as f:
-                content = f.read()
-                if content.strip():
-                    loader.load_session_from_file(username, session_file)
-                else:
-                    raise ValueError("Session file is empty!")
-        else:
-            print("Logging in...")
-            loader.login(username, password)
-            loader.save_session_to_file(session_file)
-            print("Session saved.")
-    except Exception as e:
-        print(f"Error during login: {e}")
-        if os.path.exists(session_file):
-            os.remove(session_file)
 
-login()
 def is_valid_instagram_link(link):
     """
     بررسی صحت لینک اینستاگرام
@@ -222,12 +224,10 @@ def download_ig(message , session):
         tg_id = user.telegram_id
         bot.send_message(user.telegram_id , "Wait a moment ...")
         download_instagram_content(link , str(tg_id))
-        
-        user.daily_requests = user.daily_requests + 1
-        session.commit()
         #upload too telegram
         bot.send_message(tg_id , 'uploading to telegram')
         all_in_dir = os.listdir(f"{curent_dir}/instadownloads-{tg_id}/")
+        print("=++===================" , all_in_dir)
         for item in all_in_dir:
             if item.split('.')[1] == "jpg":
                 with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
@@ -246,12 +246,15 @@ def download_ig(message , session):
         t1 = time.time()
         bot.send_message(ADMIN_ID , f'time elapsed: {t1 - t0}')
         clear_user_files(tg_id)
+        user.daily_requests = user.daily_requests + 1
+        session.commit()
         return
 #clear directory of user
 def clear_user_files(tg_id):
     files = os.listdir(f"{curent_dir}/instadownloads-{tg_id}")
     for file in files:
         os.remove(f"{curent_dir}/instadownloads-{tg_id}/{file}")
+    os.remove(file)
 #handle Instagram message       
 @bot.message_handler(func=lambda message:message.text == "Instagram")
 def start_handling(message):
