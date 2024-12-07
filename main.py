@@ -1,5 +1,6 @@
 import telebot
 from telebot.types import InputMediaPhoto, InputMediaVideo
+from telebot.apihelper import ApiTelegramException
 import os
 import time
 from sqlalchemy import create_engine
@@ -177,7 +178,9 @@ def download_instagram_content(link , tg_id):
                 try:
                     with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
                         bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))
-                except         
+                except ApiTelegramException :
+                    bot.send_photo(tg_id , 'Unsuported Image')
+                        
             if  item.split('.')[1] != "mp4" :
                 with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
                     bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))
