@@ -241,8 +241,6 @@ def download_ig(message , session):
         tg_id = user.telegram_id
         bot.send_message(user.telegram_id , "Wait a moment ...")
         download_instagram_content(link , str(tg_id))
-        #upload too telegram
-        bot.send_message(tg_id , 'uploading to telegram')                 
         comments = 'Some comments:\n'
         i = 1  
         for item in ig_coments(tg_id):
