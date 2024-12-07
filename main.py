@@ -1,4 +1,5 @@
 import telebot
+from telebot.types import InputMediaPhoto, InputMediaVideo
 import os
 import time
 from sqlalchemy import create_engine
@@ -185,6 +186,7 @@ def ig_json_dump(tg_id):
         json.dump(json_data, extracted_file, indent=4)
 #read json and prepare markup        
 def ig_reply_markup(tg_id):
+    ig_json_dump()
     with open(f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json', 'r' ,encoding='utf-8') as m:
         dic = json.load(m)
         
@@ -228,18 +230,10 @@ def download_ig(message , session):
         bot.send_message(tg_id , 'uploading to telegram')
         all_in_dir = os.listdir(f"{curent_dir}/instadownloads-{tg_id}/")
         for item in all_in_dir:
-            if item.split('.')[1] == "jpg":
-                print("=++===================" , 1)
-                with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
-                    print("=++===================" , 2)
-                    bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id)) 
-                    print("=++===================" , 3)       
-            if item.split('.')[1] == "mp4": 
-                print("=++===================" , 'one') 
-                with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
-                    print("=++===================" , 'too')
-                    bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))   
-                    print("=++===================" , 'tree')
+            if item.split('.')[1] != "jpg" or item.split('.')[1] != "mp4":
+                all_in_dir.remove(item)
+        media_group = [InputMediaPhoto(open(f"{curent_dir}/instadownloads-{tg_id}/{mowred}", 'rb'), caption="عکس اول") for mowred in all_in_dir]    
+        bot.send_media_group(tg_id, media_group)
                           
         comments = 'Some comments:\n'
         i = 1  
