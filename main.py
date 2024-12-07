@@ -13,10 +13,11 @@ import instaloader
 import validators
 import re
 
-
+with open('/mnt/txt.txt' , 'r') as d:
+    dicti = json.load(d)
 CHANNEL_USERNAME = "@INSTACURL"
-BOT_TOKEN = "7156255717:AAHBxvvhrRqNED5ZBiO9ZOb3ZRAfu0QmQik"
-MYSQL = "mysql+pymysql://root:sohaib#1375WStr0ng@localhost:3306/abzar_database"
+BOT_TOKEN = dicti['bot_token']
+MYSQL = f"mysql+pymysql://root:{dicti['mysql']}@localhost:3306/abzar_database"
 ADMIN_ID = '6040165079'
 DATA_MAX_SIZA = 30 #Megabytes
 
@@ -59,7 +60,7 @@ def start_handling(message):
     user_tgid = message.from_user.id
     session = Session()
     Uzer = session.query(User).filter_by(telegram_id = str(user_tgid)).first()
-    admin = session.query(User).filter_by(telegram_id = ADMIN_ID)
+    admin = session.query(User).filter_by(telegram_id = ADMIN_ID).first()
     admin.max_requests = 1000
     session.commit()
     if Uzer == None:
