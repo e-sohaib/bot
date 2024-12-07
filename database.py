@@ -6,7 +6,7 @@ from datetime import datetime
 import pymysql
 
 
-DATABASE_URI = 'mysql+pymysql://root:root@localhost:3306/abzar_database' 
+DATABASE_URI = 'mysql+pymysql://root:sohaib#1375WStr0n@localhost:3306/abzar_database' 
 engine = create_engine(DATABASE_URI, echo=True)
 Base = declarative_base()
 

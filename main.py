@@ -16,7 +16,7 @@ import re
 
 CHANNEL_USERNAME = "@INSTACURL"
 BOT_TOKEN = "7156255717:AAHBxvvhrRqNED5ZBiO9ZOb3ZRAfu0QmQik"
-MYSQL = "mysql+pymysql://root:sohaib#1375WStr0ng@localhost:3306/abzar_databas"
+MYSQL = "mysql+pymysql://root:sohaib#1375WStr0ng@localhost:3306/abzar_database"
 ADMIN_ID = '6040165079'
 DATA_MAX_SIZA = 30 #Megabytes
 
@@ -77,12 +77,15 @@ def start_handling(message):
 
 """End Signup Block """
 
+
+
 """ Instagram Block """
 
-username = 'sohaibfaraji'
-password = 'Aa*#3823219'
+
 loader = instaloader.Instaloader()
 def login():
+    username = 'sohaibfaraji'
+    password = 'Aa*#3823219'
     if os.path.isfile(curent_dir + '/login-sohaib'):
         loader.load_session(username, 'login-sohaib')
     else:
@@ -137,7 +140,7 @@ def download_instagram_content(link , tg_id):
         post = instaloader.Post.from_shortcode(loader.context, shortcode)
         loader.filename_pattern = tg_id
         loader.dirname_pattern = f'instadownloads-{tg_id}'
-        bot.send_message(tg_id ,f'comments:\n{post.get_comments()}')
+        bot.send_message(tg_id ,f'is video?:\n{post.is_video}')
         # دانلود محتوا
         bot.send_message(tg_id,f"Download started...")
         loader.download_post(post, target=content_type)
