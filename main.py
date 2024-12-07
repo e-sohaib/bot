@@ -229,10 +229,15 @@ def download_ig(message , session):
         #upload too telegram
         bot.send_message(tg_id , 'uploading to telegram')
         all_in_dir = os.listdir(f"{curent_dir}/instadownloads-{tg_id}/")
+        media_group = []
         for item in all_in_dir:
-            if item.split('.')[1] != "jpg" or item.split('.')[1] != "mp4":
-                all_in_dir.remove(item)
-        media_group = [InputMediaPhoto(open(f"{curent_dir}/instadownloads-{tg_id}/{mowred}", 'rb'), caption="عکس اول") for mowred in all_in_dir]    
+            if item.split('.')[1] != "jpg" :
+                X = InputMediaPhoto(open(f"{curent_dir}/instadownloads-{tg_id}/{item}", 'rb'), caption="عکس اول")
+                media_group.append(X)
+            if  item.split('.')[1] != "mp4" :
+                Y = InputMediaVideo(open(f"{curent_dir}/instadownloads-{tg_id}/{item}", 'rb'), caption="فیلم اول")
+                media_group.append(Y)
+        
         bot.send_media_group(tg_id, media_group)
                           
         comments = 'Some comments:\n'
