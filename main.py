@@ -171,14 +171,13 @@ def download_instagram_content(link , tg_id):
         loader.filename_pattern = f"{tg_id}_{post_id}"
         loader.dirname_pattern = f'instadownloads-{tg_id}'
         # دانلود محتوا
-        bot.send_message(tg_id,f"Download started...")
+        download_started = bot.send_message(tg_id,f"Download started...")
         loader.download_post(post, target=content_type)
-        bot.send_message(tg_id,"The download was done successfully.")
+        Success = bot.edit_message_text("The download was done successfully.",download_started.chat.id ,download_started.message_id)
         ig_json_dump(tg_id ,post_id)
                 #upload too telegram
-        bot.send_message(tg_id , 'uploading to telegram')
-        all_in_dir = os.listdir(f"{curent_dir}/instadownloads-{tg_id}/")
-
+        Upload = bot.send_message('Uploading to telegram' , Success.chat.id ,Success.message_id)
+        #all_in_dir = os.listdir(f"{curent_dir}/instadownloads-{tg_id}/")
         #for item in all_in_dir:    
         #    if item.split('.')[-1] != "jpg" :
         #        try:
