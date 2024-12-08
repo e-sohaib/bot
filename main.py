@@ -190,7 +190,7 @@ def download_instagram_content(link , tg_id):
                         #bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
                 except Exception as error :
                     #bot.forward_message(chat_id=tg_id ,from_chat_id=BOT_TOKEN.split(":")[0], message_id = item)
-                    bot.send_photo(tg_id , f'Unsuported Image{error}***\n')
+                    bot.send_message(tg_id , f'Unsuported Image***\n{error}')
                 try:        
                     if  item.split('.')[-1] != "mp4" :
                         with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
@@ -198,14 +198,14 @@ def download_instagram_content(link , tg_id):
                             bot.send_message(tg_id , ig_caption(tg_id,post_id))
                             #bot.send_video(tg_id , film ,caption=ig_caption(tg_id,post_id),reply_markup=ig_reply_markup(tg_id , post_id))
                 except Exception as ERR :
-                    bot.send_photo(tg_id , f'Unsuported video{ERR}**\n')
+                    bot.send_message(tg_id , f'Unsuported video{ERR}**\n')
                     
-                comments = 'Some comments:\n'
+        comments = 'Some comments:\n'
         i = 1  
         for item in ig_coments(tg_id,post_id):
             comments = ''.join(f"{comments}{i} - {item}\n")
             i+=1
-            bot.send_message(tg_id , comments)   
+        bot.send_message(tg_id , comments)   
     except Exception as e: 
         bot.send_message(tg_id,f"Error downloading link.{e}")
 
