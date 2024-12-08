@@ -143,7 +143,7 @@ def download_instagram_content(link , tg_id):
     دانلود محتوا از اینستاگرام
     """
     if not is_valid_instagram_link(link):
-        bot.send_message(tg_id,"Incorrect Link.")
+        bot.send_message(tg_id,"Incorrect Link.\nCorrect link sample : \thttps://www.instagram.com/p/abcdefghijk/")
     content_type = detect_content_type(link)
     if not content_type:
         bot.send_message(tg_id,"The type of link entered is not recognized.")
@@ -161,7 +161,8 @@ def download_instagram_content(link , tg_id):
             bot.send_message(tg_id,"File format not suported.")
             
         post = instaloader.Post.from_shortcode(loader.context, shortcode)
-        #loader.filename_pattern = tg_id
+        post_id = link.split('/')[-2]
+        loader.filename_pattern = f"{tg_id}-{post_id}"
         loader.dirname_pattern = f'instadownloads-{tg_id}'
         # دانلود محتوا
         bot.send_message(tg_id,f"Download started...")
@@ -188,18 +189,22 @@ def download_instagram_content(link , tg_id):
 
 #uplaod customizig
 def ig_caption(tg_id):
-    with open(f"{curent_dir}/instadownloads-{tg_id}/{tg_id}.txt" , 'r' , encoding = 'utf-8') as cap:
-        caption = cap.read()
-    return str(caption)
+    for item in os.listdir(f"{curent_dir}/instadownloads-{tg_id}/"):
+        if item.split('.')[1] == 'txt':
+            with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" , 'r' , encoding = 'utf-8') as cap:
+                caption = cap.read()
+            return str(caption)
 #extract .json.xs to json
 def ig_json_dump(tg_id):
-    path = f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json.xz'
-    output_file = f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json'
-    with lzma.open(path, "rb") as compressed_file:
-        raw_data = compressed_file.read().decode("utf-8")
-        json_data = json.loads(raw_data)
-    with open(output_file, "w") as extracted_file:
-        json.dump(json_data, extracted_file, indent=4)
+    for item in os.listdir(f"{curent_dir}/instadownloads-{tg_id}/"):
+        if item.split('.')[2] == 'xz':
+            path = f'{curent_dir}/instadownloads-{tg_id}/{item}'
+            output_file = f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json'
+            with lzma.open(path, "rb") as compressed_file:
+                raw_data = compressed_file.read().decode("utf-8")
+                json_data = json.loads(raw_data)
+            with open(output_file, "w") as extracted_file:
+                json.dump(json_data, extracted_file, indent=4)
 #read json and prepare markup        
 def ig_reply_markup(tg_id):
     ig_json_dump(tg_id)
