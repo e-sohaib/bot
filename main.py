@@ -166,13 +166,13 @@ def download_instagram_content(link , tg_id):
         else:
             bot.send_message(tg_id,"File format not suported.")
             
-        post = instaloader.Post.from_shortcode(loader.context, shortcode)
+        #post = instaloader.Post.from_shortcode(loader.context, shortcode)
         post_id = link.split('/')[-2]
         loader.filename_pattern = f"{tg_id}_{post_id}"
         loader.dirname_pattern = f'instadownloads-{tg_id}'
         # دانلود محتوا
         download_started = bot.send_message(tg_id,f"Download started...")
-        loader.download_post(post, target=content_type)
+        #loader.download_post(post, target=content_type)
         Success = bot.edit_message_text("The download was done successfully.",download_started.chat.id ,download_started.message_id)
         ig_json_dump(tg_id ,post_id)
                 #upload too telegram
