@@ -184,7 +184,10 @@ def download_instagram_content(link , tg_id):
             if item.split('.')[-1] != "jpg" :
                 try:
                     with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
-                        bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
+                        bot.send_message(tg_id , f"{curent_dir}/instadownloads-{tg_id}/{item}")
+                        bot.send_message(tg_id , ig_caption)
+                        
+                        #bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
                 except Exception as error :
                     bot.forward_message(chat_id=tg_id ,from_chat_id=BOT_TOKEN.split(":")[0], message_id = item)
                     bot.send_photo(tg_id , f'Unsuported Image{error}***\n')
@@ -257,7 +260,6 @@ def download_ig(message , session):
         tg_id = user.telegram_id
         bot.send_message(user.telegram_id , "Wait a moment ...")
         download_instagram_content(link , str(tg_id))
-
         user.daily_requests = user.daily_requests + 1 
         Bytes = size_meter(tg_id)
         bot.send_message(user.telegram_id , f'remaing requests {user.max_requests - user.daily_requests}\nyoure data usage : {Bytes/(1024*1024)} MB')
