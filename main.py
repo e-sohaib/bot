@@ -194,6 +194,13 @@ def download_instagram_content(link , tg_id):
                             bot.send_video(tg_id , film ,caption=ig_caption(tg_id,post_id),reply_markup=ig_reply_markup(tg_id , post_id))
                 except Exception as ERR :
                     bot.send_photo(tg_id , f'Unsuported video{ERR}**\n')
+                    
+                comments = 'Some comments:\n'
+        i = 1  
+        for item in ig_coments(tg_id,post_id):
+            comments = ''.join(f"{comments}{i} - {item}\n")
+            i+=1
+            bot.send_message(tg_id , comments)   
     except Exception as e: 
         bot.send_message(tg_id,f"Error downloading link.{e}")
 
@@ -250,12 +257,7 @@ def download_ig(message , session):
         tg_id = user.telegram_id
         bot.send_message(user.telegram_id , "Wait a moment ...")
         download_instagram_content(link , str(tg_id))
-        comments = 'Some comments:\n'
-        i = 1  
-        for item in ig_coments(tg_id):
-            comments = ''.join(f"{comments}{i} - {item}\n")
-            i+=1
-        bot.send_message(user.telegram_id , comments)   
+
         user.daily_requests = user.daily_requests + 1 
         Bytes = size_meter(tg_id)
         bot.send_message(user.telegram_id , f'remaing requests {user.max_requests - user.daily_requests}\nyoure data usage : {Bytes/(1024*1024)} MB')
