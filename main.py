@@ -161,7 +161,7 @@ def download_instagram_content(link , tg_id):
             bot.send_message(tg_id,"File format not suported.")
             
         post = instaloader.Post.from_shortcode(loader.context, shortcode)
-        loader.filename_pattern = tg_id
+        #loader.filename_pattern = tg_id
         loader.dirname_pattern = f'instadownloads-{tg_id}'
         # دانلود محتوا
         bot.send_message(tg_id,f"Download started...")
@@ -176,13 +176,13 @@ def download_instagram_content(link , tg_id):
             if item.split('.')[1] != "jpg" :
                 try:
                     with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
-                        bot.send_photo(tg_id , ax ,reply_markup=ig_reply_markup(tg_id))
+                        bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))
                 except ApiTelegramException :
                     bot.send_photo(tg_id , 'Unsuported Image')
                         
             if  item.split('.')[1] != "mp4" :
                 with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
-                    bot.send_video(tg_id , film ,reply_markup=ig_reply_markup(tg_id))
+                    bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))
     except Exception as e: 
         bot.send_message(tg_id,f"Error downloading link.{e}")
 
@@ -265,7 +265,7 @@ def clear_user_files(tg_id):
     files = os.listdir(f"{curent_dir}/instadownloads-{tg_id}")
     for file in files:
         os.remove(f"{curent_dir}/instadownloads-{tg_id}/{file}")
-    os.remove(file)
+    #os.remove(file)
 #handle Instagram message       
 @bot.message_handler(func=lambda message:message.text == "Instagram")
 def start_handling(message):
