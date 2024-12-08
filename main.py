@@ -274,8 +274,8 @@ def size_meter(tg_id):
     listofdir = os.listdir(targ)
     totalsize = 0
     for item in listofdir :
-        if not os.path.isdir(f'{here}\\{item}'):
-            size_bytes = os.path.getsize(f'{here}\\{item}')
+        if not os.path.isdir(f'{targ}/{item}'):
+            size_bytes = os.path.getsize(f'{targ}/{item}')
             totalsize += size_bytes     
     return totalsize
 #clear directory of user
