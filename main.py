@@ -185,18 +185,15 @@ def download_instagram_content(link , tg_id):
                 try:
                     with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
                         bot.send_message(tg_id , f"{curent_dir}/instadownloads-{tg_id}/{item}")
-                        bot.send_message(tg_id , ig_caption(tg_id,post_id))
-                        
-                        #bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
+                        bot.send_message(tg_id , ig_caption(tg_id))
+                        bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
                 except Exception as error :
                     #bot.forward_message(chat_id=tg_id ,from_chat_id=BOT_TOKEN.split(":")[0], message_id = item)
                     bot.send_message(tg_id , f'Unsuported Image***\n{error}')
                 try:        
                     if  item.split('.')[-1] != "mp4" :
                         with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
-                            bot.send_message(tg_id , f"{curent_dir}/instadownloads-{tg_id}/{item}")
-                            bot.send_message(tg_id , ig_caption(tg_id,post_id))
-                            #bot.send_video(tg_id , film ,caption=ig_caption(tg_id,post_id),reply_markup=ig_reply_markup(tg_id , post_id))
+                            bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id , post_id))
                 except Exception as ERR :
                     bot.send_message(tg_id , f'Unsuported video{ERR}**\n')
                     
