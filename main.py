@@ -168,6 +168,7 @@ def download_instagram_content(link , tg_id):
         bot.send_message(tg_id,f"Download started...")
         loader.download_post(post, target=content_type)
         bot.send_message(tg_id,"The download was done successfully.")
+        ig_json_dump(tg_id ,post_id)
                 #upload too telegram
         bot.send_message(tg_id , 'uploading to telegram')
         all_in_dir = os.listdir(f"{curent_dir}/instadownloads-{tg_id}/")
@@ -177,7 +178,7 @@ def download_instagram_content(link , tg_id):
             if item.split('.')[1] != "jpg" :
                 try:
                     with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
-                        bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id))
+                        bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
                 except ApiTelegramException :
                     bot.send_photo(tg_id , 'Unsuported Image')
                         
@@ -195,11 +196,11 @@ def ig_caption(tg_id):
                 caption = cap.read()
             return str(caption)
 #extract .json.xs to json
-def ig_json_dump(tg_id):
+def ig_json_dump(tg_id,post_id):
     for item in os.listdir(f"{curent_dir}/instadownloads-{tg_id}/"):
         if item.split('.')[-1] == 'xz':
             path = f'{curent_dir}/instadownloads-{tg_id}/{item}'
-            output_file = f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json'
+            output_file = f'{curent_dir}/instadownloads-{tg_id}/{tg_id}-{post_id}.json'
             with lzma.open(path, "rb") as compressed_file:
                 raw_data = compressed_file.read().decode("utf-8")
                 json_data = json.loads(raw_data)
@@ -207,9 +208,9 @@ def ig_json_dump(tg_id):
                 json.dump(json_data, extracted_file, indent=4)
             return
 #read json and prepare markup        
-def ig_reply_markup(tg_id):
-    ig_json_dump(tg_id)
-    with open(f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json', 'r' ,encoding='utf-8') as m:
+def ig_reply_markup(tg_id,post_id):
+    
+    with open(f'{curent_dir}/instadownloads-{tg_id}/{tg_id}-{post_id}.json', 'r' ,encoding='utf-8') as m:
         dic = json.load(m)
         
     likes_count = dic['node']["edge_media_preview_like"]['count']
