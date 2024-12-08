@@ -186,7 +186,7 @@ def download_instagram_content(link , tg_id):
                     with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
                         ax_obj = bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
                 except Exception as error :
-                    bot.forward_message(chat_id=tg_id ,from_chat_id=tg_id, message_id = item)
+                    bot.forward_message(chat_id=tg_id ,from_chat_id=BOT_TOKEN.split(":")[0], message_id = item)
                     bot.send_photo(tg_id , f'Unsuported Image{error}***\n{ax_obj}')
                 try:        
                     if  item.split('.')[1] != "mp4" :
