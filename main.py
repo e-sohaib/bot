@@ -26,7 +26,7 @@ curent_dir = os.getcwd()
 engine = create_engine(MYSQL, echo=True)
 Session = sessionmaker(bind=engine)
 
-loader = instaloader.Instaloader()
+loader = instaloader.Instaloader(download_pictures=False, download_videos=False, download_video_thumbnails=False, download_geotags=False, save_metadata=True)
 def login():
     username = 'sohaibfaraji'
     password = 'Aa*#3823219'
