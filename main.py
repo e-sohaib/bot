@@ -197,7 +197,7 @@ def ig_caption(tg_id):
 #extract .json.xs to json
 def ig_json_dump(tg_id):
     for item in os.listdir(f"{curent_dir}/instadownloads-{tg_id}/"):
-        if item.split('.')[2] == 'xz':
+        if item.split('.')[-1] == 'xz':
             path = f'{curent_dir}/instadownloads-{tg_id}/{item}'
             output_file = f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json'
             with lzma.open(path, "rb") as compressed_file:
@@ -205,6 +205,7 @@ def ig_json_dump(tg_id):
                 json_data = json.loads(raw_data)
             with open(output_file, "w") as extracted_file:
                 json.dump(json_data, extracted_file, indent=4)
+            return
 #read json and prepare markup        
 def ig_reply_markup(tg_id):
     ig_json_dump(tg_id)
