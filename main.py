@@ -181,26 +181,26 @@ def download_instagram_content(link , tg_id):
 
         for item in all_in_dir:
             
-            if item.split('.')[1] != "jpg" :
+            if item.split('.')[-1] != "jpg" :
                 try:
                     with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
-                        ax_obj = bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
+                        bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
                 except Exception as error :
                     bot.forward_message(chat_id=tg_id ,from_chat_id=BOT_TOKEN.split(":")[0], message_id = item)
-                    bot.send_photo(tg_id , f'Unsuported Image{error}***\n{ax_obj}')
+                    bot.send_photo(tg_id , f'Unsuported Image{error}***\n')
                 try:        
-                    if  item.split('.')[1] != "mp4" :
+                    if  item.split('.')[-1] != "mp4" :
                         with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
-                            film_obj = bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id , post_id))
+                            bot.send_video(tg_id , film ,caption=ig_caption(tg_id,post_id),reply_markup=ig_reply_markup(tg_id , post_id))
                 except Exception as ERR :
-                    bot.send_photo(tg_id , f'Unsuported video{ERR}**\n{film_obj}')
+                    bot.send_photo(tg_id , f'Unsuported video{ERR}**\n')
     except Exception as e: 
         bot.send_message(tg_id,f"Error downloading link.{e}")
 
 #uplaod customizig
 def ig_caption(tg_id):
     for item in os.listdir(f"{curent_dir}/instadownloads-{tg_id}/"):
-        if item.split('.')[1] == 'txt':
+        if item.split('.')[-1] == 'txt':
             with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" , 'r' , encoding = 'utf-8') as cap:
                 caption = cap.read()
             return str(caption)
@@ -209,7 +209,7 @@ def ig_json_dump(tg_id,post_id):
     for item in os.listdir(f"{curent_dir}/instadownloads-{tg_id}/"):
         if item.split('.')[-1] == 'xz':
             path = f'{curent_dir}/instadownloads-{tg_id}/{item}'
-            output_file = f'{curent_dir}/instadownloads-{tg_id}/{tg_id}-{post_id}.json'
+            output_file = f'{curent_dir}/instadownloads-{tg_id}/{tg_id}_{post_id}.json'
             with lzma.open(path, "rb") as compressed_file:
                 raw_data = compressed_file.read().decode("utf-8")
                 json_data = json.loads(raw_data)
@@ -219,7 +219,7 @@ def ig_json_dump(tg_id,post_id):
 #read json and prepare markup        
 def ig_reply_markup(tg_id,post_id):
     
-    with open(f'{curent_dir}/instadownloads-{tg_id}/{tg_id}-{post_id}.json', 'r' ,encoding='utf-8') as m:
+    with open(f'{curent_dir}/instadownloads-{tg_id}/{tg_id}_{post_id}.json', 'r' ,encoding='utf-8') as m:
         dic = json.load(m)
         
     likes_count = dic['node']["edge_media_preview_like"]['count']
@@ -229,8 +229,8 @@ def ig_reply_markup(tg_id,post_id):
     markup = InlineKeyboardMarkup([[likes, comments]])
     return markup
 #load comments
-def ig_coments(tg_id):
-    with open(f'{curent_dir}/instadownloads-{tg_id}/{tg_id}.json', 'r' ,encoding='utf-8') as m:
+def ig_coments(tg_id,post_id):
+    with open(f'{curent_dir}/instadownloads-{tg_id}/{tg_id}_{post_id}.json', 'r' ,encoding='utf-8') as m:
         dic = json.load(m)
     listofcomments =[]
     A = dic['node']
