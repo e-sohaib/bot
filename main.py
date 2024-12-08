@@ -189,10 +189,12 @@ def download_instagram_content(link , tg_id):
                         bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
                 except ApiTelegramException :
                     bot.send_photo(tg_id , 'Unsuported Image')
-                        
-            if  item.split('.')[1] != "mp4" :
-                with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
-                    bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id , post_id))
+                try:        
+                    if  item.split('.')[1] != "mp4" :
+                        with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
+                            bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id , post_id))
+                except ApiTelegramException :
+                    bot.send_photo(tg_id , 'Unsuported video')
     except Exception as e: 
         bot.send_message(tg_id,f"Error downloading link.{e}")
 
