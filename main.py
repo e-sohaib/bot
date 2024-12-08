@@ -31,15 +31,23 @@ def login():
     username = 'sohaibfaraji'
     password = 'Aa*#3823219'
     session_file = os.path.join(curent_dir, 'login-sohaib')
+    timeoflogin = (time.time() - os.path.getmtime(f"{curent_dir}/login-sohaib"))/(60*60)
     try:
         if os.path.isfile(session_file):
-            print("Loading session...")
-            with open(session_file, 'rb') as f:
-                content = f.read()
-                if content.strip():
-                    loader.load_session_from_file(username, session_file)
-                else:
-                    raise ValueError("Session file is empty!")
+            if  timeoflogin < 12:
+                print("Loading session...")
+                with open(session_file, 'rb') as f:
+                    content = f.read()
+                    if content.strip():
+                        loader.load_session_from_file(username, session_file)
+                    else:
+                        raise ValueError("Session file is empty!")
+            else:
+                os.remove(session_file)
+                print("Logging in...")
+                loader.login(username, password)
+                loader.save_session_to_file(session_file)
+                print("Session saved.")               
         else:
             print("Logging in...")
             loader.login(username, password)
@@ -162,7 +170,7 @@ def download_instagram_content(link , tg_id):
             
         post = instaloader.Post.from_shortcode(loader.context, shortcode)
         post_id = link.split('/')[-2]
-        loader.filename_pattern = f"{tg_id}-{post_id}"
+        loader.filename_pattern = f"{tg_id}_{post_id}"
         loader.dirname_pattern = f'instadownloads-{tg_id}'
         # دانلود محتوا
         bot.send_message(tg_id,f"Download started...")
