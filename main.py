@@ -96,8 +96,6 @@ def start_handling(message):
     user_tgid = message.from_user.id
     session = Session()
     Uzer = session.query(User).filter_by(telegram_id = str(user_tgid)).first()
-    file = bot.get_file(f'{ADMIN_ID}.jpg')
-    print(f"File path: {file.file_path}")
     session.commit()
     if Uzer == None:
         if is_user_member(user_tgid):
@@ -186,15 +184,15 @@ def download_instagram_content(link , tg_id):
             if item.split('.')[1] != "jpg" :
                 try:
                     with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as ax:
-                        bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
-                except ApiTelegramException :
-                    bot.send_photo(tg_id , 'Unsuported Image')
+                        ax_obj = bot.send_photo(tg_id , ax ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id,post_id))
+                except Exception as error :
+                    bot.send_photo(tg_id , f'Unsuported Image{error}***\n{ax_obj}')
                 try:        
                     if  item.split('.')[1] != "mp4" :
                         with open(f"{curent_dir}/instadownloads-{tg_id}/{item}" ,'rb') as film:
-                            bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id , post_id))
-                except ApiTelegramException :
-                    bot.send_photo(tg_id , 'Unsuported video')
+                            film_obj = bot.send_video(tg_id , film ,caption=ig_caption(tg_id),reply_markup=ig_reply_markup(tg_id , post_id))
+                except Exception as ERR :
+                    bot.send_photo(tg_id , f'Unsuported video{ERR}**\n{film_obj}')
     except Exception as e: 
         bot.send_message(tg_id,f"Error downloading link.{e}")
 
