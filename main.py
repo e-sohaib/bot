@@ -196,9 +196,10 @@ def download_instagram_content(link , tg_id):
         #        except Exception as ERR :
         #            bot.send_message(tg_id , f'Unsuported video{ERR}**\n')
         with open(f"{curent_dir}/instadownloads-{tg_id}/{tg_id}_{post_id}.json" , 'r') as jj:
+            bot.send_document(tg_id , jj)
             dicte = json.load(jj)
         cdn_link = dicte['node']["video_url"]  
-        bot.send_message(tg_id , f'<a href ={cdn_link}>Download Link</a>' ,reply_markup=ig_reply_markup(tg_id , post_id),parse_mode="HTML")           
+        bot.send_message(tg_id , f'<a href={cdn_link}>Download Link</a>' ,reply_markup=ig_reply_markup(tg_id , post_id),parse_mode="HTML")           
         comments = 'Some comments:\n'
         i = 1  
         for item in ig_coments(tg_id,post_id):
