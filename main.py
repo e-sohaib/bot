@@ -50,7 +50,7 @@ def login():
         if os.path.exists(session_file):
             os.remove(session_file)
 
-login()
+
 
 # Telegram Bot setup
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -294,5 +294,6 @@ def main():
         logging.error(f"bot start nashod : \n {main}")
 if  __name__ == "__main__":
      main()
+     login()
 
 
