@@ -30,10 +30,10 @@ loader = instaloader.Instaloader()
 def login():
     username = 'sohaibfaraji'
     password = 'Aa*#3823219'
-    session_file = os.path.join(curent_dir, 'login-sohaib')
-    timeoflogin = (time.time() - os.path.getmtime(f"{curent_dir}/login-sohaib"))/(60*60)
+    session_file = f"{curent_dir}/login-sohaib"
     try:
         if os.path.isfile(session_file):
+            timeoflogin = (time.time() - os.path.getmtime(f"{curent_dir}/login-sohaib"))/(60*60)
             if  timeoflogin < 12:
                 print("Loading session...")
                 with open(session_file, 'rb') as f:
