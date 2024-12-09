@@ -177,6 +177,8 @@ def download_instagram_content(link , tg_id):
                 dicte = json.load(jj)
             cdn_link = dicte['node']["video_url"] 
             bot.send_message(tg_id , f'Click to Download : \t[Download Link]({cdn_link})' ,reply_markup=ig_reply_markup(tg_id , post_id),parse_mode="Markdown")           
+            caption = ig_caption(tg_id)
+            bot.send_message(tg_id , f"Caption:\n{caption}")
             comments = 'Some comments:\n'
             i = 1  
             for item in ig_coments(tg_id,post_id):
