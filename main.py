@@ -12,8 +12,10 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 import lzma
 import json
 import instaloader
+from instaloader import TwoFactorAuthRequiredException
 import validators
 import re
+from . import login
 
 with open('/mnt/txt.txt' , 'r') as d:
     dicti = json.load(d)
@@ -27,36 +29,7 @@ engine = create_engine(MYSQL, echo=True)
 Session = sessionmaker(bind=engine)
 
 loader = instaloader.Instaloader(download_pictures=False, download_videos=False, download_video_thumbnails=False, download_geotags=False, save_metadata=True)
-def login():
-    username = 'sohaibfaraji'
-    password = 'Aa*#3823219'
-    session_file = f"{curent_dir}/login-sohaib"
-    try:
-        if os.path.isfile(session_file):
-            timeoflogin = (time.time() - os.path.getmtime(f"{curent_dir}/login-sohaib"))/(60*60)
-            if  timeoflogin < 12:
-                print("Loading session...")
-                with open(session_file, 'rb') as f:
-                    content = f.read()
-                    if content.strip():
-                        loader.load_session_from_file(username, session_file)
-                    else:
-                        raise ValueError("Session file is empty!")
-            else:
-                os.remove(session_file)
-                print("Logging in...")
-                loader.login(username, password)
-                loader.save_session_to_file(session_file)
-                print("Session saved.")               
-        else:
-            print("Logging in...")
-            loader.login(username, password)
-            loader.save_session_to_file(session_file)
-            print("Session saved.")
-    except Exception as e:
-        print(f"Error during login: {e}")
-        if os.path.exists(session_file):
-            os.remove(session_file)
+
 
 
 
@@ -145,7 +118,7 @@ def detect_content_type(link):
         return None
 
 def download_instagram_content(link , tg_id):
-    login()
+    login.login()
     """
     دانلود محتوا از اینستاگرام
     """
