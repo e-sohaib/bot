@@ -44,18 +44,5 @@ def login():
 username = "sohaibfaraji"
 password = "Aa*#3823219"
 
-try:
-    # تلاش برای ورود
-    loader.login(username, password)
-    print("Logged in successfully!")
-
-    # درخواست کد تأیید از کاربر
-    two_factor_code = input("Enter the 2FA code sent to your device: ")
-    try:
-        # تأیید کد دومرحله‌ای
-        
-        print("Logged in successfully with 2FA!")
-    except Exception as e:
-        print(f"2FA login failed: {e}")
-except Exception as e:
-    print(f"Login failed: {e}")
+if __name__ == "__main__":
+    login()
