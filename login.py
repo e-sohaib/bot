@@ -25,7 +25,8 @@ def login():
                 try:
                     print("Logging in...")
                     loader.login(username, password)
-                except TwoFactorAuthRequiredException:    
+                except TwoFactorAuthRequiredException:
+                    two_factor_code = input("Enter backup code: ")    
                     loader.two_factor_login(two_factor_code)
                     loader.save_session_to_file(session_file)
                     print("Session saved.")               
@@ -33,7 +34,8 @@ def login():
             try:
                 print("Logging in...")
                 loader.login(username, password)
-            except TwoFactorAuthRequiredException:    
+            except TwoFactorAuthRequiredException:
+                two_factor_code = input("Enter backup code: ")    
                 loader.two_factor_login(two_factor_code)
                 loader.save_session_to_file(session_file)
                 print("Session saved.")   
