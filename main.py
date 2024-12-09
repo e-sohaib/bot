@@ -15,7 +15,7 @@ import instaloader
 from instaloader import TwoFactorAuthRequiredException
 import validators
 import re
-from . import login
+
 
 with open('/mnt/txt.txt' , 'r') as d:
     dicti = json.load(d)
