@@ -118,7 +118,10 @@ def detect_content_type(link):
         return None
 
 def download_instagram_content(link , tg_id):
-    login.login()
+    session_file = f"{curent_dir}/login-sohaib"
+    if os.path.isfile(session_file):
+        loader.load_session_from_file(session_file)
+        print('loged in seccessfully.')
     """
     دانلود محتوا از اینستاگرام
     """
