@@ -17,10 +17,17 @@ def request_to_api(city_number , category_realname):
     response = requests.post(url=api_address , data=data ,headers=raw_header)
     return response.text
 
-text = request_to_api("22" , "home-lighting")
-text2 = json.dumps(text)
-
-with open('first_test.json' , 'w' , encoding='utf-8') as l:
-    json.dump(text , l , ensure_ascii=False , indent = 4)
-    
+def find_city_number(name):
+    with open('bigcitys.json' , 'r' , encoding='utf-8') as city:
+        citys = json.load(city)
+    for item in citys:
+        if item[0] == name:
+            return str(item[1])
+def find_slug_cat(name):
+    with open('category.json' , 'r' , encoding = 'utf-8') as cats:
+        category = json.load(cats)
+    for item in category:
+        if item['name'] == name:
+            return item["slug"]
+        
     
