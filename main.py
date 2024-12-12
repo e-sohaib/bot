@@ -131,7 +131,7 @@ def prepare_request(call):
     response = request_to_api(city_number , category_slug)
     with open(curent_dir + '/hichi.txt' , 'w' ,encoding='utf-8') as respo:
         respo.write(str(response))
-    with open(curent_dir + '/hichi.txt' , 'w' ,encoding='utf-8') as r:
+    with open(curent_dir + '/hichi.txt' , 'r' ,encoding='utf-8') as r:
         bot.send_document(ADMIN_ID ,r)    
 
 def category_mrkup():
