@@ -46,9 +46,12 @@ def create_main_menu_reply(tg_id):
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
     if str(tg_id) == ADMIN_ID:
         markup.add(KeyboardButton("Instagram"))
+        markup.add(KeyboardButton("Register"))
         markup.add(KeyboardButton("Youtube"))
         markup.add(KeyboardButton("Linkedin"))
         markup.add(KeyboardButton("Divar"))
+        markup.add(KeyboardButton("Register"))
+        
     else:
         markup.add(KeyboardButton("Instagram"))
         
@@ -90,7 +93,34 @@ def start_handling(message):
 """End Signup Block """
 
 
+"""registering block"""
+@bot.message_handler(func = lambda message:message.text == "Register")
+def user_register(message):
+    tg_id = message.from_user.id
+    session = Session()
+    user = session.query(User).filter_by (telegram_id= tg_id).first()
+    if user.subscriptions :
+        print("youre current plan is available still")
+    
 
+"""end register block """
+"""Divar block"""
+
+def divar_markup_citys():
+    with open(curent_dir + '/bigcitys.json' , 'r' , encoding = 'utf-8') as citys:
+        bigcitis = json.load(citys)
+    markup = ReplyKeyboardMarkup()
+    for item in bigcitis:
+        markup.add(KeyboardButton(item[1]))
+    return markup
+    
+@bot.message_handler(func = lambda message:message.text == "Register")
+def user_register(message):
+    tg_id = message.from_user.id
+    bot.send_message(tg_id ,"شهر را انتخاب کنید",reply_markup=divar_markup_citys())
+
+
+"""END Divar"""
 """ Instagram Block """
 
 

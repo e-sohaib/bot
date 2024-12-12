@@ -1,8 +1,7 @@
-from sqlalchemy import create_engine, Column, Integer, String, Float, DateTime, ForeignKey, Index, func
-from sqlalchemy.orm import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship
-from sqlalchemy.exc import SQLAlchemyError
-from datetime import datetime
+from sqlalchemy import create_engine, Column, Integer, String, Float, Enum, Date, ForeignKey, DateTime, func
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship, sessionmaker
+import datetime
 import pymysql
 import json
 import os
@@ -18,24 +17,53 @@ DATABASE_URI = f"mysql+pymysql://root:{PASS}@localhost:3306/abzar_database"
 engine = create_engine(DATABASE_URI, echo=True)
 Base = declarative_base()
 
+
+Base = declarative_base()
+
+# 1. مدل کاربران
 class User(Base):
     __tablename__ = 'users'
     
     id = Column(Integer, primary_key=True, autoincrement=True)
-    telegram_id = Column(String(50), unique=True, nullable=False, index=True)
-    date_joined = Column(DateTime, default=datetime.now())
-    balance_curency = Column(String(50) ,nullable=True)
-    balance_amount = Column(Float, default=0.0)
-    daily_requests = Column(Integer , default=0)
-    last_deposit_date = Column(DateTime, default=None)
-    transaction_id = Column(String(50), unique=True, nullable=True)
-    deposit_count = Column(Integer, default=0)
-    max_requests = Column(Integer, default=3)
-    lang = Column(String(2), nullable=True)
+    telegram_id = Column(String(50), unique=True, nullable=False)
+    phone_number = Column(String(15), nullable=True)
+    created_at = Column(DateTime, default=datetime.datetime.now())
+    transaction_id = Column(String(50) , nullable=True)
+    
+    # ارتباط با جدول اشتراک‌ها
+    subscriptions = relationship("UserSubscription", back_populates="user")
 
-    __table_args__ = (
-        Index('idx_telegram_id', 'telegram_id'),
-    )
+# 2. مدل پلن‌های اشتراک
+class SubscriptionPlan(Base):
+    __tablename__ = 'subscription_plans'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    name = Column(String(50), nullable=False)
+    description = Column(String, nullable=True)
+    price = Column(Float, nullable=False)
+    duration_days = Column(Integer, nullable=False)
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    
+    # ارتباط با جدول اشتراک‌ها
+    subscriptions = relationship("UserSubscription", back_populates="plan")
+
+# 3. مدل اشتراک‌های کاربران
+class UserSubscription(Base):
+    __tablename__ = 'user_subscriptions'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(Integer, ForeignKey('users.id'), nullable=False)
+    plan_id = Column(Integer, ForeignKey('subscription_plans.id'), nullable=False)
+    start_date = Column(Date, nullable=False)
+    end_date = Column(Date, nullable=False)
+    status = Column(Enum('active', 'expired', 'canceled', name='subscription_status'), default='active')
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    
+    # روابط
+    user = relationship("User", back_populates="subscriptions")
+    plan = relationship("SubscriptionPlan", back_populates="subscriptions")
 
 def create_database():
     try:

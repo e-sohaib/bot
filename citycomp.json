@@ -1,0 +1,3224 @@
+[
+    [
+        1,
+        "تهران",
+        "tehran",
+        {
+            "40": "ajudaniye",
+            "42": "niavaran",
+            "43": "kashanak",
+            "44": "jamaran",
+            "45": "emamzadeh-ghasem",
+            "46": "golab-darreh",
+            "47": "dar-abad",
+            "48": "aqdasiyeh",
+            "49": "shahrak-naft",
+            "50": "shahrak-golha",
+            "51": "shahrak-mahallati",
+            "52": "sohanak",
+            "53": "ozgol",
+            "54": "darband",
+            "55": "velenjak",
+            "56": "zafaraniyeh",
+            "57": "evin",
+            "58": "darakeh",
+            "59": "farahzad",
+            "60": "mahmoodiyeh",
+            "61": "tajrish",
+            "62": "kamraniyeh",
+            "63": "chizar",
+            "64": "farmanieh",
+            "65": "qeytarieh",
+            "66": "dezashib",
+            "67": "pasdaran",
+            "68": "ekhtiarieh",
+            "70": "qolhak",
+            "71": "darrous",
+            "72": "zafar",
+            "74": "mirdamad",
+            "75": "saadat-abad",
+            "78": "shahrak-gharb",
+            "81": "vanak-village",
+            "82": "punak",
+            "84": "zargandeh",
+            "85": "elahiyeh",
+            "86": "jordan",
+            "87": "ararat",
+            "88": "gisha",
+            "90": "yousef-abad",
+            "91": "amir-abad",
+            "92": "baharestan",
+            "93": "bazaar",
+            "94": "jomhouri",
+            "95": "seyyed-khandan",
+            "96": "gandhi",
+            "99": "hasan-abad",
+            "103": "shian",
+            "104": "lavizan",
+            "105": "ghanat-kowsar",
+            "106": "shemiran-now",
+            "108": "west-tehran-pars",
+            "109": "east-tehran-pars",
+            "110": "majid-abad",
+            "112": "estakhr",
+            "113": "shahrak-omid",
+            "115": "oghaf",
+            "116": "university-of-science-and-technology",
+            "117": "madaen",
+            "118": "dardasht",
+            "119": "hafthoz",
+            "120": "fadak",
+            "121": "hakimiyeh",
+            "122": "zeynabiyeh",
+            "123": "tehran-now",
+            "125": "shams-abad",
+            "126": "majidiyeh",
+            "127": "dabestan",
+            "128": "kazem-abad",
+            "130": "heshmatiyeh",
+            "131": "aramaneh",
+            "132": "nezam-abad",
+            "133": "vahidiyeh",
+            "134": "niroo-havayi",
+            "138": "shahrak-jandarmeri",
+            "139": "marzdaran",
+            "140": "shahrak-koohsar",
+            "141": "morad-abad",
+            "143": "almahdi",
+            "145": "north-jannat-abad",
+            "146": "central-jannat-abad",
+            "147": "shahin",
+            "148": "south-jannat-abad",
+            "151": "north-shahran",
+            "152": "south-shahran",
+            "153": "kan",
+            "154": "baharan",
+            "155": "shahr-ziba",
+            "156": "andisheh",
+            "157": "sazman-aab",
+            "158": "sazman-barnameh",
+            "159": "shahrak-parvaz",
+            "160": "eram",
+            "161": "dehkadeh-olympic",
+            "162": "zibadasht",
+            "163": "shahrak-sadra",
+            "164": "azadi",
+            "165": "shahrak-rahahan",
+            "166": "shahrak-ansar",
+            "167": "ekbatan",
+            "168": "kuy-bimeh",
+            "169": "shahrak-apadana",
+            "170": "kuy-ferdows",
+            "171": "tarasht",
+            "172": "sadeghiyeh",
+            "173": "abazar",
+            "174": "kuy-mehran",
+            "175": "shahrak-esteqlal",
+            "178": "tehransar",
+            "179": "shahrak-darya",
+            "180": "shahrak-aseman",
+            "182": "mehrabad-international-airport",
+            "184": "kuy-17-shahrivar",
+            "185": "shahrak-ferdos",
+            "186": "south-mehr-abad",
+            "187": "shahrak-taleqani",
+            "188": "khalij-fars",
+            "189": "shad-abad",
+            "190": "shahrak-arghavan-emam-khomeyni",
+            "191": "ebrahimabad",
+            "192": "yaftabad",
+            "193": "shahrak-moslemin",
+            "194": "shahrak-vali-asr",
+            "195": "ostad-moein",
+            "196": "jey",
+            "197": "beryanak",
+            "198": "azari",
+            "199": "falah",
+            "200": "daryan-no",
+            "201": "tehran-villa",
+            "202": "shahrara",
+            "203": "towhid",
+            "204": "jamalzadeh",
+            "205": "sattarkhan",
+            "206": "patrice-lumumba",
+            "208": "keshavarz-boulevard",
+            "209": "university-of-tehran",
+            "210": "fatemi",
+            "211": "qezel-qaleh",
+            "214": "mobarak-abad-beheshti",
+            "216": "hasan-abad-baqerfar",
+            "217": "bagh-rezvan",
+            "219": "karim-abad",
+            "220": "abdol-abad",
+            "227": "zahir-abad",
+            "228": "deylaman",
+            "231": "javanmard-qasab",
+            "232": "mansuriyeh",
+            "233": "dolat-abad",
+            "234": "malekabad",
+            "235": "ali-abad",
+            "236": "shahrak-takhti",
+            "240": "shoosh",
+            "241": "shahrak-kyanshahr",
+            "243": "moshiriyeh",
+            "245": "karevan",
+            "246": "masoodieh",
+            "248": "qasr-firuzeh-do",
+            "249": "afsariyeh",
+            "250": "yakhchi-abad",
+            "251": "chaharsad-dastgah",
+            "252": "nazi-abad",
+            "253": "khazaneh",
+            "254": "bahmanyar",
+            "255": "khani-abad",
+            "256": "esfandiyari",
+            "257": "shahrak-shariati",
+            "259": "shahrak-aboozar",
+            "260": "shahrak-sharifi",
+            "262": "nemat-abad",
+            "263": "shahid-rajaie",
+            "264": "bagh-azari",
+            "265": "javadiyeh",
+            "266": "rumi",
+            "268": "zehtabi",
+            "269": "vasfenard",
+            "270": "hashem-abad",
+            "271": "shahrak-amiralmomenin",
+            "272": "doolab",
+            "273": "ahang",
+            "275": "gomrok",
+            "276": "amir-bahador",
+            "277": "amiriyeh",
+            "278": "moniriyeh",
+            "279": "sangelaj",
+            "280": "pamenar",
+            "281": "sheykh-hadi",
+            "282": "meydan-horr",
+            "283": "eskandari",
+            "284": "salsabil",
+            "285": "darvazeh-shemiran",
+            "286": "khajeh-nasir-tousi",
+            "287": "imam-hossein",
+            "288": "safa",
+            "289": "sad-dastgah",
+            "290": "tehran-delgosha",
+            "291": "aemmeh-ye-athaar",
+            "292": "piroozi",
+            "293": "qasr-firuzeh-yek",
+            "297": "behjat-abad",
+            "298": "iran-shahr",
+            "299": "sanaey",
+            "300": "abbas-abad",
+            "301": "arjantin",
+            "302": "sohrevardi",
+            "306": "chitgar",
+            "307": "shahrak-ghazali",
+            "308": "shahrak-ghazali-cinema",
+            "311": "sarvazad",
+            "312": "navvab",
+            "315": "vanak",
+            "360": "amaniyeh",
+            "374": "vardavard",
+            "399": "narmak",
+            "637": "sharifabad",
+            "639": "qiamdasht",
+            "654": "azerbaijan",
+            "655": "meydan-enghelab",
+            "656": "shademan",
+            "657": "jeyhoon",
+            "658": "meydan-valiasr",
+            "907": "abshar-tehran",
+            "908": "havanirooz",
+            "909": "kouhak",
+            "910": "shahrak-pasdaran",
+            "911": "shahrak-farhangian",
+            "912": "fath",
+            "913": "saeed-abad",
+            "914": "sar-asiyab-mehr-abad",
+            "915": "shamshiri",
+            "916": "tolid-daroo",
+            "917": "behdasht",
+            "918": "dolatkhah",
+            "919": "tehran-hesarak",
+            "920": "bagh-feyz",
+            "921": "shahrak-naft-district5",
+            "922": "parvaz",
+            "923": "kuy-faraz",
+            "924": "hezarsang",
+            "925": "aseman",
+            "926": "sepehr",
+            "927": "eivanak",
+            "928": "university-of-sharif",
+            "929": "darya",
+            "930": "bagh-ferdows",
+            "931": "hekmat",
+            "932": "shahrak-valfajr",
+            "933": "jahad",
+            "934": "tavanir",
+            "935": "nosrat",
+            "936": "nejatollahi",
+            "937": "tehran-khaghani",
+            "938": "bahar",
+            "939": "niloufar",
+            "940": "darb-dowom",
+            "941": "qoba",
+            "942": "hesar-booali",
+            "943": "araj",
+            "944": "kuy-nobonyad",
+            "945": "tehran-kerman",
+            "946": "sorkhe-hesar",
+            "947": "javadiyeh-tehran-pars",
+            "948": "khak-sefid",
+            "949": "tehran-lashkar",
+            "950": "sabalan",
+            "951": "ashtiyani",
+            "952": "hafezie",
+            "953": "tehran-emamat",
+            "954": "south-narmak",
+            "955": "zarkesh",
+            "956": "taslihat",
+            "957": "east-shareq",
+            "958": "khaje-nezam-molk",
+            "959": "tehran-police",
+            "960": "tehran-gorgan",
+            "961": "qasemabad",
+            "962": "dehqan",
+            "963": "shahid-asadi",
+            "964": "zahed-gilani",
+            "965": "parastar",
+            "966": "taxirani",
+            "967": "nabi-akram",
+            "968": "shiva",
+            "969": "shokoofeh",
+            "970": "sarasiab-doolab",
+            "971": "jaberi",
+            "972": "shahed",
+            "973": "saheb-al-zaman",
+            "974": "aref",
+            "975": "mina",
+            "976": "mesgar-abad",
+            "977": "shahadat",
+            "978": "safaiye",
+            "979": "ebn-babevayh",
+            "982": "shahid-avini",
+            "983": "sizdah-aban",
+            "984": "sartakht",
+            "985": "hamzeh-abad",
+            "988": "firoozabadi",
+            "989": "khani-abad-no",
+            "990": "etehad",
+            "991": "tehran-iran",
+            "992": "abshar",
+            "993": "aminhozour",
+            "994": "ferdowsi",
+            "995": "qiam",
+            "996": "sirous",
+            "997": "kosar",
+            "998": "qalamestan",
+            "999": "salamat",
+            "1000": "makhsous",
+            "1001": "tehran-zanjan",
+            "1002": "hashemi",
+            "1003": "shahid-dastgheyb",
+            "1004": "shabiri",
+            "1005": "soleymani",
+            "1006": "haftchenar",
+            "1007": "bolursazi",
+            "1008": "tehran-shandiz",
+            "1009": "zamzam",
+            "1010": "moqadam",
+            "1011": "tous",
+            "1012": "golchin",
+            "1013": "jalili",
+            "1014": "imam-sajjad",
+            "1015": "bisim",
+            "1016": "tayeb",
+            "1017": "khavaran",
+            "1018": "minabi",
+            "1019": "atabak",
+            "1020": "abuzar",
+            "1021": "imamzadeh-hasan",
+            "1022": "bagh-khazaneh",
+            "1023": "shahid-borujerdi",
+            "1024": "heravi",
+            "1025": "tehran-hosein-abad",
+            "1026": "east-saleh-abad",
+            "1027": "abdollah-abad",
+            "1028": "tehran-jolfa",
+            "1029": "dr-hoshyar",
+            "1030": "shahrak-shahid-bagheri",
+            "1031": "chitgar-lake",
+            "1032": "shahrak-daneshgahi",
+            "1033": "shahrak-daneshgah-tehran",
+            "1034": "sharif",
+            "1035": "shirazi"
+        }
+    ],
+    [
+        3,
+        "مشهد",
+        "mashhad",
+        {
+            "428": "ghasem-abad",
+            "430": "vakilabad",
+            "431": "azadshahr",
+            "432": "hashemiye",
+            "433": "reza-shahr",
+            "435": "sajjad-shahr",
+            "436": "tollab",
+            "437": "abutaleb",
+            "439": "felestin",
+            "440": "ahmadabad",
+            "442": "rahnamaei",
+            "443": "kolahdouz",
+            "444": "goharshad",
+            "447": "faramaz-abbasi",
+            "449": "south-motahari",
+            "450": "tabarsi",
+            "451": "mosalla",
+            "452": "17-shahrivar",
+            "453": "toroq",
+            "457": "kuh-sangi",
+            "458": "beheshti",
+            "460": "sayyad-shirazi",
+            "461": "nofel-loshato",
+            "462": "sanabaad",
+            "463": "daneshjoo",
+            "465": "abdol-motalleb",
+            "467": "haft-e-tir",
+            "473": "emam-khomeini",
+            "474": "holy-shrine",
+            "476": "meydan-adl-khomeini",
+            "477": "honarestan",
+            "478": "imam-reza",
+            "479": "mousavi-ghoochani",
+            "481": "torbat-heydariyeh",
+            "485": "kashmar",
+            "486": "zed-square",
+            "488": "elahiyeh-boulevard",
+            "489": "kuy-mahdi",
+            "490": "barq-square",
+            "491": "sadi",
+            "493": "quchan",
+            "495": "east-gaaz",
+            "497": "janbaz",
+            "498": "resalat",
+            "642": "toos-boulevard",
+            "643": "shahrak-rajayi",
+            "1117": "shahrara",
+            "1118": "shahrak-e-niru-ye-havayi",
+            "1119": "shahrak-e-chahar-cheshmeh",
+            "1120": "kuy-e-sarafrazan",
+            "1122": "kuy-e-kowsar",
+            "1124": "ferdowsi-university-of",
+            "1125": "Shahrak-e-Taleqani",
+            "1127": "jahedshahr",
+            "1129": "fareqoltahsilan",
+            "1130": "amiriyeh",
+            "1131": "sattari",
+            "1132": "sadaf",
+            "1133": "farhang",
+            "1134": "eqbal",
+            "1137": "mahdiabad",
+            "1138": "hojjat",
+            "1139": "baharan",
+            "1141": "fadak",
+            "1143": "kuy-e-amiralmomenin",
+            "1144": "keshavaz",
+            "1145": "sepad",
+            "1146": "bahman",
+            "1147": "pardis",
+            "1148": "kuy-e-nane-razavi",
+            "1149": "isargaran",
+            "1151": "shafa",
+            "1153": "samarghand",
+            "1154": "shahid-honarvar",
+            "1155": "north-shahid-mottahari",
+            "1156": "ayatollah-ebadi",
+            "1162": "ershad",
+            "1163": "majd",
+            "1165": "amel",
+            "1169": "malek-abad-garden",
+            "1170": "10-day",
+            "1172": "rahahan",
+            "1173": "iman",
+            "1174": "koushesh",
+            "1175": "jannat",
+            "1176": "abkuh",
+            "1177": "shahrak-e-hashmenizhad",
+            "1178": "fatemiye",
+            "1180": "balal",
+            "1181": "khaje-rabi",
+            "1182": "kuy-e-daravey",
+            "1183": "sis-abad",
+            "1184": "north-tabars",
+            "1185": "samen",
+            "1186": "shahid-qorbani",
+            "1187": "kuy-e-raddeh",
+            "1188": "kuy-e-panj-tan",
+            "1189": "shahid-avini",
+            "1190": "kuy-e-amiralmonmenin",
+            "1191": "abbas-abad",
+            "1192": "vahid",
+            "1193": "abouzar",
+            "1194": "telgerd",
+            "1195": "ansar",
+            "1196": "mooud",
+            "1197": "poursina",
+            "1198": "bahonar",
+            "1199": "sajadieh",
+            "1200": "isar",
+            "1201": "golshour",
+            "1202": "mehrabad",
+            "1203": "hoseynabad",
+            "1204": "rezaieyeh",
+            "1205": "noghan",
+            "1206": "kuy-e-bala-khiaban",
+            "1207": "kuy-e-paein-khiaban",
+            "1208": "eidgah",
+            "1210": "ayatollah-khamenei",
+            "1211": "charbagh",
+            "1212": "danesh",
+            "1213": "salam",
+            "1214": "onsori",
+            "1215": "dehnavi",
+            "1216": "shahid-maqoul",
+            "1217": "amirabad",
+            "1218": "karmandan-e-dovom",
+            "1219": "karmandan-e-aval",
+            "1220": "chahnou",
+            "1221": "shiroudi",
+            "1222": "kuy-e-karagaran",
+            "1223": "kuy-e-agha-mostafa-khomeini",
+            "1225": "mohammadabad",
+            "1226": "Shahrak-e-Shirin",
+            "1227": "moqadam",
+            "1228": "parvin-etesami",
+            "1229": "neyzeh",
+            "1230": "panj-tan-al-e-abba",
+            "1232": "valiasr",
+            "1234": "kuy-e-police",
+            "1235": "Kuy-e-Seyyedi",
+            "1236": "mashhad-hashemi-nejad-international-airport",
+            "1237": "enqelab",
+            "1238": "baharestan",
+            "1239": "shahrak-e-abuzar",
+            "1240": "robat-e-Toroq",
+            "1241": "asgariyeh",
+            "1242": "ivan",
+            "1247": "arvand",
+            "1613": "mashhad-international-exhibition"
+        }
+    ],
+    [
+        2,
+        "کرج",
+        "karaj",
+        {
+            "566": "gohardasht",
+            "567": "mehrshahr",
+            "568": "golshahr",
+            "569": "azimieh",
+            "570": "shahinvila",
+            "571": "mehrvila",
+            "572": "jahanshahr",
+            "573": "baghestan",
+            "576": "andisheh-new-town",
+            "577": "marlik",
+            "579": "hesarak",
+            "580": "mesbah",
+            "581": "kamalshahr",
+            "582": "kianmehr",
+            "584": "shahriar-karaj",
+            "585": "haft-e-tir",
+            "586": "taleghani-karaj",
+            "587": "manzariyeh-karaj",
+            "588": "khorramdasht",
+            "589": "azadegan",
+            "590": "banafsheh",
+            "591": "dehghanvila",
+            "592": "malard",
+            "593": "meshkindasht",
+            "594": "vahdat-town",
+            "596": "shahrak-owj",
+            "597": "sasani",
+            "598": "derakhti",
+            "1038": "kuy-zanbaq",
+            "1039": "kuy-mehr",
+            "1040": "abrisham",
+            "1041": "aq-tappeh",
+            "1042": "asadabad",
+            "1043": "rajababad",
+            "1044": "hosseinabad",
+            "1045": "ahadabad",
+            "1046": "kuy-farhang",
+            "1047": "shabanabad",
+            "1048": "malekabad",
+            "1049": "akhtarabad",
+            "1050": "shahrak-sohrabiyeh",
+            "1051": "akhgarabad",
+            "1052": "raazi-town",
+            "1053": "shahrak-nahal-va-bazr",
+            "1054": "golestan",
+            "1055": "kuy-bahar",
+            "1056": "akbarabad",
+            "1057": "shahrak-yas",
+            "1058": "350-metri",
+            "1059": "golha",
+            "1064": "shahrak-zafar",
+            "1066": "shahrak-ostadan",
+            "1067": "karaj-no",
+            "1069": "south-kuy-karmandan",
+            "1070": "hyderabad",
+            "1071": "kuy-emamiyeh",
+            "1072": "aseman-town",
+            "1073": "baharestan-industrial-town",
+            "1074": "mahmodabad",
+            "1075": "shahrak-ali-ebn-abitaleb",
+            "1076": "north-kuy-karmandan",
+            "1077": "golshahrvila",
+            "1078": "ettehad",
+            "1079": "valiasr",
+            "1080": "dowlatabad",
+            "1081": "esfahaniha",
+            "1083": "chaharsad-dastgah",
+            "1084": "shahrake-fahmideh",
+            "1086": "kuy-modarres",
+            "1088": "kuy-farhangian",
+            "1089": "shahrak-imam-reza",
+            "1091": "pishahangi",
+            "1092": "goldasht",
+            "1093": "kalak",
+            "1094": "jahan-nama",
+            "1095": "kalak-no",
+            "1096": "shahrak-alborz",
+            "1097": "mehrshahr-5",
+            "1099": "chaman",
+            "1101": "eslamabad",
+            "1104": "bahar",
+            "1105": "Baraghan",
+            "1111": "samandehi",
+            "1112": "mehrshahr-2",
+            "1113": "mehrshahr-3",
+            "1114": "mehrshar-1"
+        }
+    ],
+    [
+        6,
+        "شیراز",
+        "shiraz",
+        {
+            "502": "shahrak-golestaan",
+            "503": "moaliabad",
+            "505": "molla-sadra",
+            "506": "modarresblvd",
+            "507": "farhang-shahr",
+            "509": "atlasi",
+            "511": "rahmat-boulevard",
+            "512": "tachara",
+            "513": "valfajr",
+            "515": "ghasr-dasht",
+            "516": "mianrood",
+            "517": "seraj",
+            "521": "amir-kabir",
+            "522": "eram-shiraz",
+            "523": "sattar-khan",
+            "524": "kolbeh",
+            "527": "fazilat-boulevard",
+            "529": "zand",
+            "531": "east-ghodoosi",
+            "532": "west-ghodoosi",
+            "533": "zargari",
+            "534": "saadi-cinema",
+            "535": "afif-abad",
+            "536": "shahrak-beheshti",
+            "537": "shahrak-rokn-abad",
+            "538": "bani-hashemi",
+            "540": "goldasht-hafez",
+            "542": "shahrak-parvaaz",
+            "543": "edalat-boulevard",
+            "544": "kholde-barin",
+            "548": "paygah-havayi",
+            "550": "fargaz",
+            "551": "jomhoori",
+            "552": "azaadi",
+            "554": "shahrak-motahhari",
+            "555": "besat",
+            "563": "kuy-zahra",
+            "640": "ziba-shahr",
+            "1251": "siloo",
+            "1253": "bagh-e-takht",
+            "1254": "tappeh-telviziyoun",
+            "1255": "chencheneh",
+            "1256": "kuy-valiasr",
+            "1257": "shahrak-isar",
+            "1258": "darvazeh",
+            "1259": "dinakan",
+            "1260": "mansoor-abad",
+            "1261": "shahrak-bahonar",
+            "1262": "goldasht-mohammadi",
+            "1263": "shahrak-erfan",
+            "1264": "goldasht-moaliabad",
+            "1266": "shahrak-bootan",
+            "1268": "javadiyeh",
+            "1269": "pardis-town",
+            "1270": "arian-town",
+            "1271": "hossein-abad",
+            "1272": "bezin-town",
+            "1276": "north-shahrak-golestan",
+            "1279": "talkh-e-dash",
+            "1281": "kuy-azadi",
+            "1282": "shah-gholi-beigi",
+            "1283": "derki",
+            "1286": "kuy-yas",
+            "1287": "golshan",
+            "1288": "kuy-ghozat",
+            "1289": "janbazan",
+            "1292": "gouyom",
+            "1293": "fajr-town",
+            "1294": "dokuhak",
+            "1295": "qasre-qomsheh",
+            "1297": "shahrak-e-mokhaberat",
+            "1299": "niayesh",
+            "1300": "mahmoudieh",
+            "1303": "shahrak-modares",
+            "1304": "shahrak-mahdiabad",
+            "1305": "farzanegan",
+            "1306": "hoveyzeh",
+            "1307": "rezvan",
+            "1308": "farhangian",
+            "1309": "jamaran",
+            "1310": "ahmad-abad",
+            "1311": "shahrak-imam-hossein",
+            "1312": "sajjadieh",
+            "1313": "mahdiyeh",
+            "1314": "shahrak-e-shahid-navvab-e-safavi",
+            "1315": "shahrak-valiasr",
+            "1317": "mohammadiyeh",
+            "1318": "goldasht",
+            "1320": "kuy-farhangian",
+            "1321": "shahrak-golha",
+            "1323": "vazir-abad",
+            "1324": "sahl-abad",
+            "1325": "ghale-no",
+            "1326": "mehregan",
+            "1327": "koshkek",
+            "1328": "mah-firouzan",
+            "1330": "ali-abad",
+            "1331": "nasr-abad",
+            "1332": "dastkhezr",
+            "1333": "sharif-abad",
+            "1334": "pdonak",
+            "1335": "bonakdaran",
+            "1336": "shahrak-nirou-entezamie",
+            "1337": "deh-pialeh",
+            "1338": "sheikh-ali-choupan",
+            "1339": "lashkari",
+            "1340": "shiraz-cemetery",
+            "1341": "hojat-abad",
+            "1342": "saman",
+            "1343": "shahrak-bargh",
+            "1344": "shahrak-daraie",
+            "1345": "moslem",
+            "1347": "maqar",
+            "1348": "ghaleh-shahzadeh-bagom",
+            "1349": "shishehgari",
+            "1350": "shahid-bahonar-university",
+            "1351": "saheb-al-zaman",
+            "1352": "emam-hosein",
+            "1353": "golkoub",
+            "1354": "dabbagh-khaneh",
+            "1355": "ghaleh-ghebleh",
+            "1356": "tondgooyan",
+            "1357": "laleh",
+            "1358": "zerehi",
+            "1359": "abyari",
+            "1360": "eslahnejad",
+            "1361": "tahavoli",
+            "1362": "bazaar",
+            "1363": "god-araban",
+            "1364": "bala-kaft",
+            "1365": "eshagh-beyg",
+            "1366": "ahmadi",
+            "1367": "lab-e-ab",
+            "1368": "shah-square",
+            "1369": "sar-bagh",
+            "1370": "kuy-sang-siah",
+            "1371": "darvazeh-kazeroon",
+            "1372": "dozak",
+            "1373": "vesal",
+            "1374": "abiverdi",
+            "1375": "chogiah",
+            "1376": "pardis-of-eram",
+            "1378": "kian-shahr",
+            "1379": "sharak-e-sadi",
+            "1380": "kuy-tollab",
+            "1381": "saadiyeh",
+            "1382": "abunasr",
+            "1383": "karandish",
+            "1384": "hafeziyeh",
+            "1385": "tal-e-hosseinabad",
+            "1386": "kaftarak",
+            "1387": "chogha",
+            "1388": "berijestoon",
+            "1390": "rahmat-abad",
+            "1391": "khalili",
+            "1393": "west-moshir",
+            "1395": "rishmak",
+            "1396": "neshat",
+            "1398": "mahdi-abad",
+            "1401": "haft-tanan",
+            "1402": "koozehgari",
+            "1403": "fazl-abad",
+            "1404": "abjavar",
+            "1405": "saheb-divan",
+            "1406": "dasht-chenaran",
+            "1407": "mehrab",
+            "1408": "kimia-villa-complex",
+            "1409": "torkan",
+            "1410": "sait-edari",
+            "1411": "barbari-terminal",
+            "1416": "narenjestan",
+            "1417": "pay-kata",
+            "1418": "shahid-amiri"
+        }
+    ],
+    [
+        4,
+        "اصفهان",
+        "isfahan",
+        {
+            "376": "bid-abad",
+            "377": "abbas-abad-isfahan",
+            "378": "lonban",
+            "380": "bozorgmehr",
+            "381": "khane-esfahan",
+            "382": "baharestan-isfahan",
+            "383": "malek-shahr",
+            "385": "sepahan-shahr",
+            "386": "sichan",
+            "387": "khomeyni-shahr",
+            "391": "chaharbagh-khajoo",
+            "392": "3nd-moshtagh",
+            "394": "jolfa",
+            "398": "mardavij",
+            "402": "tiran",
+            "403": "hasht-behesht",
+            "409": "zeynabiye",
+            "411": "shahreza",
+            "413": "mobarakeh",
+            "645": "hosein-abad",
+            "646": "zarinshahr",
+            "875": "gaz",
+            "1419": "shahrak-shahid-montazeri",
+            "1420": "mahmud-abad",
+            "1421": "amin-abad",
+            "1422": "isfahan-university-of-technology",
+            "1423": "dehno",
+            "1424": "ashegh-abad",
+            "1425": "shahrak-kowsar",
+            "1426": "shahrak-mahdieh",
+            "1427": "resalat",
+            "1428": "babukan",
+            "1429": "dastgerd-e-qadaadeh",
+            "1430": "marchin",
+            "1433": "lemjir",
+            "1434": "naser-khosro",
+            "1435": "azadegan",
+            "1436": "aqiq",
+            "1437": "sadaf",
+            "1438": "berelian",
+            "1440": "negarestan",
+            "1441": "valiasr-town",
+            "1442": "shahrak-milad",
+            "1443": "shahrak-kaveh",
+            "1444": "barazandeh",
+            "1445": "derak",
+            "1446": "eshragh",
+            "1447": "lale",
+            "1448": "24-metri",
+            "1449": "toghchi",
+            "1450": "farvardin",
+            "1451": "baghoush-khaneh",
+            "1452": "pa-ghalea",
+            "1453": "modarres",
+            "1454": "shahshahan",
+            "1455": "joubareh",
+            "1456": "shahishabad",
+            "1457": "dastgerdeh",
+            "1458": "afaran",
+            "1459": "mahale-now",
+            "1460": "gurtan",
+            "1461": "nazband",
+            "1462": "bazzar",
+            "1463": "janiran",
+            "1464": "veldan",
+            "1465": "soodan",
+            "1467": "mohammad-taher",
+            "1468": "golbahar",
+            "1469": "yazd-abad",
+            "1470": "ahmad-abad",
+            "1471": "ladan",
+            "1472": "golzar",
+            "1473": "ghale-tabre",
+            "1474": "sheykh-yousef",
+            "1475": "mofatteh",
+            "1476": "dashtestan",
+            "1477": "talar",
+            "1478": "paeen-darvazeh",
+            "1479": "shahzyed",
+            "1480": "bisim",
+            "1481": "hamedaniyan",
+            "1482": "baharan",
+            "1483": "roknodowleh",
+            "1484": "farhangian",
+            "1485": "nourbaran",
+            "1487": "charkhab",
+            "1488": "fath-abad",
+            "1490": "elyderan",
+            "1491": "bishe-habib",
+            "1492": "jowzdan",
+            "1493": "nazhvan",
+            "1494": "mehr-abad",
+            "1495": "bazougah",
+            "1496": "shahrestan",
+            "1497": "jey-Shir",
+            "1498": "marnan",
+            "1500": "takht-foulad",
+            "1501": "kouleh-parcheh",
+            "1502": "gabr-abad",
+            "1503": "ferdos",
+            "1504": "kerdabad",
+            "1505": "kalman",
+            "1506": "bagh-ghadir",
+            "1507": "farhangiyan-town",
+            "1508": "soltan-abad",
+            "1509": "pozveh",
+            "1510": "khiadan",
+            "1511": "shahrak-elahiyeh",
+            "1512": "kalmh-khvaran",
+            "1513": "zavan",
+            "1514": "pinart",
+            "1515": "shahrak-zayandeh",
+            "1516": "fizadan",
+            "1517": "radan",
+            "1518": "kuy-shahid-keshvari",
+            "1519": "roshan-dasht",
+            "1521": "azar",
+            "1522": "naqshe-jahan",
+            "1523": "rehnan",
+            "1524": "doteflan",
+            "1527": "soffeh",
+            "1528": "shahrak-valiasr",
+            "1529": "amiriyeh",
+            "1530": "bagh-ziar",
+            "1531": "vahid",
+            "1532": "bagh-daryacheh",
+            "1533": "farhang",
+            "1534": "mahmoodiyeh",
+            "1535": "sheykh-sadough",
+            "1536": "khalaja",
+            "1537": "sajjadieh",
+            "1538": "keshavarzi",
+            "1539": "bagh-ferdows",
+            "1540": "dastgerd",
+            "1541": "ghaemiyeh",
+            "1542": "saadat-abad",
+            "1543": "azadan",
+            "1544": "golestan",
+            "1545": "nasr-abad",
+            "1546": "monarjonban",
+            "1547": "dorcheh",
+            "1548": "zahran",
+            "1549": "javan-e-paein",
+            "1550": "javan-e-bala",
+            "1551": "jarvakan",
+            "1552": "darb-e-sibeh",
+            "1553": "mahaleh-sofla",
+            "1554": "arghavanieh",
+            "1555": "sanjavamareh",
+            "1556": "ghale-bertianchi",
+            "1557": "histan",
+            "1558": "shahid-rajaee",
+            "1559": "buzan",
+            "1560": "abr",
+            "1561": "kangaz",
+            "1562": "sattar",
+            "1563": "ardaji",
+            "1564": "khatoonabad",
+            "1565": "sudan-zeinabiyeh",
+            "1566": "mohammad-abad",
+            "1567": "oman-samani",
+            "1568": "ghale-nou",
+            "1569": "raran",
+            "1570": "andevan",
+            "1571": "kian",
+            "1572": "gavart",
+            "1573": "haftoon",
+            "1574": "asgariyeh",
+            "1575": "batoun",
+            "1576": "tameh",
+            "1577": "jaber-ansari",
+            "1578": "golmohammadi",
+            "1579": "kuy-golzar",
+            "1580": "bahram-abad",
+            "1581": "shafagh",
+            "1582": "razmandegan",
+            "1583": "miremad",
+            "1584": "shahriyar",
+            "1585": "kesare",
+            "1586": "fardovan",
+            "1587": "kojan",
+            "1588": "partman",
+            "1589": "bagh-zereshk",
+            "1590": "aineh-khaneh",
+            "1591": "bagh-negar",
+            "1592": "hemat-abad",
+            "1593": "abshar",
+            "1594": "kuy-emam",
+            "1595": "emam-jafar-sadegh-town",
+            "1596": "sepahan-lane",
+            "1597": "denart",
+            "1598": "malek",
+            "1599": "khoram",
+            "1600": "bahar-azadi",
+            "1601": "jelvan",
+            "1602": "hesseh",
+            "1604": "shahrak-imam-hossein",
+            "1605": "rahim-abad",
+            "1606": "bagh-fadak",
+            "1609": "dolat-abad"
+        }
+    ],
+    [
+        7,
+        "اهواز",
+        "ahvaz",
+        {
+            "322": "kianpars",
+            "323": "golestan",
+            "324": "zeitoun-karmandi",
+            "325": "padadshahr",
+            "326": "koorosh",
+            "327": "zeitoun-kargari",
+            "328": "naderi",
+            "329": "parddis",
+            "330": "bahonar",
+            "331": "lashkar-ahvaz",
+            "332": "kuy-enghelab",
+            "333": "kian-abad",
+            "334": "baharestan-ahvaz",
+            "335": "sepidar",
+            "336": "naft",
+            "337": "shahrak-daneshgaah",
+            "338": "amanieh",
+            "339": "shahrak-naftt",
+            "340": "kian-shahr",
+            "341": "meli-rah",
+            "342": "farhang-shahr-ahvaz",
+            "343": "kuy-mahdis",
+            "344": "kuy-nabovvat",
+            "345": "kuy-ramezan",
+            "347": "taleghani",
+            "348": "yousefi",
+            "349": "resaalat",
+            "350": "moeinzadeh",
+            "351": "sad-dastgaah",
+            "352": "ziba-shaahr",
+            "353": "kuy-soltan-manesh",
+            "354": "fooladshahr-ahvaz",
+            "355": "ariya-shahr",
+            "356": "pirozi",
+            "357": "new-side",
+            "358": "zergan",
+            "361": "daghagheleh",
+            "362": "sisad-dastgah",
+            "363": "lashkar-abad",
+            "364": "hasir-abad",
+            "365": "south-shariati",
+            "366": "kuy-alavi",
+            "367": "kut-abdollah",
+            "368": "cantex",
+            "369": "shahrak-aghajari",
+            "370": "shahrak-hafari",
+            "371": "padad-phase2",
+            "372": "padshahr-phase1",
+            "373": "kuy-modarres",
+            "644": "kuy-farhangian"
+        }
+    ],
+    [
+        5,
+        "تبریز",
+        "tabriz"
+    ],
+    [
+        9,
+        "کرمانشاه",
+        "kermanshah"
+    ],
+    [
+        8,
+        "قم",
+        "qom",
+        {
+            "600": "pardisan-qom",
+            "601": "safaeieh",
+            "603": "19-dey",
+            "604": "bonyad",
+            "605": "emam",
+            "606": "shahid-sadooqi",
+            "607": "tohid",
+            "608": "amin-boulevard",
+            "609": "azadegan",
+            "610": "salarieh",
+            "611": "azar",
+            "612": "haram",
+            "613": "dourshahr",
+            "614": "shahrak-qods",
+            "615": "jomhoori-eslami",
+            "616": "attaran",
+            "617": "honarestan-qom",
+            "618": "somayeh",
+            "619": "haft-e-tir-qom",
+            "620": "kalhori",
+            "621": "safa-shahar",
+            "622": "ensejam",
+            "623": "keyvanfar",
+            "624": "police",
+            "625": "ammar-yasir",
+            "626": "payame-noor",
+            "627": "danial",
+            "628": "yazdan-shahr",
+            "629": "enqelab",
+            "630": "ansar-alhossein",
+            "631": "emamzade-ebrahim",
+            "632": "modarres",
+            "633": "15-khordad",
+            "634": "kashani-boulevard",
+            "635": "shahid-beheshti",
+            "636": "golzar"
+        }
+    ],
+    [
+        12,
+        "رشت",
+        "rasht",
+        {
+            "1877": "pir-kola-chay",
+            "1878": "niroo-daryaee",
+            "1879": "nikmaraam",
+            "1880": "yakhsaazi",
+            "1881": "toushiba",
+            "1882": "manzariyeh",
+            "1883": "pol-taleshan",
+            "1884": "saghari-sazaan",
+            "1885": "shohada",
+            "1886": "amin-zarb",
+            "1887": "shalkou",
+            "1888": "diyanati",
+            "1889": "esmaeil-abad",
+            "1890": "ansari",
+            "1891": "golbagh-namaz",
+            "1892": "gilan-blvd",
+            "1893": "charrah-golsaar",
+            "1894": "navaab",
+            "1895": "gholipour",
+            "1896": "bousaar",
+            "1897": "kouye-hoseini",
+            "1898": "moalem",
+            "1899": "saadi",
+            "1900": "bagher-abad",
+            "1901": "takhti",
+            "1902": "hosein-abad",
+            "1903": "ostad-saraa",
+            "1904": "lakani",
+            "1905": "ali-abad",
+            "1906": "rashtian",
+            "1907": "sia-estalkh",
+            "1908": "chomaar-saraa",
+            "1909": "pirsaraa",
+            "1910": "saam",
+            "1911": "cheleh-khaneh",
+            "1912": "haaji-abad",
+            "1913": "park-e-shahr",
+            "1914": "pol-e-aragh",
+            "1915": "gaaz",
+            "1916": "roudbari",
+            "1917": "ghasemiyeh",
+            "1918": "nazari",
+            "1919": "maaloolin",
+            "1920": "soleyman-daraab",
+            "1921": "raazi",
+            "1922": "esteghamat",
+            "1923": "mofateh",
+            "1924": "shahriyaran",
+            "1925": "hamidiyan",
+            "1926": "hafez-abad",
+            "1927": "eynak",
+            "1928": "golsaar",
+            "1930": "emam-hossein",
+            "1931": "resalat",
+            "1932": "felestin",
+            "1933": "azadegan",
+            "1934": "bazaar",
+            "1935": "motahari",
+            "1936": "poursina"
+        }
+    ],
+    [
+        24,
+        "آبادان",
+        "abadan"
+    ],
+    [
+        851,
+        "آباده",
+        "abadeh"
+    ],
+    [
+        775,
+        "آبدانان",
+        "abdanan"
+    ],
+    [
+        1709,
+        "آبسرد",
+        "absard"
+    ],
+    [
+        1715,
+        "آبعلی",
+        "abali"
+    ],
+    [
+        869,
+        "آبیک",
+        "abyek"
+    ],
+    [
+        853,
+        "آذرشهر",
+        "azarshahr"
+    ],
+    [
+        1737,
+        "آران و بیدگل",
+        "aran-va-bidgol"
+    ],
+    [
+        1691,
+        "آزادشهر",
+        "azadshahr-golestan"
+    ],
+    [
+        1722,
+        "آسارا",
+        "asara"
+    ],
+    [
+        824,
+        "آستارا",
+        "astara"
+    ],
+    [
+        825,
+        "آستانه اشرفیه",
+        "astaneh-ashrafiyeh"
+    ],
+    [
+        793,
+        "آشخانه",
+        "ashkhaneh"
+    ],
+    [
+        1871,
+        "آلاشت",
+        "aalasht"
+    ],
+    [
+        748,
+        "آق قلا",
+        "aq-qala"
+    ],
+    [
+        663,
+        "آمل",
+        "amol"
+    ],
+    [
+        1723,
+        "ابریشم",
+        "abrisham-isfahan"
+    ],
+    [
+        802,
+        "ابهر",
+        "abhar"
+    ],
+    [
+        1852,
+        "احمدسرگوراب",
+        "ahmadsar-gourab"
+    ],
+    [
+        15,
+        "اراک",
+        "arak"
+    ],
+    [
+        1714,
+        "ارجمند",
+        "arjmand"
+    ],
+    [
+        17,
+        "اردبیل",
+        "ardabil"
+    ],
+    [
+        846,
+        "اردکان",
+        "ardakan"
+    ],
+    [
+        10,
+        "ارومیه",
+        "urmia"
+    ],
+    [
+        870,
+        "ازنا",
+        "azna"
+    ],
+    [
+        842,
+        "اسدآباد",
+        "asadabad"
+    ],
+    [
+        1812,
+        "اسالم",
+        "asalem"
+    ],
+    [
+        794,
+        "اسفراین",
+        "esfarāyen"
+    ],
+    [
+        819,
+        "اسلام‌‌آباد غرب",
+        "eslamabad-gharb"
+    ],
+    [
+        29,
+        "اسلام‌شهر",
+        "eslamshahr"
+    ],
+    [
+        1721,
+        "اشتهارد",
+        "eshtehard"
+    ],
+    [
+        859,
+        "اشنویه",
+        "oshnavieh"
+    ],
+    [
+        1795,
+        "اقبالیه",
+        "eqbaliyeh"
+    ],
+    [
+        1728,
+        "اقلید",
+        "eqlid"
+    ],
+    [
+        1816,
+        "الشتر",
+        "aleshtar"
+    ],
+    [
+        872,
+        "الوند",
+        "alvand"
+    ],
+    [
+        830,
+        "الیگودرز",
+        "aligudarz"
+    ],
+    [
+        1688,
+        "املش",
+        "amlash"
+    ],
+    [
+        1779,
+        "امیدیه",
+        "omidiyeh"
+    ],
+    [
+        1703,
+        "امیرکلا",
+        "amirkala"
+    ],
+    [
+        1764,
+        "اندیشه",
+        "andisheh-new-town"
+    ],
+    [
+        796,
+        "اندیمشک",
+        "andimeshk"
+    ],
+    [
+        759,
+        "اهر",
+        "ahar"
+    ],
+    [
+        797,
+        "ایذه",
+        "izeh"
+    ],
+    [
+        807,
+        "ایرانشهر",
+        "iranshahr"
+    ],
+    [
+        1701,
+        "ایزدشهر",
+        "izadshahr"
+    ],
+    [
+        32,
+        "ایلام",
+        "ilam"
+    ],
+    [
+        776,
+        "ایوان",
+        "eyvan"
+    ],
+    [
+        664,
+        "بابل",
+        "babol"
+    ],
+    [
+        1854,
+        "بره‌سر",
+        "barah-sar"
+    ],
+    [
+        710,
+        "بابلسر",
+        "babolsar"
+    ],
+    [
+        1804,
+        "بافت",
+        "baft"
+    ],
+    [
+        1829,
+        "بافق",
+        "bafq"
+    ],
+    [
+        1707,
+        "باقرشهر",
+        "baghershahr"
+    ],
+    [
+        662,
+        "بانه",
+        "baneh"
+    ],
+    [
+        39,
+        "بجنورد",
+        "bojnurd"
+    ],
+    [
+        778,
+        "برازجان",
+        "borazjan"
+    ],
+    [
+        1735,
+        "بردسکن",
+        "bardaskan"
+    ],
+    [
+        1873,
+        "بلده",
+        "baladeh"
+    ],
+    [
+        1805,
+        "بردسیر",
+        "bardsir"
+    ],
+    [
+        26,
+        "بروجرد",
+        "borujerd"
+    ],
+    [
+        1807,
+        "بلوک",
+        "boluk"
+    ],
+    [
+        785,
+        "بروجن",
+        "boroujen"
+    ],
+    [
+        815,
+        "بم",
+        "bam"
+    ],
+    [
+        760,
+        "بناب",
+        "bonab"
+    ],
+    [
+        798,
+        "بندر امام خمینی",
+        "bandar-imam-khomeini"
+    ],
+    [
+        708,
+        "بندر انزلی",
+        "bandar-anzali"
+    ],
+    [
+        751,
+        "بندر ترکمن",
+        "bandar-torkaman"
+    ],
+    [
+        1756,
+        "بندر دیر",
+        "dayyer"
+    ],
+    [
+        779,
+        "بندر کنگان",
+        "bandar-kangan"
+    ],
+    [
+        780,
+        "بندر گناوه",
+        "bandar-ganaveh"
+    ],
+    [
+        37,
+        "بندر ماهشهر",
+        "bandar-mahshahr"
+    ],
+    [
+        18,
+        "بندرعباس",
+        "bandar-abbas"
+    ],
+    [
+        25,
+        "بوشهر",
+        "bushehr"
+    ],
+    [
+        1768,
+        "بومهن",
+        "bumehen"
+    ],
+    [
+        765,
+        "بوکان",
+        "bukan"
+    ],
+    [
+        1828,
+        "بهار",
+        "bahar"
+    ],
+    [
+        314,
+        "بهبهان",
+        "behbahan"
+    ],
+    [
+        832,
+        "بهشهر",
+        "behshahr"
+    ],
+    [
+        868,
+        "بیجار",
+        "bijar"
+    ],
+    [
+        34,
+        "بیرجند",
+        "birjand"
+    ],
+    [
+        1801,
+        "بیستون",
+        "bisotun"
+    ],
+    [
+        771,
+        "پارس‌آباد",
+        "parsabad"
+    ],
+    [
+        1760,
+        "پاکدشت",
+        "pakdasht"
+    ],
+    [
+        1865,
+        "بهنمیر",
+        "bahnamir"
+    ],
+    [
+        1767,
+        "پردیس",
+        "pardis"
+    ],
+    [
+        1841,
+        "پره‌سر",
+        "pareh-sar"
+    ],
+    [
+        1766,
+        "پرند",
+        "parand"
+    ],
+    [
+        1702,
+        "پل سفید",
+        "polsefid"
+    ],
+    [
+        1817,
+        "پلدختر",
+        "pol-dokhtar"
+    ],
+    [
+        766,
+        "پیرانشهر",
+        "piranshahr"
+    ],
+    [
+        781,
+        "پیشوا",
+        "pishva"
+    ],
+    [
+        811,
+        "تاکستان",
+        "takestan"
+    ],
+    [
+        829,
+        "تالش",
+        "talesh"
+    ],
+    [
+        1729,
+        "تایباد",
+        "taybad"
+    ],
+    [
+        1822,
+        "تخت",
+        "takht"
+    ],
+    [
+        791,
+        "تربت جام",
+        "torbat-jam"
+    ],
+    [
+        1776,
+        "تربت‌حیدریه",
+        "torbat-heydariyeh"
+    ],
+    [
+        1855,
+        "توتکابن",
+        "toutkabon"
+    ],
+    [
+        1831,
+        "تفت",
+        "taft"
+    ],
+    [
+        833,
+        "تنکابن",
+        "tonekabon"
+    ],
+    [
+        1739,
+        "تنکمان",
+        "tankaman"
+    ],
+    [
+        866,
+        "تویسرکان",
+        "tuyserkan"
+    ],
+    [
+        1850,
+        "جیرنده",
+        "jirandeh"
+    ],
+    [
+        1757,
+        "جم",
+        "jam"
+    ],
+    [
+        1718,
+        "جوادآباد",
+        "javadabad"
+    ],
+    [
+        820,
+        "جوانرود",
+        "javanrud"
+    ],
+    [
+        834,
+        "جویبار",
+        "juybar"
+    ],
+    [
+        808,
+        "جهرم",
+        "jahrom"
+    ],
+    [
+        816,
+        "جیرفت",
+        "jiroft"
+    ],
+    [
+        747,
+        "چابهار",
+        "chabahar"
+    ],
+    [
+        864,
+        "چابکسر",
+        "chaboksar"
+    ],
+    [
+        835,
+        "چالوس",
+        "chalus"
+    ],
+    [
+        1686,
+        "چاف و چمخاله",
+        "chaf-chamkhale"
+    ],
+    [
+        1782,
+        "چمران",
+        "chamran-town"
+    ],
+    [
+        1694,
+        "چمستان",
+        "chamestan"
+    ],
+    [
+        1732,
+        "چناران",
+        "chenaran"
+    ],
+    [
+        1740,
+        "چهارباغ",
+        "charbagh-alborz"
+    ],
+    [
+        782,
+        "چهاردانگه",
+        "chahar-dangeh"
+    ],
+    [
+        1844,
+        "چوبر",
+        "chobar"
+    ],
+    [
+        871,
+        "حمیدیا",
+        "hamidia"
+    ],
+    [
+        1784,
+        "حمیدیه",
+        "hamidiyeh"
+    ],
+    [
+        1785,
+        "خاش",
+        "khash"
+    ],
+    [
+        1847,
+        "حویق",
+        "haviq"
+    ],
+    [
+        27,
+        "خرم‌آباد",
+        "khorramabad"
+    ],
+    [
+        803,
+        "خرمدره",
+        "khorramdarreh"
+    ],
+    [
+        799,
+        "خرمشهر",
+        "khorramshahr"
+    ],
+    [
+        1689,
+        "خشکبیجار",
+        "khoshkbijar"
+    ],
+    [
+        772,
+        "خلخال",
+        "khalkhal"
+    ],
+    [
+        1809,
+        "خمام",
+        "khomam"
+    ],
+    [
+        839,
+        "خمین",
+        "khomein"
+    ],
+    [
+        1747,
+        "خمینی‌شهر",
+        "khomeyni-shahr"
+    ],
+    [
+        1736,
+        "خواف",
+        "khaf"
+    ],
+    [
+        1727,
+        "خوانسار",
+        "khansar"
+    ],
+    [
+        1861,
+        "خلیل شهر",
+        "khalil-shahr"
+    ],
+    [
+        1793,
+        "خور",
+        "khoour"
+    ],
+    [
+        1750,
+        "خور",
+        "khour"
+    ],
+    [
+        1755,
+        "خورموج",
+        "khormoj"
+    ],
+    [
+        767,
+        "خوی",
+        "khoy"
+    ],
+    [
+        809,
+        "داراب",
+        "darab"
+    ],
+    [
+        1724,
+        "داران",
+        "daran"
+    ],
+    [
+        805,
+        "دامغان",
+        "damghan"
+    ],
+    [
+        1868,
+        "خوش‌رودپی",
+        "khoshroud-pey"
+    ],
+    [
+        1820,
+        "درگهان",
+        "dargahan"
+    ],
+    [
+        23,
+        "دزفول",
+        "dezful"
+    ],
+    [
+        1824,
+        "دلیجان",
+        "delijan"
+    ],
+    [
+        783,
+        "دماوند",
+        "damavand"
+    ],
+    [
+        874,
+        "دوگنبدان",
+        "dogonbadan"
+    ],
+    [
+        752,
+        "دورود",
+        "dorud"
+    ],
+    [
+        822,
+        "دهدشت",
+        "dehdasht"
+    ],
+    [
+        1798,
+        "دهگلان",
+        "dehgolan"
+    ],
+    [
+        777,
+        "دهلران",
+        "dehloran"
+    ],
+    [
+        1814,
+        "دیلمان",
+        "deylaman"
+    ],
+    [
+        745,
+        "رامسر",
+        "ramsar"
+    ],
+    [
+        1851,
+        "رانکوه",
+        "rankouh"
+    ],
+    [
+        1839,
+        "رحیم‌آباد",
+        "rahim-abad"
+    ],
+    [
+        1835,
+        "رستم‌آباد",
+        "rostam-abad"
+    ],
+    [
+        1781,
+        "رامشیر",
+        "ramshir"
+    ],
+    [
+        800,
+        "رامهرمز",
+        "ramhormoz"
+    ],
+    [
+        1860,
+        "رستمکلا",
+        "rostamkola"
+    ],
+    [
+        1765,
+        "رباط‌کریم",
+        "robat-karim"
+    ],
+    [
+        1684,
+        "رضوانشهر",
+        "rezvanshahr"
+    ],
+    [
+        817,
+        "رفسنجان",
+        "rafsanjan"
+    ],
+    [
+        1810,
+        "رودبار",
+        "rudbar"
+    ],
+    [
+        1849,
+        "رودبنه",
+        "roudbaneh"
+    ],
+    [
+        826,
+        "رودسر",
+        "rudsar"
+    ],
+    [
+        1769,
+        "رودهن",
+        "rudehen"
+    ],
+    [
+        1698,
+        "رویان",
+        "royan"
+    ],
+    [
+        1763,
+        "ری",
+        "shahr-e-rey"
+    ],
+    [
+        706,
+        "زابل",
+        "zabol"
+    ],
+    [
+        11,
+        "زاهدان",
+        "zahedan"
+    ],
+    [
+        1872,
+        "رینه",
+        "reyneh"
+    ],
+    [
+        1859,
+        "زیرآب",
+        "ziraab"
+    ],
+    [
+        1791,
+        "زرقان",
+        "zarghan"
+    ],
+    [
+        867,
+        "زرند",
+        "zarand"
+    ],
+    [
+        20,
+        "زنجان",
+        "zanjan"
+    ],
+    [
+        1787,
+        "زهک",
+        "zahak"
+    ],
+    [
+        1683,
+        "زیباکنار",
+        "zibakenar"
+    ],
+    [
+        22,
+        "ساری",
+        "sari"
+    ],
+    [
+        1833,
+        "سامان",
+        "saman"
+    ],
+    [
+        671,
+        "ساوه",
+        "saveh"
+    ],
+    [
+        316,
+        "سبزوار",
+        "sabzevar"
+    ],
+    [
+        852,
+        "سراب",
+        "sarab"
+    ],
+    [
+        865,
+        "سراوان-سیستان و بلوچستان",
+        "saravan"
+    ],
+    [
+        854,
+        "سرپل ذهاب",
+        "sarpol-zahab"
+    ],
+    [
+        1700,
+        "سرخرود",
+        "sorkhrood"
+    ],
+    [
+        857,
+        "سردشت",
+        "sardasht"
+    ],
+    [
+        1741,
+        "سرعین",
+        "sarein"
+    ],
+    [
+        812,
+        "سقز",
+        "saqqez"
+    ],
+    [
+        768,
+        "سلماس",
+        "salmas"
+    ],
+    [
+        1699,
+        "سلمان‌شهر",
+        "salman-shahr"
+    ],
+    [
+        35,
+        "سمنان",
+        "semnan"
+    ],
+    [
+        1725,
+        "سمیرم",
+        "semirom"
+    ],
+    [
+        855,
+        "سنقر",
+        "sonqor"
+    ],
+    [
+        1811,
+        "سنگر",
+        "sangar"
+    ],
+    [
+        28,
+        "سنندج",
+        "sanandaj"
+    ],
+    [
+        756,
+        "سوسنگرد",
+        "susangerd"
+    ],
+    [
+        761,
+        "سهند",
+        "sahand"
+    ],
+    [
+        861,
+        "سیاهکل",
+        "siahkal"
+    ],
+    [
+        818,
+        "سیرجان",
+        "sirjan"
+    ],
+    [
+        1808,
+        "سی‌سخت",
+        "sisakht"
+    ],
+    [
+        1780,
+        "شادگان",
+        "shadeghan"
+    ],
+    [
+        1825,
+        "شازند",
+        "shazand"
+    ],
+    [
+        1796,
+        "شال",
+        "shal"
+    ],
+    [
+        1775,
+        "شاندیز",
+        "shandiz"
+    ],
+    [
+        1713,
+        "شاهدشهر",
+        "shahedshahr"
+    ],
+    [
+        858,
+        "شاهین دژ",
+        "shahin-dej"
+    ],
+    [
+        707,
+        "شاهرود",
+        "shahroud"
+    ],
+    [
+        1744,
+        "شاهین‌شهر",
+        "shahin-shahr"
+    ],
+    [
+        1862,
+        "سورک",
+        "sourek"
+    ],
+    [
+        1813,
+        "شفت",
+        "shaft"
+    ],
+    [
+        1717,
+        "شمشک",
+        "shemshak"
+    ],
+    [
+        754,
+        "شوش",
+        "shush"
+    ],
+    [
+        602,
+        "شوشتر",
+        "shooshtar"
+    ],
+    [
+        36,
+        "شهرکرد",
+        "shahrekord"
+    ],
+    [
+        1759,
+        "شهریار",
+        "shahriar"
+    ],
+    [
+        795,
+        "شیروان",
+        "shirvan"
+    ],
+    [
+        1845,
+        "شلمان",
+        "shelman"
+    ],
+    [
+        1863,
+        "شیرگاه",
+        "shirgah"
+    ],
+    [
+        1712,
+        "صباشهر",
+        "sabashahr"
+    ],
+    [
+        1800,
+        "صحنه",
+        "sahneh"
+    ],
+    [
+        810,
+        "صدرا-فارس",
+        "sadra"
+    ],
+    [
+        1710,
+        "صفادشت",
+        "safadasht-industrial-city"
+    ],
+    [
+        827,
+        "صومعه‌سرا",
+        "someh-sara"
+    ],
+    [
+        850,
+        "طالقان",
+        "taleqan"
+    ],
+    [
+        788,
+        "طبس",
+        "tabas"
+    ],
+    [
+        1774,
+        "طرقبه",
+        "torghabeh"
+    ],
+    [
+        1697,
+        "عباس‌آباد",
+        "abbasabad-mazandaran"
+    ],
+    [
+        823,
+        "علی‌آباد کتول",
+        "aliabad-katul"
+    ],
+    [
+        1819,
+        "فرح آباد",
+        "farahabad"
+    ],
+    [
+        786,
+        "فرخ‌شهر",
+        "farrokhshahr"
+    ],
+    [
+        789,
+        "فردوس",
+        "ferdows"
+    ],
+    [
+        1716,
+        "فردوسیه",
+        "ferdosiye"
+    ],
+    [
+        1751,
+        "فردیس",
+        "fardis"
+    ],
+    [
+        836,
+        "فریدون‌کنار",
+        "fereydunkenar"
+    ],
+    [
+        1789,
+        "فسا",
+        "fasa"
+    ],
+    [
+        1772,
+        "فشم",
+        "fasham"
+    ],
+    [
+        849,
+        "فلاورجان",
+        "falavarjan"
+    ],
+    [
+        1875,
+        "فریم",
+        "farim"
+    ],
+    [
+        1745,
+        "فولادشهر",
+        "foolad-shahr"
+    ],
+    [
+        860,
+        "فومن",
+        "fuman"
+    ],
+    [
+        1734,
+        "فیروزآباد",
+        "firuzabad"
+    ],
+    [
+        665,
+        "قائم‌شهر",
+        "qaemshahr"
+    ],
+    [
+        1770,
+        "فیروزکوه",
+        "firuzkooh"
+    ],
+    [
+        1733,
+        "قاسم‌آباد (خواف)",
+        "qasemabad-khaf"
+    ],
+    [
+        790,
+        "قاين",
+        "ghayen"
+    ],
+    [
+        1758,
+        "قدس",
+        "qods"
+    ],
+    [
+        1761,
+        "قرچک",
+        "qarchak"
+    ],
+    [
+        813,
+        "قروه",
+        "qorveh"
+    ],
+    [
+        19,
+        "قزوین",
+        "qazvin"
+    ],
+    [
+        660,
+        "قشم",
+        "qeshm"
+    ],
+    [
+        1746,
+        "قمصر",
+        "ghamsar"
+    ],
+    [
+        1777,
+        "قوچان",
+        "quchan"
+    ],
+    [
+        1858,
+        "کتالم و سادات شهر",
+        "katalem-sadatshahr"
+    ],
+    [
+        804,
+        "قیدار",
+        "qeydar"
+    ],
+    [
+        1790,
+        "کازرون",
+        "kazeroon"
+    ],
+    [
+        30,
+        "کاشان",
+        "kashan"
+    ],
+    [
+        1797,
+        "کامیاران",
+        "kamyaran"
+    ],
+    [
+        1827,
+        "کبودراهنگ",
+        "kabudrahang"
+    ],
+    [
+        750,
+        "کردکوی",
+        "kordkuy"
+    ],
+    [
+        13,
+        "کرمان",
+        "kerman"
+    ],
+    [
+        863,
+        "کلاچای",
+        "kelachay"
+    ],
+    [
+        1695,
+        "کلارآباد",
+        "kelarabad"
+    ],
+    [
+        1696,
+        "کلاردشت",
+        "kelarestan"
+    ],
+    [
+        1692,
+        "کلاله",
+        "kalale"
+    ],
+    [
+        1870,
+        "کوهی‌خیل",
+        "kouhi-kheyl"
+    ],
+    [
+        1869,
+        "کیاسر",
+        "kiasar"
+    ],
+    [
+        1786,
+        "کنارک",
+        "konarak"
+    ],
+    [
+        821,
+        "کنگاور",
+        "kangavar"
+    ],
+    [
+        831,
+        "کوهدشت",
+        "kuhdasht"
+    ],
+    [
+        1840,
+        "کوچصفهان",
+        "kouchesfahan"
+    ],
+    [
+        1738,
+        "کوهسار",
+        "koohsar"
+    ],
+    [
+        1708,
+        "کهریزک",
+        "kahrizak"
+    ],
+    [
+        1864,
+        "کیاکلا",
+        "kiakola"
+    ],
+    [
+        1843,
+        "کومله",
+        "koumeleh"
+    ],
+    [
+        1803,
+        "کهنوج",
+        "kahnooj"
+    ],
+    [
+        1687,
+        "کیاشهر",
+        "kiashahr"
+    ],
+    [
+        1866,
+        "گتاب",
+        "gatab"
+    ],
+    [
+        33,
+        "کیش",
+        "kish"
+    ],
+    [
+        1832,
+        "گالیکش",
+        "galikesh"
+    ],
+    [
+        1719,
+        "کیلان",
+        "kilan"
+    ],
+    [
+        1876,
+        "گزنک",
+        "gazanak"
+    ],
+    [
+        21,
+        "گرگان",
+        "gorgan"
+    ],
+    [
+        1720,
+        "گرمدره",
+        "garmdareh"
+    ],
+    [
+        806,
+        "گرمسار",
+        "garmsar"
+    ],
+    [
+        1743,
+        "گرمی",
+        "germi"
+    ],
+    [
+        1773,
+        "گلبهار",
+        "golbahar"
+    ],
+    [
+        848,
+        "گلپایگان",
+        "golpayegan"
+    ],
+    [
+        1856,
+        "گلوگاه",
+        "galougah-babol"
+    ],
+    [
+        1706,
+        "گلستان",
+        "golestan-baharestan"
+    ],
+    [
+        1846,
+        "گوراب زرمیخ",
+        "gourab-zarmikh"
+    ],
+    [
+        749,
+        "گمیشان",
+        "gomishan"
+    ],
+    [
+        847,
+        "گناباد",
+        "gonabad"
+    ],
+    [
+        743,
+        "گنبد کاووس",
+        "gonbad-kavus"
+    ],
+    [
+        1802,
+        "گهواره",
+        "gahvareh"
+    ],
+    [
+        1730,
+        "لار",
+        "lar"
+    ],
+    [
+        1731,
+        "لامرد",
+        "lamerd"
+    ],
+    [
+        746,
+        "لاهیجان",
+        "lahijan"
+    ],
+    [
+        787,
+        "لردگان",
+        "lordegan"
+    ],
+    [
+        1690,
+        "لشت نشا",
+        "lashtenesha"
+    ],
+    [
+        1749,
+        "لنجان",
+        "lenjan"
+    ],
+    [
+        828,
+        "لنگرود",
+        "langarud"
+    ],
+    [
+        1836,
+        "لوشان",
+        "loshan"
+    ],
+    [
+        1771,
+        "لواسان",
+        "lavasan"
+    ],
+    [
+        1842,
+        "لولمان",
+        "loulman"
+    ],
+    [
+        1837,
+        "لوندویل",
+        "lavandevil"
+    ],
+    [
+        1848,
+        "لیسار",
+        "lisar"
+    ],
+    [
+        862,
+        "ماسال",
+        "masal"
+    ],
+    [
+        1815,
+        "ماسوله",
+        "masuleh"
+    ],
+    [
+        1853,
+        "ماکلوان",
+        "makloan"
+    ],
+    [
+        1834,
+        "منجیل",
+        "manjil"
+    ],
+    [
+        856,
+        "ماکو",
+        "maku"
+    ],
+    [
+        1806,
+        "ماهان",
+        "mahan"
+    ],
+    [
+        1753,
+        "ماهدشت",
+        "mahdasht"
+    ],
+    [
+        1748,
+        "مبارکه",
+        "mobarakeh"
+    ],
+    [
+        840,
+        "محلات",
+        "mahalat"
+    ],
+    [
+        1752,
+        "محمدشهر",
+        "mohammad-shahr"
+    ],
+    [
+        873,
+        "محمدیه-قزوین",
+        "mohammadiyeh"
+    ],
+    [
+        837,
+        "محمودآباد",
+        "mahmudabad"
+    ],
+    [
+        762,
+        "مراغه",
+        "maragheh"
+    ],
+    [
+        763,
+        "مرند",
+        "marand"
+    ],
+    [
+        1788,
+        "مرودشت",
+        "marvdasht"
+    ],
+    [
+        814,
+        "مریوان",
+        "marivan"
+    ],
+    [
+        317,
+        "مسجد سلیمان",
+        "masjed-soleyman"
+    ],
+    [
+        773,
+        "مشکین‌شهر",
+        "meshgin-shahr"
+    ],
+    [
+        843,
+        "ملایر",
+        "malayer"
+    ],
+    [
+        1778,
+        "ملک‌آباد",
+        "molkabad"
+    ],
+    [
+        769,
+        "مهاباد",
+        "mahabad"
+    ],
+    [
+        1826,
+        "مهاجران",
+        "mohajeran"
+    ],
+    [
+        1792,
+        "مهر",
+        "mohr"
+    ],
+    [
+        1867,
+        "مرزن‌آباد",
+        "marzan-abad"
+    ],
+    [
+        1823,
+        "مهران",
+        "mehran"
+    ],
+    [
+        1830,
+        "مهریز",
+        "mehriz"
+    ],
+    [
+        792,
+        "میاندوآب",
+        "miandoab"
+    ],
+    [
+        845,
+        "میبد",
+        "meybod"
+    ],
+    [
+        764,
+        "میانه",
+        "mianeh"
+    ],
+    [
+        1874,
+        "مرزیکلا",
+        "marzikola"
+    ],
+    [
+        841,
+        "میناب",
+        "minab"
+    ],
+    [
+        1693,
+        "مینودشت",
+        "minoodasht"
+    ],
+    [
+        31,
+        "نجف‌آباد",
+        "najafabad"
+    ],
+    [
+        784,
+        "نسیم‌شهر",
+        "nasimshahr"
+    ],
+    [
+        1818,
+        "نشتارود",
+        "nashtarud"
+    ],
+    [
+        774,
+        "نظرآباد",
+        "nazarabad"
+    ],
+    [
+        770,
+        "نقده",
+        "naqadeh"
+    ],
+    [
+        838,
+        "نکا",
+        "neka"
+    ],
+    [
+        1742,
+        "نمین",
+        "namin"
+    ],
+    [
+        744,
+        "نور",
+        "nur"
+    ],
+    [
+        753,
+        "نورآباد",
+        "nurabad"
+    ],
+    [
+        1794,
+        "نورآباد ممسنی",
+        "norabad"
+    ],
+    [
+        709,
+        "نوشهر",
+        "nowshahr"
+    ],
+    [
+        844,
+        "نهاوند",
+        "nahavand"
+    ],
+    [
+        1726,
+        "نی‌ریز",
+        "neyriz"
+    ],
+    [
+        318,
+        "نیشابور",
+        "neyshabur"
+    ],
+    [
+        1711,
+        "وحیدیه",
+        "vahidieh"
+    ],
+    [
+        1762,
+        "ورامین",
+        "varamin"
+    ],
+    [
+        1799,
+        "هرسین",
+        "harsin"
+    ],
+    [
+        1821,
+        "هرمز",
+        "hormuz"
+    ],
+    [
+        1754,
+        "هشتگرد",
+        "hashtgerd"
+    ],
+    [
+        14,
+        "همدان",
+        "hamedan"
+    ],
+    [
+        1783,
+        "هندیجان",
+        "hendijan"
+    ],
+    [
+        38,
+        "یاسوج",
+        "yasuj"
+    ],
+    [
+        16,
+        "یزد",
+        "yazd"
+    ],
+    [
+        1965,
+        "پایین هولار",
+        "paeen-holar"
+    ],
+    [
+        1966,
+        "سنگدوین",
+        "sangdovin"
+    ],
+    [
+        1967,
+        "دالخانی",
+        "dalkhani"
+    ],
+    [
+        1968,
+        "سرخنکلاته",
+        "sorkhan-kalateh"
+    ],
+    [
+        1969,
+        "واجارگاه",
+        "vajargah"
+    ],
+    [
+        1970,
+        "فراغی",
+        "faragi"
+    ],
+    [
+        1971,
+        "گلوگاه بابل (گلیا)",
+        "galugah-babol"
+    ],
+    [
+        1972,
+        "صادق آباد",
+        "sadegh-abad"
+    ],
+    [
+        1973,
+        "بندر گز",
+        "bandar-gaz"
+    ],
+    [
+        1974,
+        "مراوه",
+        "maraveh-tapeh"
+    ],
+    [
+        1975,
+        "دلند",
+        "daland"
+    ],
+    [
+        1976,
+        "نگین شهر",
+        "negin-shahr"
+    ],
+    [
+        1977,
+        "هادی شهر",
+        "hadi-shahr"
+    ],
+    [
+        1978,
+        "بابکان",
+        "babakan"
+    ],
+    [
+        1979,
+        "رامیان",
+        "ramiyan"
+    ],
+    [
+        1980,
+        "خان بین",
+        "khan-bin"
+    ],
+    [
+        1981,
+        "جلین",
+        "jelin"
+    ],
+    [
+        1982,
+        "زرگرشهر",
+        "zargarshahr"
+    ],
+    [
+        1983,
+        "طاهرگوراب",
+        "tahergurab"
+    ],
+    [
+        1984,
+        "دوزین",
+        "dozin"
+    ],
+    [
+        1985,
+        "نوکنده",
+        "nokandeh"
+    ],
+    [
+        1986,
+        "گلی داغ",
+        "goli-dagh"
+    ],
+    [
+        1987,
+        "ارطه",
+        "arateh"
+    ],
+    [
+        1988,
+        "امامزاده عبدالله",
+        "emamzadeh-abdollah"
+    ],
+    [
+        1989,
+        "شیرود",
+        "shirud"
+    ],
+    [
+        1990,
+        "نوده خاندوز",
+        "nodeh-khandoz"
+    ],
+    [
+        1991,
+        "انبارآلوم",
+        "anbaralum"
+    ],
+    [
+        1992,
+        "دابودشت",
+        "dabudasht"
+    ],
+    [
+        1993,
+        "آکند",
+        "akand"
+    ],
+    [
+        1994,
+        "شاندرمن",
+        "shanderman"
+    ],
+    [
+        1995,
+        "آستانه سرا",
+        "astaneh-sara"
+    ],
+    [
+        1996,
+        "فاضل آباد",
+        "fazel-abad"
+    ],
+    [
+        1997,
+        "پول",
+        "pool"
+    ],
+    [
+        1998,
+        "طبقده",
+        "tabaghdeh"
+    ],
+    [
+        1999,
+        "مزرعه کتول",
+        "mazrae-katool"
+    ],
+    [
+        2000,
+        "ضیابر",
+        "ziyabar"
+    ],
+    [
+        2001,
+        "کجور",
+        "kojur"
+    ],
+    [
+        2002,
+        "ینقاق",
+        "yanghagh"
+    ],
+    [
+        2003,
+        "سیجوال",
+        "sijval"
+    ],
+    [
+        2004,
+        "اطاقور",
+        "otaghvar"
+    ],
+    [
+        2005,
+        "خرم‌آباد (تنکابن)",
+        "khoram-abad"
+    ],
+    [
+        2006,
+        "سیمین شهر",
+        "simin-shahr"
+    ],
+    [
+        2007,
+        "تولم شهر",
+        "tulam-shahr"
+    ],
+    [
+        2008,
+        "تاتار علیا",
+        "tatar-olya"
+    ],
+    [
+        2009,
+        "هچیرود",
+        "hachirud"
+    ],
+    [
+        2010,
+        "القجر",
+        "alghajar"
+    ],
+    [
+        2011,
+        "پیربازار",
+        "pirbazar"
+    ],
+    [
+        2012,
+        "قرق",
+        "ghorogh"
+    ],
+    [
+        2013,
+        "اینچه برون",
+        "inche-borun"
+    ]
+]
