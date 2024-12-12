@@ -124,11 +124,11 @@ def prepare_request(call):
     city = call.message.text.split('\n')[0].split(':')[1]
     text = call.message.text.split('\n')[0]
     category = call.data.split('_')[1]
-    bot.send_message(ADMIN_ID , f"check {city} , {category}")
     bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
     bot.edit_message_text(f"{text}\nدسته بندی انتخاب شده : {category}",call.message.chat.id,call.message.message_id)
     city_number = find_city_number(city)
     category_slug = find_slug_cat(category)
+    bot.send_message(ADMIN_ID , f"check:\n {city_number}\n{category_slug}")
     response = request_to_api(city_number , category_slug)
     with open(curent_dir + '/hichi.txt' , 'w' ,encoding='utf-8') as respo:
         respo.write(str(response))
