@@ -109,7 +109,7 @@ def user_register(message):
 def find_city_number(name):
     with open(curent_dir + '/bigcitys.json' , 'r' , encoding='utf-8') as city:
         citys = json.load(city)
-    for item in city:
+    for item in citys:
         if item[0] == name:
             return str(item[1])
 def find_slug_cat(name):
