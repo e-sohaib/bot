@@ -1,0 +1,1761 @@
+[
+  {
+    "name": "املاک",
+    "slug": "real-estate",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "real-estate",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/real_estate.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/real_estate.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "فروش مسکونی",
+        "slug": "residential-sell",
+        "icon": {},
+        "parent": "real-estate",
+        "children": [
+          {
+            "name": "آپارتمان",
+            "slug": "apartment-sell",
+            "icon": {},
+            "parent": "residential-sell",
+            "children": []
+          },
+          {
+            "name": "خانه و ویلا",
+            "slug": "house-villa-sell",
+            "icon": {},
+            "parent": "residential-sell",
+            "children": []
+          },
+          {
+            "name": "زمین و ملک کلنگی",
+            "slug": "plot-old",
+            "icon": {},
+            "parent": "residential-sell",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "اجارهٔ مسکونی",
+        "slug": "residential-rent",
+        "icon": {},
+        "parent": "real-estate",
+        "children": [
+          {
+            "name": "آپارتمان",
+            "slug": "apartment-rent",
+            "icon": {},
+            "parent": "residential-rent",
+            "children": []
+          },
+          {
+            "name": "خانه و ویلا",
+            "slug": "house-villa-rent",
+            "icon": {},
+            "parent": "residential-rent",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "فروش اداری و تجاری",
+        "slug": "commercial-sell",
+        "icon": {},
+        "parent": "real-estate",
+        "children": [
+          {
+            "name": "دفتر کار، اتاق اداری، مطب",
+            "slug": "office-sell",
+            "icon": {},
+            "parent": "commercial-sell",
+            "children": []
+          },
+          {
+            "name": "مغازه و غرفه",
+            "slug": "shop-sell",
+            "icon": {},
+            "parent": "commercial-sell",
+            "children": []
+          },
+          {
+            "name": "صنعتی، کشاورزی، تجاری",
+            "slug": "industry-agriculture-business-sell",
+            "icon": {},
+            "parent": "commercial-sell",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "اجارهٔ اداری و تجاری",
+        "slug": "commercial-rent",
+        "icon": {},
+        "parent": "real-estate",
+        "children": [
+          {
+            "name": "دفتر کار، اتاق اداری، مطب",
+            "slug": "office-rent",
+            "icon": {},
+            "parent": "commercial-rent",
+            "children": []
+          },
+          {
+            "name": "مغازه و غرفه",
+            "slug": "shop-rent",
+            "icon": {},
+            "parent": "commercial-rent",
+            "children": []
+          },
+          {
+            "name": "صنعتی، کشاورزی، تجاری",
+            "slug": "industry-agriculture-business-rent",
+            "icon": {},
+            "parent": "commercial-rent",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "اجارهٔ کوتاه‌مدت",
+        "slug": "temporary-rent",
+        "icon": {},
+        "parent": "real-estate",
+        "children": [
+          {
+            "name": "آپارتمان و سوئیت",
+            "slug": "suite-apartment",
+            "icon": {},
+            "parent": "temporary-rent",
+            "children": []
+          },
+          {
+            "name": "ویلا و باغ",
+            "slug": "villa",
+            "icon": {},
+            "parent": "temporary-rent",
+            "children": []
+          },
+          {
+            "name": "دفتر کار و فضای آموزشی",
+            "slug": "workspace",
+            "icon": {},
+            "parent": "temporary-rent",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "پروژه‌های ساخت‌وساز",
+        "slug": "real-estate-services",
+        "icon": {},
+        "parent": "real-estate",
+        "children": [
+          {
+            "name": "مشارکت در ساخت",
+            "slug": "partnership",
+            "icon": {},
+            "parent": "real-estate-services",
+            "children": []
+          },
+          {
+            "name": "پیش‌فروش",
+            "slug": "presell",
+            "icon": {},
+            "parent": "real-estate-services",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "وسایل نقلیه",
+    "slug": "vehicles",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "cat-vehicles",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/cat_vehicles.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/cat_vehicles.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "خودرو",
+        "slug": "cars",
+        "icon": {},
+        "parent": "vehicles",
+        "children": [
+          {
+            "name": "سواری و وانت",
+            "slug": "light",
+            "icon": {},
+            "parent": "cars",
+            "children": []
+          },
+          {
+            "name": "کلاسیک",
+            "slug": "classic",
+            "icon": {},
+            "parent": "cars",
+            "children": []
+          },
+          {
+            "name": "اجاره‌ای",
+            "slug": "rental",
+            "icon": {},
+            "parent": "cars",
+            "children": []
+          },
+          {
+            "name": "سنگین",
+            "slug": "heavy",
+            "icon": {},
+            "parent": "cars",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "موتورسیکلت",
+        "slug": "motorcycles",
+        "icon": {},
+        "parent": "vehicles",
+        "children": []
+      },
+      {
+        "name": "قطعات یدکی و لوازم جانبی",
+        "slug": "parts-accessories",
+        "icon": {},
+        "parent": "vehicles",
+        "children": []
+      },
+      {
+        "name": "قایق و سایر وسایل نقلیه",
+        "slug": "boat",
+        "icon": {},
+        "parent": "vehicles",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "کالای دیجیتال",
+    "slug": "electronic-devices",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "cat-electronic-devices",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/cat_electronic_devices.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/cat_electronic_devices.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "موبایل و تبلت",
+        "slug": "mobile-tablet",
+        "icon": {},
+        "parent": "electronic-devices",
+        "children": [
+          {
+            "name": "موبایل",
+            "slug": "mobile-phones",
+            "icon": {},
+            "parent": "mobile-tablet",
+            "children": []
+          },
+          {
+            "name": "تبلت",
+            "slug": "tablet",
+            "icon": {},
+            "parent": "mobile-tablet",
+            "children": []
+          },
+          {
+            "name": "لوازم جانبی موبایل و تبلت",
+            "slug": "mobile-tablet-accessories",
+            "icon": {},
+            "parent": "mobile-tablet",
+            "children": []
+          },
+          {
+            "name": "سیم‌کارت",
+            "slug": "sim-card",
+            "icon": {},
+            "parent": "mobile-tablet",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "رایانه",
+        "slug": "computers",
+        "icon": {},
+        "parent": "electronic-devices",
+        "children": [
+          {
+            "name": "رایانه همراه",
+            "slug": "laptops",
+            "icon": {},
+            "parent": "computers",
+            "children": []
+          },
+          {
+            "name": "رایانه رومیزی",
+            "slug": "desktops",
+            "icon": {},
+            "parent": "computers",
+            "children": []
+          },
+          {
+            "name": "قطعات و لوازم جانبی",
+            "slug": "parts-and-accessories",
+            "icon": {},
+            "parent": "computers",
+            "children": []
+          },
+          {
+            "name": "مودم و تجهیزات شبکه",
+            "slug": "modem-and-network-equipment",
+            "icon": {},
+            "parent": "computers",
+            "children": []
+          },
+          {
+            "name": "پرینتر، اسکنر، کپی، فکس",
+            "slug": "printer-scaner-copier",
+            "icon": {},
+            "parent": "computers",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "کنسول، بازی‌ ویدئویی و آنلاین",
+        "slug": "game-consoles-and-video-games",
+        "icon": {},
+        "parent": "electronic-devices",
+        "children": []
+      },
+      {
+        "name": "صوتی و تصویری",
+        "slug": "audio-video",
+        "icon": {},
+        "parent": "electronic-devices",
+        "children": [
+          {
+            "name": "فیلم و موسیقی",
+            "slug": "movies-and-music",
+            "icon": {},
+            "parent": "audio-video",
+            "children": []
+          },
+          {
+            "name": "دوربین عکاسی و فیلم‌برداری",
+            "slug": "camera-camcoders",
+            "icon": {},
+            "parent": "audio-video",
+            "children": []
+          },
+          {
+            "name": "پخش‌کننده همراه",
+            "slug": "mp3-player",
+            "icon": {},
+            "parent": "audio-video",
+            "children": []
+          },
+          {
+            "name": "سیستم صوتی خانگی",
+            "slug": "stereo-surround",
+            "icon": {},
+            "parent": "audio-video",
+            "children": []
+          },
+          {
+            "name": "پخش‌کننده DVD و ویدیو",
+            "slug": "video-dvdplayer",
+            "icon": {},
+            "parent": "audio-video",
+            "children": []
+          },
+          {
+            "name": "تلویزیون و پروژکتور",
+            "slug": "tv-projector",
+            "icon": {},
+            "parent": "audio-video",
+            "children": []
+          },
+          {
+            "name": "دوربین مداربسته",
+            "slug": "CCTV",
+            "icon": {},
+            "parent": "audio-video",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "تلفن رومیزی",
+        "slug": "phone",
+        "icon": {},
+        "parent": "electronic-devices",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "خانه و آشپزخانه",
+    "slug": "home-kitchen",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "cat-for-the-home",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/cat_for_the_home.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/cat_for_the_home.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "لوازم خانگی برقی",
+        "slug": "appliance",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "یخچال و فریزر",
+            "slug": "refrigerator-freezer",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "آب‌سردکن و تصفیه آب",
+            "slug": "water-cooler-refinery",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "ماشین لباسشویی و خشک‌کن لباس",
+            "slug": "washing-machines",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "ماشین ظرفشویی",
+            "slug": "dishwasher",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "جاروبرقی، جارو شارژی، بخارشو",
+            "slug": "vacuums-cleaner",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "اتو و لوازم اتو",
+            "slug": "steam-iron",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "آبمیوه‌گیر و آب‌مرکبات‌گیر",
+            "slug": "juicers",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "خردکن، آسیاب، غذاساز",
+            "slug": "food-mill",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "سماور، چای‌ساز، قهوه‌ساز",
+            "slug": "drink-maker",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "اجاق گاز و لوازم برقی پخت‌وپز",
+            "slug": "oven-baking-appliances",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "هود",
+            "slug": "range-hood",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          },
+          {
+            "name": "سایر لوازم برقی",
+            "slug": "other-appliances",
+            "icon": {},
+            "parent": "appliance",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "ظروف و لوازم آشپزخانه",
+        "slug": "kitchen-utensils",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "سفره، حوله، دستمال آشپزخانه",
+            "slug": "tablecloths",
+            "icon": {},
+            "parent": "kitchen-utensils",
+            "children": []
+          },
+          {
+            "name": "آب‌چکان و نظم‌دهنده ظروف",
+            "slug": "container-organizers",
+            "icon": {},
+            "parent": "kitchen-utensils",
+            "children": []
+          },
+          {
+            "name": "قوری، کتری، قهوه‌ساز دستی",
+            "slug": "pot-kettle",
+            "icon": {},
+            "parent": "kitchen-utensils",
+            "children": []
+          },
+          {
+            "name": "ظروف سرو و پذیرایی",
+            "slug": "home-catering",
+            "icon": {},
+            "parent": "kitchen-utensils",
+            "children": []
+          },
+          {
+            "name": "ظروف نگهدارنده، پلاستیکی، یک‌بارمصرف",
+            "slug": "containers",
+            "icon": {},
+            "parent": "kitchen-utensils",
+            "children": []
+          },
+          {
+            "name": "ظروف پخت‌وپز",
+            "slug": "cooking-utensils",
+            "icon": {},
+            "parent": "kitchen-utensils",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "خوردنی و آشامیدنی",
+        "slug": "food-and-drink",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": []
+      },
+      {
+        "name": "خیاطی و بافتنی",
+        "slug": "sewing-knitting",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "چرخ خیاطی و ریسندگی",
+            "slug": "sewing-machine",
+            "icon": {},
+            "parent": "sewing-knitting",
+            "children": []
+          },
+          {
+            "name": "لوازم خیاطی و بافتنی",
+            "slug": "sewing-accessories",
+            "icon": {},
+            "parent": "sewing-knitting",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "مبلمان و صنایع چوب",
+        "slug": "furniture-wood",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "مبلمان خانگی و میز عسلی",
+            "slug": "furniture",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "میز و صندلی غذاخوری",
+            "slug": "dining-table",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "بوفه، ویترین، کنسول",
+            "slug": "buffet-showcases",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "کتابخانه، شلف، قفسه‌های دیواری",
+            "slug": "bookcase-shelf",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "جاکفشی، کمد، دراور",
+            "slug": "shoe-rack-drawer",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "تخت و سرویس خواب",
+            "slug": "bed-service",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "میز تلفن",
+            "slug": "phone-desk",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "میز تلویزیون",
+            "slug": "tv-stand",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "میز تحریر و کامپیوتر",
+            "slug": "desk",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "مبلمان اداری",
+            "slug": "office-decoration",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          },
+          {
+            "name": "صندلی و نیمکت",
+            "slug": "chair-bench",
+            "icon": {},
+            "parent": "furniture-wood",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "نور و روشنایی",
+        "slug": "home-lighting",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "لوستر و چراغ آویز",
+            "slug": "chandeliers",
+            "icon": {},
+            "parent": "home-lighting",
+            "children": []
+          },
+          {
+            "name": "چراغ خواب و آباژور",
+            "slug": "lampshade",
+            "icon": {},
+            "parent": "home-lighting",
+            "children": []
+          },
+          {
+            "name": "ریسه و چراغ تزئینی",
+            "slug": "yarn-lights",
+            "icon": {},
+            "parent": "home-lighting",
+            "children": []
+          },
+          {
+            "name": "لامپ و چراغ",
+            "slug": "lamps",
+            "icon": {},
+            "parent": "home-lighting",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "فرش، گلیم، موکت",
+        "slug": "carpet-moquette",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "فرش",
+            "slug": "carpet",
+            "icon": {},
+            "parent": "carpet-moquette",
+            "children": []
+          },
+          {
+            "name": "تابلو فرش",
+            "slug": "pictorial-carpet",
+            "icon": {},
+            "parent": "carpet-moquette",
+            "children": []
+          },
+          {
+            "name": "روفرشی",
+            "slug": "rubber-carpet",
+            "icon": {},
+            "parent": "carpet-moquette",
+            "children": []
+          },
+          {
+            "name": "پادری",
+            "slug": "mat",
+            "icon": {},
+            "parent": "carpet-moquette",
+            "children": []
+          },
+          {
+            "name": "موکت",
+            "slug": "moquette",
+            "icon": {},
+            "parent": "carpet-moquette",
+            "children": []
+          },
+          {
+            "name": "گلیم، جاجیم، گبه",
+            "slug": "rugs-woolen-cloth",
+            "icon": {},
+            "parent": "carpet-moquette",
+            "children": []
+          },
+          {
+            "name": "پشتی",
+            "slug": "lumbar-pillow",
+            "icon": {},
+            "parent": "carpet-moquette",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "تشک، روتختی، رختخواب",
+        "slug": "sleep-goods",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "رختخواب، بالش، پتو",
+            "slug": "bed-pillow-blanket",
+            "icon": {},
+            "parent": "sleep-goods",
+            "children": []
+          },
+          {
+            "name": "تشک تختخواب",
+            "slug": "mattress",
+            "icon": {},
+            "parent": "sleep-goods",
+            "children": []
+          },
+          {
+            "name": "سرویس روتختی",
+            "slug": "bed-sheet",
+            "icon": {},
+            "parent": "sleep-goods",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "لوازم دکوری و تزئینی",
+        "slug": "decoration",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "پرده، رانر، رومیزی",
+            "slug": "curtains-table-cover",
+            "icon": {},
+            "parent": "decoration",
+            "children": []
+          },
+          {
+            "name": "آینه",
+            "slug": "mirror",
+            "icon": {},
+            "parent": "decoration",
+            "children": []
+          },
+          {
+            "name": "ساعت دیواری و تزئینی",
+            "slug": "wall-clock",
+            "icon": {},
+            "parent": "decoration",
+            "children": []
+          },
+          {
+            "name": "تابلو، نقاشی، عکس",
+            "slug": "paintings-picture",
+            "icon": {},
+            "parent": "decoration",
+            "children": []
+          },
+          {
+            "name": "مجسمه، تندیس، ماکت",
+            "slug": "figurines",
+            "icon": {},
+            "parent": "decoration",
+            "children": []
+          },
+          {
+            "name": "گل مصنوعی",
+            "slug": "artificial-flower",
+            "icon": {},
+            "parent": "decoration",
+            "children": []
+          },
+          {
+            "name": "گل و گیاه طبیعی",
+            "slug": "natural-plants",
+            "icon": {},
+            "parent": "decoration",
+            "children": []
+          },
+          {
+            "name": "صنایع دستی و سایر لوازم تزئینی",
+            "slug": "crafts",
+            "icon": {},
+            "parent": "decoration",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "تهویه، سرمایش، گرمایش",
+        "slug": "ventilation-cooling-heating",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "آبگرمکن، پکیج، شوفاژ",
+            "slug": "water-heater-package-radiator",
+            "icon": {},
+            "parent": "ventilation-cooling-heating",
+            "children": []
+          },
+          {
+            "name": "بخاری، هیتر، شومینه",
+            "slug": "stoves-heaters-fireplaces",
+            "icon": {},
+            "parent": "ventilation-cooling-heating",
+            "children": []
+          },
+          {
+            "name": "کولر آبی",
+            "slug": "water-cooler",
+            "icon": {},
+            "parent": "ventilation-cooling-heating",
+            "children": []
+          },
+          {
+            "name": "کولر گازی و فن‌کوئل",
+            "slug": "air-conditioning-fan-coil",
+            "icon": {},
+            "parent": "ventilation-cooling-heating",
+            "children": []
+          },
+          {
+            "name": "پنکه و تصفیه‌کنندهٔ هوا",
+            "slug": "fan-ventilator-humidifier",
+            "icon": {},
+            "parent": "ventilation-cooling-heating",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "شست‌وشو و نظافت",
+        "slug": "washing-cleaning",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "مواد شوینده و دستمال کاغذی",
+            "slug": "detergent-tissue",
+            "icon": {},
+            "parent": "washing-cleaning",
+            "children": []
+          },
+          {
+            "name": "لوازم نظافت",
+            "slug": "cleaning-supplies",
+            "icon": {},
+            "parent": "washing-cleaning",
+            "children": []
+          },
+          {
+            "name": "بندرخت و رخت‌آویز",
+            "slug": "clothes-rack",
+            "icon": {},
+            "parent": "washing-cleaning",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "حمام و سرویس بهداشتی",
+        "slug": "bathrooms",
+        "icon": {},
+        "parent": "home-kitchen",
+        "children": [
+          {
+            "name": "لوازم حمام",
+            "slug": "bathroom-accessories",
+            "icon": {},
+            "parent": "bathrooms",
+            "children": []
+          },
+          {
+            "name": "لوازم سرویس بهداشتی",
+            "slug": "wc-accessories",
+            "icon": {},
+            "parent": "bathrooms",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "خدمات",
+    "slug": "services",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "cat-services",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/cat_services.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/cat_services.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "موتور و ماشین",
+        "slug": "car-and-motor",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      },
+      {
+        "name": "پذیرایی، مراسم",
+        "slug": "catering",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      },
+      {
+        "name": "رایانه‌ای و موبایل",
+        "slug": "computer-and-mobile",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      },
+      {
+        "name": "مالی، حسابداری، بیمه",
+        "slug": "accounting-and-finance",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      },
+      {
+        "name": "حمل و نقل",
+        "slug": "transport",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      },
+      {
+        "name": "پیشه و مهارت",
+        "slug": "craftsmen",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      },
+      {
+        "name": "آرایشگری و زیبایی",
+        "slug": "beauty-and-haircare",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      },
+      {
+        "name": "نظافت",
+        "slug": "cleaning",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      },
+      {
+        "name": "باغبانی و درختکاری",
+        "slug": "garden-and-landscaping",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      },
+      {
+        "name": "آموزشی",
+        "slug": "teaching",
+        "icon": {},
+        "parent": "services",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "وسایل شخصی",
+    "slug": "personal",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "cat-personal",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/cat_personal.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/cat_personal.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "کیف، کفش، لباس",
+        "slug": "clothing-and-shoes",
+        "icon": {},
+        "parent": "personal",
+        "children": [
+          {
+            "name": "کیف، کفش، کمربند",
+            "slug": "shoes-belt-bag",
+            "icon": {},
+            "parent": "clothing-and-shoes",
+            "children": []
+          },
+          {
+            "name": "لباس",
+            "slug": "clothing",
+            "icon": {},
+            "parent": "clothing-and-shoes",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "زیورآلات و اکسسوری",
+        "slug": "jewelry-and-watches",
+        "icon": {},
+        "parent": "personal",
+        "children": [
+          {
+            "name": "ساعت",
+            "slug": "watches",
+            "icon": {},
+            "parent": "jewelry-and-watches",
+            "children": []
+          },
+          {
+            "name": "جواهرات",
+            "slug": "jewelry",
+            "icon": {},
+            "parent": "jewelry-and-watches",
+            "children": []
+          },
+          {
+            "name": "بدلیجات",
+            "slug": "rhinestones",
+            "icon": {},
+            "parent": "jewelry-and-watches",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "آرایشی، بهداشتی، درمانی",
+        "slug": "health-beauty",
+        "icon": {},
+        "parent": "personal",
+        "children": []
+      },
+      {
+        "name": "کفش و لباس بچه",
+        "slug": "childrens-clothing-and-shoe",
+        "icon": {},
+        "parent": "personal",
+        "children": []
+      },
+      {
+        "name": "وسایل بچه و اسباب‌بازی",
+        "slug": "baby-and-toys",
+        "icon": {},
+        "parent": "personal",
+        "children": [
+          {
+            "name": "اسباب‌بازی بچه",
+            "slug": "personal-toys",
+            "icon": {},
+            "parent": "baby-and-toys",
+            "children": []
+          },
+          {
+            "name": "کالسکه و لوازم جانبی",
+            "slug": "strollers-and-accessories",
+            "icon": {},
+            "parent": "baby-and-toys",
+            "children": []
+          },
+          {
+            "name": "تخت و صندلی بچه",
+            "slug": "child-car-seat",
+            "icon": {},
+            "parent": "baby-and-toys",
+            "children": []
+          },
+          {
+            "name": "اسباب و اثاث بچه",
+            "slug": "childrens-furniture",
+            "icon": {},
+            "parent": "baby-and-toys",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "لوازم التحریر",
+        "slug": "stationery",
+        "icon": {},
+        "parent": "personal",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "سرگرمی و فراغت",
+    "slug": "leisure-hobbies",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "cat-leisure-hobbies",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/cat_leisure_hobbies.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/cat_leisure_hobbies.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "بلیت",
+        "slug": "ticket",
+        "icon": {},
+        "parent": "leisure-hobbies",
+        "children": [
+          {
+            "name": "کنسرت",
+            "slug": "concert",
+            "icon": {},
+            "parent": "ticket",
+            "children": []
+          },
+          {
+            "name": "تئاتر و سینما",
+            "slug": "theatre-and-cinema",
+            "icon": {},
+            "parent": "ticket",
+            "children": []
+          },
+          {
+            "name": "کارت هدیه و تخفیف",
+            "slug": "gift-certificate",
+            "icon": {},
+            "parent": "ticket",
+            "children": []
+          },
+          {
+            "name": "مسابقه‌ها و مکان‌های ورزشی",
+            "slug": "tickets-sports",
+            "icon": {},
+            "parent": "ticket",
+            "children": []
+          },
+          {
+            "name": "ورزشی",
+            "slug": "sport",
+            "icon": {},
+            "parent": "ticket",
+            "children": []
+          },
+          {
+            "name": "اتوبوس، مترو، قطار",
+            "slug": "bus-metro-train",
+            "icon": {},
+            "parent": "ticket",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "تور و چارتر",
+        "slug": "travel-packages",
+        "icon": {},
+        "parent": "leisure-hobbies",
+        "children": []
+      },
+      {
+        "name": "کتاب و مجله",
+        "slug": "book-student-literature",
+        "icon": {},
+        "parent": "leisure-hobbies",
+        "children": [
+          {
+            "name": "آموزشی",
+            "slug": "educational",
+            "icon": {},
+            "parent": "book-student-literature",
+            "children": []
+          },
+          {
+            "name": "ادبی",
+            "slug": "literary",
+            "icon": {},
+            "parent": "book-student-literature",
+            "children": []
+          },
+          {
+            "name": "تاریخی",
+            "slug": "historical",
+            "icon": {},
+            "parent": "book-student-literature",
+            "children": []
+          },
+          {
+            "name": "مذهبی",
+            "slug": "religious",
+            "icon": {},
+            "parent": "book-student-literature",
+            "children": []
+          },
+          {
+            "name": "مجلات",
+            "slug": "magazines",
+            "icon": {},
+            "parent": "book-student-literature",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "دوچرخه، اسکیت، اسکوتر",
+        "slug": "bicycle",
+        "icon": {},
+        "parent": "leisure-hobbies",
+        "children": []
+      },
+      {
+        "name": "حیوانات",
+        "slug": "animals",
+        "icon": {},
+        "parent": "leisure-hobbies",
+        "children": [
+          {
+            "name": "گربه",
+            "slug": "cat",
+            "icon": {},
+            "parent": "animals",
+            "children": []
+          },
+          {
+            "name": "موش و خرگوش",
+            "slug": "rodents-rabbits",
+            "icon": {},
+            "parent": "animals",
+            "children": []
+          },
+          {
+            "name": "خزنده",
+            "slug": "reptile",
+            "icon": {},
+            "parent": "animals",
+            "children": []
+          },
+          {
+            "name": "پرنده",
+            "slug": "birds",
+            "icon": {},
+            "parent": "animals",
+            "children": []
+          },
+          {
+            "name": "ماهی",
+            "slug": "fish",
+            "icon": {},
+            "parent": "animals",
+            "children": []
+          },
+          {
+            "name": "لوازم جانبی",
+            "slug": "accessories",
+            "icon": {},
+            "parent": "animals",
+            "children": []
+          },
+          {
+            "name": "حیوانات مزرعه",
+            "slug": "farm-animals",
+            "icon": {},
+            "parent": "animals",
+            "children": []
+          },
+          {
+            "name": "سگ",
+            "slug": "dog",
+            "icon": {},
+            "parent": "animals",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "کلکسیون و سرگرمی",
+        "slug": "hobby-collectibles",
+        "icon": {},
+        "parent": "leisure-hobbies",
+        "children": [
+          {
+            "name": "سکه، تمبر، اسکناس",
+            "slug": "coin-stamp",
+            "icon": {},
+            "parent": "hobby-collectibles",
+            "children": []
+          },
+          {
+            "name": "اشیاء عتیقه",
+            "slug": "historical-objects",
+            "icon": {},
+            "parent": "hobby-collectibles",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "آلات موسیقی",
+        "slug": "musical-instruments",
+        "icon": {},
+        "parent": "leisure-hobbies",
+        "children": [
+          {
+            "name": "گیتار، بیس، امپلیفایر",
+            "slug": "guitar-bass-amplifier",
+            "icon": {},
+            "parent": "musical-instruments",
+            "children": []
+          },
+          {
+            "name": "سازهای بادی",
+            "slug": "wind",
+            "icon": {},
+            "parent": "musical-instruments",
+            "children": []
+          },
+          {
+            "name": "پیانو، کیبورد، آکاردئون",
+            "slug": "piano-keyboard",
+            "icon": {},
+            "parent": "musical-instruments",
+            "children": []
+          },
+          {
+            "name": "سازهای سنتی",
+            "slug": "traditional",
+            "icon": {},
+            "parent": "musical-instruments",
+            "children": []
+          },
+          {
+            "name": "درام و پرکاشن",
+            "slug": "drums-percussion",
+            "icon": {},
+            "parent": "musical-instruments",
+            "children": []
+          },
+          {
+            "name": "ویولن",
+            "slug": "violins",
+            "icon": {},
+            "parent": "musical-instruments",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "ورزش و تناسب اندام",
+        "slug": "sport-leisure",
+        "icon": {},
+        "parent": "leisure-hobbies",
+        "children": [
+          {
+            "name": "ورزش‌های توپی",
+            "slug": "ball-sports",
+            "icon": {},
+            "parent": "sport-leisure",
+            "children": []
+          },
+          {
+            "name": "کوهنوردی و کمپینگ",
+            "slug": "camping-outdoor",
+            "icon": {},
+            "parent": "sport-leisure",
+            "children": []
+          },
+          {
+            "name": "غواصی و ورزش‌های آبی",
+            "slug": "diving-watersports",
+            "icon": {},
+            "parent": "sport-leisure",
+            "children": []
+          },
+          {
+            "name": "ماهیگیری",
+            "slug": "fishing",
+            "icon": {},
+            "parent": "sport-leisure",
+            "children": []
+          },
+          {
+            "name": "تجهیزات ورزشی",
+            "slug": "training",
+            "icon": {},
+            "parent": "sport-leisure",
+            "children": []
+          },
+          {
+            "name": "ورزش‌های زمستانی",
+            "slug": "winter-sports",
+            "icon": {},
+            "parent": "sport-leisure",
+            "children": []
+          },
+          {
+            "name": "اسب و تجهیزات اسب‌سواری",
+            "slug": "horses-equestrian",
+            "icon": {},
+            "parent": "sport-leisure",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "اسباب‌‌بازی",
+        "slug": "leisure-hobbies-toys",
+        "icon": {},
+        "parent": "leisure-hobbies",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "اجتماعی",
+    "slug": "community",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "community",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/community.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/community.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "رویداد",
+        "slug": "event",
+        "icon": {},
+        "parent": "community",
+        "children": [
+          {
+            "name": "حراج",
+            "slug": "for-sale",
+            "icon": {},
+            "parent": "event",
+            "children": []
+          },
+          {
+            "name": "گردهمایی و همایش",
+            "slug": "conference-meeting",
+            "icon": {},
+            "parent": "event",
+            "children": []
+          },
+          {
+            "name": "ورزشی",
+            "slug": "events-sports",
+            "icon": {},
+            "parent": "event",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "داوطلبانه",
+        "slug": "volunteers",
+        "icon": {},
+        "parent": "community",
+        "children": [
+          {
+            "name": "تحقیقاتی",
+            "slug": "research",
+            "icon": {},
+            "parent": "volunteers",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "گم‌شده‌ها",
+        "slug": "lost-and-found",
+        "icon": {},
+        "parent": "community",
+        "children": [
+          {
+            "name": "حیوانات",
+            "slug": "lost-animals",
+            "icon": {},
+            "parent": "lost-and-found",
+            "children": []
+          },
+          {
+            "name": "اشیا",
+            "slug": "lost-things",
+            "icon": {},
+            "parent": "lost-and-found",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "تجهیزات و صنعتی",
+    "slug": "tools-materials-equipment",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "cat-businesses",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/cat_businesses.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/cat_businesses.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "مصالح و تجهیزات ساختمان",
+        "slug": "building-equipment",
+        "icon": {},
+        "parent": "tools-materials-equipment",
+        "children": []
+      },
+      {
+        "name": "ابزارآلات",
+        "slug": "toolbox",
+        "icon": {},
+        "parent": "tools-materials-equipment",
+        "children": []
+      },
+      {
+        "name": "ماشین‌آلات صنعتی",
+        "slug": "industrial-machinery",
+        "icon": {},
+        "parent": "tools-materials-equipment",
+        "children": []
+      },
+      {
+        "name": "تجهیزات کسب‌وکار",
+        "slug": "work-equipment",
+        "icon": {},
+        "parent": "tools-materials-equipment",
+        "children": [
+          {
+            "name": "پزشکی",
+            "slug": "medical-equipment",
+            "icon": {},
+            "parent": "work-equipment",
+            "children": []
+          },
+          {
+            "name": "فروشگاه و مغازه",
+            "slug": "shop-and-cash",
+            "icon": {},
+            "parent": "work-equipment",
+            "children": []
+          },
+          {
+            "name": "کافی‌شاپ و رستوران",
+            "slug": "cafe-and-restaurant",
+            "icon": {},
+            "parent": "work-equipment",
+            "children": []
+          },
+          {
+            "name": "آرایشگاه و سالن‌های زیبایی",
+            "slug": "barbershop-and-beautysalon",
+            "icon": {},
+            "parent": "work-equipment",
+            "children": []
+          },
+          {
+            "name": "دفتر کار",
+            "slug": "offices",
+            "icon": {},
+            "parent": "work-equipment",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "عمده‌فروشی",
+        "slug": "batch",
+        "icon": {},
+        "parent": "tools-materials-equipment",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "استخدام و کاریابی",
+    "slug": "jobs",
+    "icon": {
+      "iconColor": "var(--black-secondary)",
+      "iconName": "cat-jobs",
+      "iconURL": {
+        "light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/cat_jobs.png",
+        "dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/cat_jobs.png"
+      }
+    },
+    "parent": "ROOT",
+    "children": [
+      {
+        "name": "اداری و مدیریت",
+        "slug": "administration-and-hr",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "سرایداری و نظافت",
+        "slug": "janitorial-cleaning",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "معماری، عمران و ساختمانی",
+        "slug": "construction-craft",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "خدمات فروشگاه و رستوران",
+        "slug": "shop-restaurant",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "رایانه و فناوری اطلاعات",
+        "slug": "computer-and-it",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "مالی، حسابداری، حقوقی",
+        "slug": "accounting-finance-legal",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "بازاریابی و فروش",
+        "slug": "sales-marketing",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "صنعتی، فنی، مهندسی",
+        "slug": "industrial-technology",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "آموزشی",
+        "slug": "education",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "حمل و نقل",
+        "slug": "transportation",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "درمانی، زیبایی، بهداشتی",
+        "slug": "care-health-beauty",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      },
+      {
+        "name": "هنری و رسانه",
+        "slug": "media-advertising",
+        "icon": {},
+        "parent": "jobs",
+        "children": []
+      }
+    ]
+  }
+]

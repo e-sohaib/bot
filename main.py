@@ -105,13 +105,26 @@ def user_register(message):
 
 """end register block """
 """Divar block"""
-
+def category_mrkup():
+    with open(curent_dir + '/category.json' , 'r' , encoding = 'utf-8') as cats:
+        category = json.load(cats)  
+    markup = InlineKeyboardMarkup()
+    for item in category:
+        markup.add(InlineKeyboardButton(item['name'], callback_data=f"category_{item['name']}"))
+    return markup  
+        
+@bot.callback_query_handler(func=lambda call : call.data.startswith("city_"))
+def change_city_and_chooscategory(call):
+    city = call.data.split('_')[1]
+    call.message
+    bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
+    bot.edit_message_text(f"شهر شما : {city}\nدسته بندی را انتخاب کنید :",reply_markup=category_mrkup())
 def divar_markup_citys():
     with open(curent_dir + '/bigcitys.json' , 'r' , encoding = 'utf-8') as citys:
         bigcitis = json.load(citys)
-    markup = ReplyKeyboardMarkup()
+    markup = InlineKeyboardMarkup()
     for item in bigcitis:
-        markup.add(KeyboardButton(item[0]))
+        markup.add(InlineKeyboardButton(item[0], callback_data=f"city_{item[0]}"))
     return markup
     
 @bot.message_handler(func = lambda message:message.text == "Divar")
