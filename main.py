@@ -108,9 +108,10 @@ def user_register(message):
 @bot.callback_query_handler(lambda call : call.data.startswith('category_'))
 def creat_request(call):
     text = call.message.text.split('\n')[0].split(':')[1]
+    s = call.message.text.split('\n')[0]
     category = call.data.split('_')[1]
     bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
-    bot.edit_message_text(f"{call.message.text.split('\n')[0]}\nدسته بندی انتخاب شده : {category}",call.message.chat.id,call.message.message_id)
+    bot.edit_message_text(f"{s}\nدسته بندی انتخاب شده : {category}",call.message.chat.id,call.message.message_id)
     bot.send_message(ADMIN_ID , f"text : {text}\n{category}")
 
 def category_mrkup():
