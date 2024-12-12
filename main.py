@@ -128,7 +128,7 @@ def prepare_request(call):
     bot.edit_message_text(f"{text}\nدسته بندی انتخاب شده : {category}",call.message.chat.id,call.message.message_id)
     city_number = find_city_number(city)
     category_slug = find_slug_cat(category)
-    bot.send_message(ADMIN_ID , f"check:\n {city_number}\n{category_slug}")
+    bot.send_message(ADMIN_ID , f"check:\n{city}\n{city_number}\n{category_slug}")
     response = request_to_api(city_number , category_slug)
     with open(curent_dir + '/hichi.txt' , 'w' ,encoding='utf-8') as respo:
         respo.write(str(response))
