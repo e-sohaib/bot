@@ -39,7 +39,7 @@ class SubscriptionPlan(Base):
     
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(50), nullable=False)
-    description = Column(String, nullable=True)
+    description = Column(String(20), nullable=True)
     price = Column(Float, nullable=False)
     duration_days = Column(Integer, nullable=False)
     created_at = Column(DateTime, default=func.now())
