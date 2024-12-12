@@ -69,7 +69,7 @@ def create_database():
     try:
         Base.metadata.create_all(engine)
         print("جداول با موفقیت ایجاد شدند.")
-    except SQLAlchemyError as e:
+    except Exception as e:
         print(f"خطا در ایجاد جداول: {e}")
 
 Session = sessionmaker(bind=engine)
