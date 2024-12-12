@@ -128,8 +128,8 @@ def divar_markup_citys():
     with open(curent_dir + '/bigcitys.json' , 'r' , encoding = 'utf-8') as citys:
         bigcitis = json.load(citys)
     markup = InlineKeyboardMarkup(row_width=3)
-    for item in bigcitis:
-        markup.add(InlineKeyboardButton(item[0], callback_data=f"city_{item[0]}"))
+    buttons = [InlineKeyboardButton(item[0], callback_data=f"city_{item[0]}") for item in bigcitis]
+    markup.add(*buttons)
     return markup
     
 @bot.message_handler(func = lambda message:message.text == "Divar")
