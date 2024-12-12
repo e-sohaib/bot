@@ -77,7 +77,7 @@ def start_handling(message):
     if Uzer == None:
         if is_user_member(user_tgid):
             new_user = User(telegram_id = user_tgid ,
-                            date_joined = datetime.now(),
+                            created_at = datetime.now(),
                             )
             session.add(new_user)
             session.commit()
@@ -279,17 +279,17 @@ def ig_coments(tg_id,post_id):
 def download_ig(message , session):
     t0 = time.time()
     user = session.query(User).filter_by(telegram_id = message.from_user.id ).first()
-    if user.daily_requests >= user.max_requests:
+    if not user.subscriptions.name:
         bot.send_message(user.telegram_id , f"You reached limit")   
         return
-    elif user.daily_requests < user.max_requests:
+    elif user.subscriptions.name:
         link = message.text
         tg_id = user.telegram_id
         bot.send_message(user.telegram_id , "Wait a moment ...")
         download_instagram_content(link , str(tg_id))
-        user.daily_requests = user.daily_requests + 1 
+        #user.daily_requests = user.daily_requests + 1 
         Bytes = size_meter(tg_id)
-        bot.send_message(user.telegram_id , f'remaing requests {user.max_requests - user.daily_requests}\nyoure data usage : {Bytes/(1024*1024)} MB')
+        bot.send_message(user.telegram_id , f'remaing requests {user.subscriptions.duration_days}\nyoure data usage : {Bytes/(1024*1024)} MB')
         t1 = time.time()
         bot.send_message(ADMIN_ID , f'time elapsed: {t1 - t0}')
         clear_user_files(tg_id)
