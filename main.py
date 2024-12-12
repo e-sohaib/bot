@@ -114,7 +114,7 @@ def divar_markup_citys():
         markup.add(KeyboardButton(item[1]))
     return markup
     
-@bot.message_handler(func = lambda message:message.text == "Register")
+@bot.message_handler(func = lambda message:message.text == "Divar")
 def user_register(message):
     tg_id = message.from_user.id
     bot.send_message(tg_id ,"شهر را انتخاب کنید",reply_markup=divar_markup_citys())
