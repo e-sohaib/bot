@@ -121,7 +121,7 @@ def find_slug_cat(name):
     
 @bot.callback_query_handler(lambda call : call.data.startswith('category_'))
 def prepare_request(call):
-    city = call.message.text.split('\n')[0].split(':')[1]
+    city = call.message.text.split('\n')[0].split(':')[1].strip()
     text = call.message.text.split('\n')[0]
     category = call.data.split('_')[1]
     bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
