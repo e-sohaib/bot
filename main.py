@@ -118,7 +118,7 @@ def change_city_and_chooscategory(call):
     city = call.data.split('_')[1]
     call.message
     bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
-    bot.edit_message_text(f"شهر شما : {city}\nدسته بندی را انتخاب کنید :",reply_markup=category_mrkup())
+    bot.edit_message_text(f"شهر شما : {city}\nدسته بندی را انتخاب کنید :",call.message.chat.id,call.message.message_id,reply_markup=category_mrkup())
 def divar_markup_citys():
     with open(curent_dir + '/bigcitys.json' , 'r' , encoding = 'utf-8') as citys:
         bigcitis = json.load(citys)
