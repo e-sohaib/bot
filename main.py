@@ -15,6 +15,7 @@ import instaloader
 from instaloader import TwoFactorAuthRequiredException
 import validators
 import re
+from divar import request_to_api 
 
 curent_dir = os.getcwd()
 with open('/mnt/txt.txt' , 'r') as d:
@@ -105,14 +106,33 @@ def user_register(message):
 
 """end register block """
 """Divar block"""
+def find_city_number(name):
+    with open(curent_dir + '/bigcitys.json' , 'r' , encoding='utf-8') as city:
+        citys = json.load(city)
+    for item in city:
+        if item[0] == name:
+            return str(item[1])
+def find_slug_cat(name):
+    with open(curent_dir + '/category.json' , 'r' , encoding = 'utf-8') as cats:
+        category = json.load(cats)
+    for item in category:
+        if item['name'] == name:
+            return item["slug"]
+    
 @bot.callback_query_handler(lambda call : call.data.startswith('category_'))
-def creat_request(call):
-    text = call.message.text.split('\n')[0].split(':')[1]
-    s = call.message.text.split('\n')[0]
+def prepare_request(call):
+    city = call.message.text.split('\n')[0].split(':')[1]
+    text = call.message.text.split('\n')[0]
     category = call.data.split('_')[1]
     bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
-    bot.edit_message_text(f"{s}\nدسته بندی انتخاب شده : {category}",call.message.chat.id,call.message.message_id)
-    bot.send_message(ADMIN_ID , f"text : {text}\n{category}")
+    bot.edit_message_text(f"{text}\nدسته بندی انتخاب شده : {category}",call.message.chat.id,call.message.message_id)
+    city_number = find_city_number(city)
+    category_slug = find_slug_cat(category)
+    response = request_to_api(city_number , category_slug)
+    with open(curent_dir + '/hichi.txt' , 'w' ,encoding='utf-8') as respo:
+        respo.write(str(response))
+    with open(curent_dir + '/hichi.txt' , 'w' ,encoding='utf-8') as r:
+        bot.send_document(ADMIN_ID ,r)    
 
 def category_mrkup():
     with open(curent_dir + '/category.json' , 'r' , encoding = 'utf-8') as cats:
