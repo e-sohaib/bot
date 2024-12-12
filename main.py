@@ -111,7 +111,7 @@ def divar_markup_citys():
         bigcitis = json.load(citys)
     markup = ReplyKeyboardMarkup()
     for item in bigcitis:
-        markup.add(KeyboardButton(item[1]))
+        markup.add(KeyboardButton(item[0]))
     return markup
     
 @bot.message_handler(func = lambda message:message.text == "Divar")
