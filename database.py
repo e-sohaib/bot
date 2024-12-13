@@ -107,7 +107,10 @@ if __name__ == "__main__":
         )
     try:
         session = Session()
-        session.add(free_plan,one_month,two_month,three_month)
+        session.add(free_plan)
+        session.add(one_month)
+        session.add(two_month)
+        session.add(three_month)
         session.commit()
     except Exception as e:
         print("plans are excist" ,e)
