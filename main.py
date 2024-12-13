@@ -118,7 +118,19 @@ def find_slug_cat(name):
     for item in category:
         if item['name'] == name:
             return item["slug"]
-    
+def Analyze_response(response):
+    js = json.loads(response)
+    all_posts = js['list_widgets'] #type = list
+    TXT = "لیست 24 آگهی اخیر:\n"
+    for post in all_posts:    
+        try:
+            row = post['data']['title'] + " : " +post['data']['middle_description_text'] + '\n'
+            TXT = "".join(TXT + row)
+        except KeyError:
+            row_t = post['data']['title'] + ' : ' + "توافقی" + '\n'
+            TXT = "".join(TXT + row_t)
+    return TXT
+        
 @bot.callback_query_handler(lambda call : call.data.startswith('category_'))
 def prepare_request(call):
     city = call.message.text.split('\n')[0].split(':')[1].strip()
@@ -130,10 +142,8 @@ def prepare_request(call):
     category_slug = find_slug_cat(category)
     bot.send_message(ADMIN_ID , f"check:\n{city}\n{city_number}\n{category_slug}")
     response = request_to_api(city_number , category_slug)
-    with open(curent_dir + '/hichi.txt' , 'w' ,encoding='utf-8') as respo:
-        respo.write(str(response))
-    with open(curent_dir + '/hichi.txt' , 'r' ,encoding='utf-8') as r:
-        bot.send_document(ADMIN_ID ,r)    
+    result = Analyze_response(response)  
+    bot.send_message(call.chat.id,result) 
 
 def category_mrkup():
     with open(curent_dir + '/category.json' , 'r' , encoding = 'utf-8') as cats:

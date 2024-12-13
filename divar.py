@@ -17,17 +17,13 @@ def request_to_api(city_number , category_realname):
     response = requests.post(url=api_address , data=data ,headers=raw_header)
     return response.text
 
-def find_city_number(name):
-    with open('bigcitys.json' , 'r' , encoding='utf-8') as city:
-        citys = json.load(city)
-    for item in citys:
-        if item[0] == name:
-            return str(item[1])
-def find_slug_cat(name):
-    with open('category.json' , 'r' , encoding = 'utf-8') as cats:
-        category = json.load(cats)
-    for item in category:
-        if item['name'] == name:
-            return item["slug"]
+
+    #with open('hichi.txt' , 'r' ,encoding='utf-8') as r:
+         
+         
+
         
+        
+    
+
     

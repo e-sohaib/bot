@@ -1,0 +1,2705 @@
+{
+    "list_top_widgets": [
+        {
+            "widget_type": "POST_LIST_HEADLINE",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostListHeadline",
+                "text": "خرید و فروش املاک مسکونی در زاهدان - صفحه ۲"
+            }
+        }
+    ],
+    "list_widgets": [
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "زمین بلوک R دادگستری جنب شهرک مرزبانی",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZZ5-tng",
+                        "web_info": {
+                            "title": "زمین بلوک R دادگستری جنب شهرک مرزبانی",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/5LKNdgJV_rzm3uERMauq7A/a789231a-b9e3-4948-a383-cfd5e75d64da.webp",
+                "bottom_description_text": "مشاور براهویی",
+                "red_text": "نردبان شده",
+                "has_divider": true,
+                "image_count": 1,
+                "image_top_left_tag": {
+                    "text": "۱",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZZ5-tng"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZZ5-tng",
+                        "index": 0,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:53:35.970501Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "فروش دانشگاه ۱۱طبقه اول خام",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZZp_X-N",
+                        "web_info": {
+                            "title": "فروش دانشگاه ۱۱طبقه اول خام",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "bottom_description_text": "مشاور عالی",
+                "middle_description_text": "۴,۱۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "token": "wZZp_X-N"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZZp_X-N",
+                        "index": 1,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:50:01.783577Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "فروش آپارتمان کفعمی شخصی ساز پنج واحدی",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZX9Tlw0",
+                        "web_info": {
+                            "title": "فروش آپارتمان کفعمی شخصی ساز پنج واحدی",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/tCcJnp2YeOzr386Eph4bBQ/c0f58907-4a38-465d-ab34-25288447ebd2.webp",
+                "bottom_description_text": "مشاور عالی",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۶,۸۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 12,
+                "image_top_left_tag": {
+                    "text": "۱۲",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZX9Tlw0"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZX9Tlw0",
+                        "index": 2,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:48:44.427820Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "ویلایی 144متری بلوار بهداشت",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZbVe2XZ",
+                        "web_info": {
+                            "title": "ویلایی 144متری بلوار بهداشت",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/RnPGUAT2cwBX7y8BdLpeJA/a688d381-8ee6-4a2b-8d08-ed016ebafbb5.webp",
+                "bottom_description_text": "آژانس دپارتمان آلتون",
+                "middle_description_text": "۳,۶۰۰,۰۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 5,
+                "image_top_left_tag": {
+                    "text": "۵",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZbVe2XZ"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZbVe2XZ",
+                        "index": 3,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:46:59.690678Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "۷۵۰۰مترزمین کشاورزی .مزروعی .باغی",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "AZBqsVbd",
+                        "web_info": {
+                            "title": "۷۵۰۰مترزمین کشاورزی .مزروعی .باغی",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/afra/webp_thumbnail/P52Xe3h097XoUWvTUSnSRg/fa58f75c-52bb-409b-b805-30147783f078.webp",
+                "red_text": "نردبان شده | فوری ",
+                "middle_description_text": "۶۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 8,
+                "image_top_left_tag": {
+                    "text": "۸",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "AZBqsVbd"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "AZBqsVbd",
+                        "index": 4,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:46:00.821915Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "فروش ویلایی سعدی 88 فرصت",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZ84MM1K",
+                        "web_info": {
+                            "title": "فروش ویلایی سعدی 88 فرصت",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/afra/webp_thumbnail/ZX5oJVVjgJCLwLGzlVPJDg/dbfeac69-ce9c-4f55-8cf1-6cab4c6b6a23.webp",
+                "bottom_description_text": "آژانس دپارتمان املاک ویرا",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۲,۸۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 7,
+                "image_top_left_tag": {
+                    "text": "۷",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZ84MM1K"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZ84MM1K",
+                        "index": 5,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:45:59.397363Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "زمین ۱۹۸متر کنار زمین های مرزبانی (سیادک)",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZKNurwb",
+                        "web_info": {
+                            "title": "زمین ۱۹۸متر کنار زمین های مرزبانی (سیادک)",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/pk0BUMpng3L8ZH7ju2tC-g/6afc86ab-69ee-4bdc-9b5e-aef66f22f0eb.webp",
+                "red_text": "نردبان شده",
+                "has_divider": true,
+                "image_count": 1,
+                "image_top_left_tag": {
+                    "text": "۱",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZKNurwb"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZKNurwb",
+                        "index": 6,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:30:00.110829Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "آپارتمان تک واحدی مهرشهر",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZbFe3Qe",
+                        "web_info": {
+                            "title": "آپارتمان تک واحدی مهرشهر",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/x0Fl4gAovAHXPnvhiHqu0A/0b89a4a0-6f9c-4d7c-88cb-e6713672b99b.webp",
+                "bottom_description_text": "نیم ساعت پیش",
+                "middle_description_text": "۱,۳۵۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 1,
+                "image_top_left_tag": {
+                    "text": "۱",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZbFe3Qe"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZbFe3Qe",
+                        "index": 7,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:27:34.279639Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "فروش زمین تجاری واقع در حاشیه امام خمینی ۳۲",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZJ9sXE1",
+                        "web_info": {
+                            "title": "فروش زمین تجاری واقع در حاشیه امام خمینی ۳۲",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "red_text": "نردبان شده",
+                "middle_description_text": "۱۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "token": "wZJ9sXE1"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZJ9sXE1",
+                        "index": 8,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:23:18.149265Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "ملک نزدیک بازار در خیابان اصلی نبش کوچه(۳۷۰ متر)",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZWdITuV",
+                        "web_info": {
+                            "title": "ملک نزدیک بازار در خیابان اصلی نبش کوچه(۳۷۰ متر)",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/NVrWIFECHdc62V1wto9W7g/61e90bec-25a1-4e3c-97f1-c3ec94208b04.webp",
+                "red_text": "نردبان شده | فوری ",
+                "middle_description_text": "۱,۱۱۱,۱۱۱ تومان",
+                "has_divider": true,
+                "image_count": 1,
+                "image_top_left_tag": {
+                    "text": "۱",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZWdITuV"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZWdITuV",
+                        "index": 9,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:21:34.311053Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "آپارتمان 100متری وام دار مزاری",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZbxtmlr",
+                        "web_info": {
+                            "title": "آپارتمان 100متری وام دار مزاری",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/4zaETrvuGOIT7FNmvQEN1g/0d277b8f-ec25-4cd9-b586-89c804d33999.webp",
+                "bottom_description_text": "مشاور محمد پیله ور",
+                "middle_description_text": "۲,۴۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 3,
+                "image_top_left_tag": {
+                    "text": "۳",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZbxtmlr"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZbxtmlr",
+                        "index": 10,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:06:25.171640Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "آپارتمان پرستار/مجتمع سردار سلیمانی/۱۱۰متری",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZbklzEU",
+                        "web_info": {
+                            "title": "آپارتمان پرستار/مجتمع سردار سلیمانی/۱۱۰متری",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/ehz8iVfPTxjc0jPIassI0g/306642e7-704d-4524-815f-79ace40a8a79.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۱,۵۵۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 4,
+                "image_top_left_tag": {
+                    "text": "۴",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZbklzEU"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZbklzEU",
+                        "index": 11,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:03:28.686624Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "آپارتمان 109 متری/تک واحدی/ دانش",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZF1PqI0",
+                        "web_info": {
+                            "title": "آپارتمان 109 متری/تک واحدی/ دانش",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/VvOGRACFDdblwwEFJwr-Dw/3e8b84de-7d71-44fc-bcbc-93dc270832ae.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۱,۶۷۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 5,
+                "image_top_left_tag": {
+                    "text": "۵",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZF1PqI0"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZF1PqI0",
+                        "index": 12,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:03:09.647295Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "۱۸۰ متری سراسر نور/۳ خواب/شخصی ساز",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZYJXwxB",
+                        "web_info": {
+                            "title": "۱۸۰ متری سراسر نور/۳ خواب/شخصی ساز",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/kD6XreKR4IY6LhD8zjG_Bw/310e0bb9-14f1-4205-9d33-eb11708c3944.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "middle_description_text": "۴,۵۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 5,
+                "image_top_left_tag": {
+                    "text": "۵",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZYJXwxB"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZYJXwxB",
+                        "index": 13,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:03:02.582542Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "آپارتمان ۹۴متری/بازسازی شده/تک برگ سند/انقلاب/",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZbUFdS2",
+                        "web_info": {
+                            "title": "آپارتمان ۹۴متری/بازسازی شده/تک برگ سند/انقلاب/",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/ukXlhQZyXkFRh6qfgPDeHQ/af6a5253-0d65-4ac8-a5e0-db70f2c24e39.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۱,۳۵۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 5,
+                "image_top_left_tag": {
+                    "text": "۵",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZbUFdS2"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZbUFdS2",
+                        "index": 14,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:02:49.437698Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "تک واحدی/۱۲۰ متر/مولوی",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZVIv0Ux",
+                        "web_info": {
+                            "title": "تک واحدی/۱۲۰ متر/مولوی",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/afra/webp_thumbnail/9WvjgM2JkplEtlj-yUa7Ew/54e42e20-ae1d-47c8-b093-69beab6d445e.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۳,۰۵۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 5,
+                "image_top_left_tag": {
+                    "text": "۵",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZVIv0Ux"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZVIv0Ux",
+                        "index": 15,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:01:32.582817Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "۱۵۸ متر فول دیزاین/۳ خواب/دانشگاه/بزرگمهر",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZMd3P1i",
+                        "web_info": {
+                            "title": "۱۵۸ متر فول دیزاین/۳ خواب/دانشگاه/بزرگمهر",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/UXR96_LUb4lcB0_5cTLFSQ/d647dfe7-ed84-431d-be8c-854237858696.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۶,۱۵۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 5,
+                "image_top_left_tag": {
+                    "text": "۵",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZMd3P1i"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZMd3P1i",
+                        "index": 16,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:01:12.116242Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "۱۳۰ متری ارزنده / سراسر نور / ابتدای بزرگمهر",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZXVQ4Em",
+                        "web_info": {
+                            "title": "۱۳۰ متری ارزنده / سراسر نور / ابتدای بزرگمهر",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/j6GZCIkDXp5vvIY2zc6wHA/5fee15ad-b8c1-4e14-bde9-938849fc129e.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۱,۱۱۱,۱۱۱,۱۱۱ تومان",
+                "has_divider": true,
+                "image_count": 5,
+                "image_top_left_tag": {
+                    "text": "۵",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZXVQ4Em"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZXVQ4Em",
+                        "index": 17,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:00:54.848205Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "آپارتمان ۱۰۵ متری علوم پزشکی رو به نما",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZ2kUB5S",
+                        "web_info": {
+                            "title": "آپارتمان ۱۰۵ متری علوم پزشکی رو به نما",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/Wr2BE3DiSMXuGVDIniVMVw/df844387-cb05-4b39-b556-64defe373de0.webp",
+                "bottom_description_text": "کارگذاری املاک اردیبهشت",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۲,۰۴۷,۵۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 13,
+                "image_top_left_tag": {
+                    "text": "۱۳",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZ2kUB5S"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZ2kUB5S",
+                        "index": 18,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:00:42.069909Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "۱۴۵ متر پروژه هوشمند/بزرگمهر",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZYR2y-o",
+                        "web_info": {
+                            "title": "۱۴۵ متر پروژه هوشمند/بزرگمهر",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/RZn_bjUQZUgxoAb6RGitDw/eb121e69-f458-413c-8722-a42ae1580e07.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۴,۶۴۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 6,
+                "image_top_left_tag": {
+                    "text": "۶",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZYR2y-o"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZYR2y-o",
+                        "index": 19,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:00:24.696436Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "ویلایی ۳ خواب جنوبی در خیابان نصر",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZ2kQa1H",
+                        "web_info": {
+                            "title": "ویلایی ۳ خواب جنوبی در خیابان نصر",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/aaTqikcA5ju_7AhP_k4GIQ/ab355ca3-8bf5-42fd-a046-c72e155cb44a.webp",
+                "bottom_description_text": "کارگذاری املاک اردیبهشت",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۴,۵۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 7,
+                "image_top_left_tag": {
+                    "text": "۷",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZ2kQa1H"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZ2kQa1H",
+                        "index": 20,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:00:22.419486Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "۲۲۵ متر فوق هوشمند/سازه ای شکوهمند/تک واحدی",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZYF2vDC",
+                        "web_info": {
+                            "title": "۲۲۵ متر فوق هوشمند/سازه ای شکوهمند/تک واحدی",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/QuVWErgVgO_tovLiVq_89A/1b8cb625-8633-4036-9381-312dacc16131.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۱۰,۱۲۵,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 6,
+                "image_top_left_tag": {
+                    "text": "۶",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZYF2vDC"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZYF2vDC",
+                        "index": 21,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T07:00:06.985955Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "تک واحدی اعیان نشین/ ۲۵۰ متر/سونا/جیم",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZX1hp9-",
+                        "web_info": {
+                            "title": "تک واحدی اعیان نشین/ ۲۵۰ متر/سونا/جیم",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/qbTE7csdpO8RrUDI7j345g/d5c71d3f-6d05-4261-a690-5db12562303c.webp",
+                "bottom_description_text": "آژانس کارگزاری املاک ونوس",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۱۱,۲۵۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 8,
+                "image_top_left_tag": {
+                    "text": "۸",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZX1hp9-"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZX1hp9-",
+                        "index": 22,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T06:59:51.507096Z"
+                    }
+                },
+                "enabled": true
+            }
+        },
+        {
+            "widget_type": "POST_ROW",
+            "data": {
+                "@type": "type.googleapis.com/widgets.PostRowData",
+                "title": "اپارتمان ۱۱۵ متر،دو خواب،سند اماده، منطقه ۱۰",
+                "action": {
+                    "type": "VIEW_POST",
+                    "payload": {
+                        "@type": "type.googleapis.com/widgets.ViewPostPayload",
+                        "token": "wZI1VM7n",
+                        "web_info": {
+                            "title": "اپارتمان ۱۱۵ متر،دو خواب،سند اماده، منطقه ۱۰",
+                            "city_persian": "زاهدان"
+                        }
+                    }
+                },
+                "image_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/m7BlJPdaShr_dJD7EjDE5A/eb2ec763-7e55-419f-a274-ef2575f0f159.webp",
+                "bottom_description_text": "کارگذاری املاک اردیبهشت",
+                "red_text": "نردبان شده",
+                "middle_description_text": "۲,۳۰۰,۰۰۰,۰۰۰,۰۰۰ تومان",
+                "has_divider": true,
+                "image_count": 14,
+                "image_top_left_tag": {
+                    "text": "۱۴",
+                    "icon": {
+                        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/camera.png",
+                        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/camera.png",
+                        "icon_name": "CAMERA",
+                        "icon_color": "WHITE_PRIMARY"
+                    },
+                    "is_icon_left": true
+                },
+                "token": "wZI1VM7n"
+            },
+            "action_log": {
+                "server_side_info": {
+                    "item_type": {
+                        "type": "POST_ITEM"
+                    },
+                    "info": {
+                        "@type": "type.googleapis.com/action_log.PostItemInfo",
+                        "post_token": "wZI1VM7n",
+                        "index": 23,
+                        "post_type": "SEARCH",
+                        "list_type": "PAGE",
+                        "source_page": "POST_LIST_PAGE",
+                        "extra_data": {
+                            "@type": "type.googleapis.com/action_log.PostItemInfo.SearchExtraData",
+                            "jli": {
+                                "category": {
+                                    "value": "residential-sell"
+                                },
+                                "cities": [
+                                    "11"
+                                ],
+                                "sort": {
+                                    "value": "sort_date"
+                                }
+                            },
+                            "last_post_sort_date": "1734076658355529",
+                            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                            "search_data": {
+                                "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                                "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                                "cities": [
+                                    "11"
+                                ],
+                                "query_input_type": "TEXT"
+                            }
+                        },
+                        "widget_type": "POST_ROW",
+                        "sort_date": "2024-12-13T06:59:48.367408Z"
+                    }
+                },
+                "enabled": true
+            }
+        }
+    ],
+    "action_log": {
+        "server_side_info": {
+            "item_type": {
+                "type": "POST_LIST_LOAD_PAGE"
+            },
+            "info": {
+                "@type": "type.googleapis.com/action_log.PostListLoadPageInfo",
+                "cities": [
+                    "11"
+                ],
+                "current_tab": "default",
+                "search_data": {
+                    "form_data_json": "{\"data\":{\"category\":{\"str\":{\"value\":\"residential-sell\"}}}}",
+                    "server_payload_json": "{\"@type\":\"type.googleapis.com/widgets.SearchData.ServerPayload\",\"additional_form_data\":{\"data\":{\"sort\":{\"str\":{\"value\":\"sort_date\"}}}}}",
+                    "cities": [
+                        "11"
+                    ],
+                    "query_input_type": "TEXT"
+                },
+                "tokens": [
+                    "wZZ5-tng",
+                    "wZZp_X-N",
+                    "wZX9Tlw0",
+                    "wZbVe2XZ",
+                    "AZBqsVbd",
+                    "wZ84MM1K",
+                    "wZKNurwb",
+                    "wZbFe3Qe",
+                    "wZJ9sXE1",
+                    "wZWdITuV",
+                    "wZbxtmlr",
+                    "wZbklzEU",
+                    "wZF1PqI0",
+                    "wZYJXwxB",
+                    "wZbUFdS2",
+                    "wZVIv0Ux",
+                    "wZMd3P1i",
+                    "wZXVQ4Em",
+                    "wZ2kUB5S",
+                    "wZYR2y-o",
+                    "wZ2kQa1H",
+                    "wZYF2vDC",
+                    "wZX1hp9-",
+                    "wZI1VM7n"
+                ],
+                "has_next_page": true,
+                "page": 1,
+                "last_post_date_epoch": "1734073188367408",
+                "search_id": "fcf3a22289725368595ad9789ed56e1a",
+                "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817",
+                "source_view": "UNKNOWN",
+                "posts_metadata": [
+                    {
+                        "token": "wZZ5-tng",
+                        "sort_date": "1734076415970501",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZZp_X-N",
+                        "sort_date": "1734076201783577",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZX9Tlw0",
+                        "sort_date": "1734076124427820",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZbVe2XZ",
+                        "sort_date": "1734076019690678",
+                        "source": "f"
+                    },
+                    {
+                        "token": "AZBqsVbd",
+                        "sort_date": "1734075960821915",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZ84MM1K",
+                        "sort_date": "1734075959397363",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZKNurwb",
+                        "sort_date": "1734075000110829",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZbFe3Qe",
+                        "sort_date": "1734074854279639",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZJ9sXE1",
+                        "sort_date": "1734074598149265",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZWdITuV",
+                        "sort_date": "1734074494311053",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZbxtmlr",
+                        "sort_date": "1734073585171640",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZbklzEU",
+                        "sort_date": "1734073408686624",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZF1PqI0",
+                        "sort_date": "1734073389647295",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZYJXwxB",
+                        "sort_date": "1734073382582542",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZbUFdS2",
+                        "sort_date": "1734073369437698",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZVIv0Ux",
+                        "sort_date": "1734073292582817",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZMd3P1i",
+                        "sort_date": "1734073272116242",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZXVQ4Em",
+                        "sort_date": "1734073254848205",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZ2kUB5S",
+                        "sort_date": "1734073242069909",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZYR2y-o",
+                        "sort_date": "1734073224696436",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZ2kQa1H",
+                        "sort_date": "1734073222419486",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZYF2vDC",
+                        "sort_date": "1734073206985955",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZX1hp9-",
+                        "sort_date": "1734073191507096",
+                        "source": "f"
+                    },
+                    {
+                        "token": "wZI1VM7n",
+                        "sort_date": "1734073188367408",
+                        "source": "f"
+                    }
+                ],
+                "jli": {
+                    "category": {
+                        "value": "residential-sell"
+                    },
+                    "cities": [
+                        "11"
+                    ],
+                    "sort": {
+                        "value": "sort_date"
+                    }
+                },
+                "search_layer": "fulltext_t1"
+            }
+        },
+        "enabled": true
+    },
+    "pagination": {
+        "has_next_page": true,
+        "data": {
+            "@type": "type.googleapis.com/post_list.PaginationData",
+            "last_post_date": "2024-12-13T06:59:48.367408Z",
+            "page": 2,
+            "layer_page": 2,
+            "search_uid": "c39a02cf-cf7e-4d5e-ba91-4faeaf0b0817"
+        }
+    },
+    "search_id": "fcf3a22289725368595ad9789ed56e1a",
+    "seo_details": {
+        "title": "خرید و فروش بهترین املاک مسکونی، خانه و آپارتمان در زاهدان - صفحه ۲ | دیوار",
+        "description": "بهترین فرصت‌های خرید و فروش املاک مسکونی، خانه و آپارتمان در زاهدان را در دیوار پیدا کنید.",
+        "headline": "خرید و فروش املاک مسکونی در زاهدان - صفحه ۲",
+        "canonical": {
+            "form_data": {
+                "data": {
+                    "category": {
+                        "str": {
+                            "value": "residential-sell"
+                        }
+                    }
+                }
+            }
+        },
+        "robots_metadata": {
+            "index": true,
+            "follow": true
+        },
+        "bread_crumb": [
+            {
+                "name": "فروش مسکونی",
+                "search_data": {
+                    "form_data": {
+                        "data": {
+                            "category": {
+                                "str": {
+                                    "value": "residential-sell"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "name": "املاک",
+                "search_data": {
+                    "form_data": {
+                        "data": {
+                            "category": {
+                                "str": {
+                                    "value": "real-estate"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "name": "زاهدان",
+                "search_data": {
+                    "form_data": {}
+                }
+            },
+            {
+                "name": "دیوار"
+            }
+        ],
+        "linked_data": [
+            {
+                "@context": "https://schema.org",
+                "@type": "Accommodation",
+                "accommodationCategory": "زمین و ملک کلنگی",
+                "description": "خواهشمندیم تماس بگیرید \n\nمشاور شما == بـراهـویـی\n\nزمین واگذاری دادگستری \nابتدای ورودی \nبلوک r\nحاشیه خیابان 12 متری \nموقعیت شمالی \n\nبا توجه به پول لازم بودن صاحب ملک  زیر فی منطقه \nبفروش میرسد",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "200"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.481528723112",
+                    "longitude": "60.786397185568"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/5LKNdgJV_rzm3uERMauq7A/a789231a-b9e3-4948-a383-cfd5e75d64da.webp",
+                "name": "زمین بلوک R دادگستری جنب شهرک مرزبانی",
+                "url": "https://divar.ir/v/زمین-بلوک-r-دادگستری-جنب-شهرک-مرزبانی/wZZ5-tng",
+                "web_info": {
+                    "category_slug_persian": "زمین و ملک کلنگی",
+                    "city_persian": "زاهدان",
+                    "title": "زمین بلوک R دادگستری جنب شهرک مرزبانی"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "فروش آپارتما 144متری  ،خوش نقشه و نورگیری کامل ،هر پاگرد دو واحد در پنج طبقه ،ده واحدی ،به صورت خام واگذار میشود ،جهت هماهنگی و بازدید تماس بگیرید مشاور شما خانم عالی",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "144"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049535975",
+                    "longitude": "60.866037687783"
+                },
+                "name": "فروش دانشگاه ۱۱طبقه اول خام",
+                "numberOfRooms": "سه",
+                "url": "https://divar.ir/v/فروش-دانشگاه-۱۱طبقه-اول-خام/wZZp_X-N",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "فروش دانشگاه ۱۱طبقه اول خام"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "فروش آپارتمان شخصی کفعمی چهار ،بهتربن موقعیت طبقه سوم با تخفیف ویژه ،برای اطلاع بیشتر تماس بگیرید ،مشاور شما عالی",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "237"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049535975",
+                    "longitude": "60.866037687783"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/tCcJnp2YeOzr386Eph4bBQ/c0f58907-4a38-465d-ab34-25288447ebd2.webp",
+                "name": "فروش آپارتمان کفعمی شخصی ساز پنج واحدی",
+                "numberOfRooms": "سه",
+                "url": "https://divar.ir/v/فروش-آپارتمان-کفعمی-شخصی-ساز-پنج-واحدی/wZX9Tlw0",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "فروش آپارتمان کفعمی شخصی ساز پنج واحدی"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "House",
+                "accommodationCategory": "خانه و ویلا",
+                "description": "⚜️ دپارتمان املاک آلتون ⚜️\n\n\" زندگی کن ، جایی که عاشقشی \"\n___\n\n✅ ویلایی \n✅ سه خواب \n✅ سند تک برگ\n✅ همکف راه مستقل\n✅ گرمایش از کف \n✅ کابینت های گلاس\n✅ کمد دیواری\n✅ سالن پرده خور\n✅ لاین نوری \n✅ درب اطاق خواب ها جدیدترین برند \n✅ دارای حیاط \n✅ کاغذ دیواری \n✅ اسپلیت \n\nآدرس ملک :  بلوار بهداشت \n___\nآدرس دفتر : معلم _ بعد از شیرنی سرای طوس \n\n✅ برای اطلاعات بیشتر و بازدید تماس بگیرید \nمشاور : سعید شهری",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "122"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049535975",
+                    "longitude": "60.866037687783"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/RnPGUAT2cwBX7y8BdLpeJA/a688d381-8ee6-4a2b-8d08-ed016ebafbb5.webp",
+                "name": "ویلایی 144متری بلوار بهداشت",
+                "numberOfRooms": "سه",
+                "url": "https://divar.ir/v/ویلایی-144متری-بلوار-بهداشت/wZbVe2XZ",
+                "web_info": {
+                    "category_slug_persian": "خانه و ویلا",
+                    "city_persian": "زاهدان",
+                    "title": "ویلایی 144متری بلوار بهداشت"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Accommodation",
+                "accommodationCategory": "زمین و ملک کلنگی",
+                "description": "7500مترزمین کشاورزی.مزروعی .باغی .15کیلومتری سربیشه یا ۴۵ کیلومتری بیرجند.نزدیک به جاده اصلی .ورودی روستای پخت.دارای ۵۰۰ نهال زرشک.۱۰۰ نهال میوه .۵۰۰متر زیر کشت زعفران که الان دوسال برداشت شده ازش.نیم ساعت آب از چاه آب شیرین داره درهفته.25متربراسفالت هست.علمک گاز جلوی زمین وتیربرق ازوسط زمین ردشده که میتونین امتیازش بگیرین .واسه ساخت هم تا75مترمیتونین مجوز بگیرین واسه ساخت اتاق یا استخر برای آب قطره ای..سند تک برگ . توضیحات کافی فقط خواهشا از روی کنجکاوی مزاحم وقت هم نشیم.ضمنا با ماشین هم معامله میشود",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "7500"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049",
+                    "longitude": "60.866039"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/afra/webp_thumbnail/P52Xe3h097XoUWvTUSnSRg/fa58f75c-52bb-409b-b805-30147783f078.webp",
+                "name": "۷۵۰۰مترزمین کشاورزی .مزروعی .باغی",
+                "url": "https://divar.ir/v/۷۵۰۰مترزمین-کشاورزی-مزروعی-باغی/AZBqsVbd",
+                "web_info": {
+                    "category_slug_persian": "زمین و ملک کلنگی",
+                    "city_persian": "زاهدان",
+                    "title": "۷۵۰۰مترزمین کشاورزی .مزروعی .باغی"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "House",
+                "accommodationCategory": "خانه و ویلا",
+                "description": "فروش ویلایی سعدی 88 ،پای قولنامه تخفیف خوبی خواهد داشت ،برای اطلاع بیشتر تماس بگیرید ، با مدیریت مهندس افشاری املاک ویرافرصت خرید خوب با بهترین قیمت ،صد زیر قیمت",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "140"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.502554",
+                    "longitude": "60.863403"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/afra/webp_thumbnail/ZX5oJVVjgJCLwLGzlVPJDg/dbfeac69-ce9c-4f55-8cf1-6cab4c6b6a23.webp",
+                "name": "فروش ویلایی سعدی 88 فرصت",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/فروش-ویلایی-سعدی-88-فرصت/wZ84MM1K",
+                "web_info": {
+                    "category_slug_persian": "خانه و ویلا",
+                    "city_persian": "زاهدان",
+                    "title": "فروش ویلایی سعدی 88 فرصت"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Accommodation",
+                "accommodationCategory": "زمین و ملک کلنگی",
+                "description": "زمین دونبش و موقعیت زمین نیاز به تعریف ندارد\nبرای بازدید با بنده درتماس باشید و حضوری تشریف بیارید \nزمین در بلوکL و خیابان ۱۰متری تا ۱۶متری موجود می باشد\nلاین اول در اولین ردیف و نزدیک جاده اصلی",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "198"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049535975",
+                    "longitude": "60.866037687783"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/pk0BUMpng3L8ZH7ju2tC-g/6afc86ab-69ee-4bdc-9b5e-aef66f22f0eb.webp",
+                "name": "زمین ۱۹۸متر کنار زمین های مرزبانی (سیادک)",
+                "url": "https://divar.ir/v/زمین-۱۹۸متر-کنار-زمین-های-مرزبانی-سیادک-/wZKNurwb",
+                "web_info": {
+                    "category_slug_persian": "زمین و ملک کلنگی",
+                    "city_persian": "زاهدان",
+                    "title": "زمین ۱۹۸متر کنار زمین های مرزبانی (سیادک)"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "مهرشهر روبه روی مجتمع کارکنان کمیته امداد خانه دو طبقه پایین مغازه بالا خونه فقط خونه بفروش میرسد نما رومی بدون پارکینگ خونه تک واحدی خیلی کم پیدا میشه",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "75"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.585170868914",
+                    "longitude": "60.861441759299"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/x0Fl4gAovAHXPnvhiHqu0A/0b89a4a0-6f9c-4d7c-88cb-e6713672b99b.webp",
+                "name": "آپارتمان تک واحدی مهرشهر",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/آپارتمان-تک-واحدی-مهرشهر/wZbFe3Qe",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "آپارتمان تک واحدی مهرشهر"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Accommodation",
+                "accommodationCategory": "زمین و ملک کلنگی",
+                "description": "بسیار خوش قوار\n✅۲۷متر عرض زمین\n✅مناسب برای ساخت ساز\n✅مناسب برای سرمایه گذاری \n✅سند تک برگ \n✅زیر قیمت بازار\n✅دل بازار\n✅بهترین موقعیت خرید برای دوستان سازنده و سرمایه گذار",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "1000"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049535975",
+                    "longitude": "60.866037687783"
+                },
+                "name": "فروش زمین تجاری واقع در حاشیه امام خمینی ۳۲",
+                "url": "https://divar.ir/v/فروش-زمین-تجاری-واقع-در-حاشیه-امام-خمینی-۳۲/wZJ9sXE1",
+                "web_info": {
+                    "category_slug_persian": "زمین و ملک کلنگی",
+                    "city_persian": "زاهدان",
+                    "title": "فروش زمین تجاری واقع در حاشیه امام خمینی ۳۲"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "House",
+                "accommodationCategory": "خانه و ویلا",
+                "description": "یا فتاح \n\nبا سلام\nملک ۳۷۰ متری در خیابان اصلی سر دو نبش\n\nطول زمین : ۳۲.۵ متر\nعرض زمین : ۱۲.۵ متر (بر خیابان سعدی)\n\n\nدارای ۳ واحد مسکونی مجزا با کنتور های مجزا\n۱ مغازه تجاری در خیابان اصلی\nامکان دریافت مجوز ساخت تا ۷‌ طبقه از شهرداری \nسند تک برگ\nموقعیت عالی \n۵ دقیقه پیاده تا بازار مرکزی",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "265"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.50035353470309",
+                    "longitude": "60.871319177209614"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/NVrWIFECHdc62V1wto9W7g/61e90bec-25a1-4e3c-97f1-c3ec94208b04.webp",
+                "name": "ملک نزدیک بازار در خیابان اصلی نبش کوچه(۳۷۰ متر)",
+                "numberOfRooms": "بیشتر",
+                "url": "https://divar.ir/v/ملک-نزدیک-بازار-در-خیابان-اصلی-نبش-کوچه-۳۷۰-متر-/wZWdITuV",
+                "web_info": {
+                    "category_slug_persian": "خانه و ویلا",
+                    "city_persian": "زاهدان",
+                    "title": "ملک نزدیک بازار در خیابان اصلی نبش کوچه(۳۷۰ متر)"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "با درود و وقت به نیکی\n⚪️⚪️⚪️کارگزاری املاک ونوس⚪️⚪️⚪️\nپروژه خاص و متراژ مناسب \n\n➖\nتوضیحات\n⚜️95%از کار انجام شده  \n⚜️مهمترین مزیتی که این ملک دارد قابلیت استفاده از 450میلیون وام مسکن\n⚜️سازه فوق‌العاده  قوی\n➖\n⚜️متراژ 100 متر\n⚜️دوخواب\n⚜️انباری\n⚜️پارکینگ اختصاصی همکف\n⚜️آسانسور 8نفره\n⚜️درب و پنجره دو جداره برند ترک\n⚜️موعد تحویل بهمن1403\n⚜️استفاده از بهترین متریال درجه یک بروز\n⚜️کاملا شخصی ساز\n⚜️طبقه 3/4/5\n⭐پیله ور هستم مشاور شما در بحث پیش فروش⭐\n(8صبح الی 22)\n➖➖➖ اینجا با اعتماد به ما رویاها به خانه می‌رسند ➖➖➖\n↙️آدرس دفتر:حد فاصل معلم یک و سه روبروی معلم شش ↘️",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "100"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049535975",
+                    "longitude": "60.866037687783"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/4zaETrvuGOIT7FNmvQEN1g/0d277b8f-ec25-4cd9-b586-89c804d33999.webp",
+                "name": "آپارتمان 100متری وام دار مزاری",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/آپارتمان-100متری-وام-دار-مزاری/wZbxtmlr",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "آپارتمان 100متری وام دار مزاری"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\nهر جا که باشی خانه ای برای تو هست✅\nمشخصات و  مشاعات\nکف سرامیک\nکابینت به تعداد محدود \nکمد دیواری \nتراس \n آسانسور \nپارکینگ (مشا‌)\n انباری\n سرویس بهداشتی و حمام جدا از هم \n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید.\nمشاور شما: در امر خرید (آقای جهانتیغ)\nبا مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر: روبروی معلم ۶ \n\n⚜️⚜️کارگزاری املاک ونوس⚜️⚜️\nبهترین ها را از ونوس بخواهید.",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "110"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049535975",
+                    "longitude": "60.866037687783"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/ehz8iVfPTxjc0jPIassI0g/306642e7-704d-4524-815f-79ace40a8a79.webp",
+                "name": "آپارتمان پرستار/مجتمع سردار سلیمانی/۱۱۰متری",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/آپارتمان-پرستار-مجتمع-سردار-سلیمانی-۱۱۰متری/wZbklzEU",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "آپارتمان پرستار/مجتمع سردار سلیمانی/۱۱۰متری"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\nهر جا که باشی خانه ای برای تو هست✅\nمشخصات و  مشاعات\n✅✅✅ تک واحدی ✅✅✅\n تک برگ سند \nکف سرامیک\nکابینت MDF\nگاز صفحه ای و هود\nکمد دیواری\nتراس \nپارکینگ بدون مزاحمت و بزرگ \n انباری \n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید.\nمشاور شما: در بحث رهن و اجاره (آقای جهانتیغ)\nبا مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر:بین معلم ۱و۳(روبه روی شیرینی مجلسی)\n\n\n⚜️⚜️کارگزاری املاک ونوس⚜️⚜️\nبهترین ها را از ونوس بخواهید.",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "109"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.472860240507",
+                    "longitude": "60.84767141494"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/VvOGRACFDdblwwEFJwr-Dw/3e8b84de-7d71-44fc-bcbc-93dc270832ae.webp",
+                "name": "آپارتمان 109 متری/تک واحدی/ دانش",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/آپارتمان-109-متری-تک-واحدی-دانش/wZF1PqI0",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "آپارتمان 109 متری/تک واحدی/ دانش"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\n⭐محسن قاسمی هستم،همراه شما برای خرید مطمعن⭐\n✅هر جا که باشی خانه ای برای تو هست\n_________________________\n\nدر این‌ واحد “نور” میهمان شماست\n\n_________________________\n\n✨اعیان‌نشین\n✨کم تراکم\n✨جارو مرکزی\n_________________________\n\n✅فستیوال نور\n✅نقشه بی نظیر\n✅سالن بزرگ و قابل چیدمان\n✅پنجره قدی\n✅دسترسی فوق العاده\n✅خواب مستر\n\n\n\n\n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید\nمشاور شما: در بحث خرید و فروش محسن قاسمی\nبا مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر:بین معلم ۱و۳(روبه روی شیرینی مجلسی)",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "180"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049",
+                    "longitude": "60.866039"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/kD6XreKR4IY6LhD8zjG_Bw/310e0bb9-14f1-4205-9d33-eb11708c3944.webp",
+                "name": "۱۸۰ متری سراسر نور/۳ خواب/شخصی ساز",
+                "numberOfRooms": "سه",
+                "url": "https://divar.ir/v/۱۸۰-متری-سراسر-نور-۳-خواب-شخصی-ساز/wZYJXwxB",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "۱۸۰ متری سراسر نور/۳ خواب/شخصی ساز"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\nهر جا که باشی خانه ای برای تو هست✅\nمشخصات و  مشاعات\n تک برگ سند\n درسال ۱۴۰۰ بازسازی شده\nکف سرامیک\nکابینت MDF\nگاز و هود \nکمد دیواری\n۲ تراس \nپارکینگ \n سرویس بهداشتی و حمام جدا از هم \n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید.\nمشاور شما: در امر خرید (آقای جهانتیغ)\nبا مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر:بین معلم ۱و۳(روبه روی شیرینی مجلسی)\n\n\n⚜️⚜️کارگزاری املاک ونوس⚜️⚜️\nبهترین ها را از ونوس بخواهید.",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "94"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049535975",
+                    "longitude": "60.866037687783"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/ukXlhQZyXkFRh6qfgPDeHQ/af6a5253-0d65-4ac8-a5e0-db70f2c24e39.webp",
+                "name": "آپارتمان ۹۴متری/بازسازی شده/تک برگ سند/انقلاب/",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/آپارتمان-۹۴متری-بازسازی-شده-تک-برگ-سند-انقلاب-/wZbUFdS2",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "آپارتمان ۹۴متری/بازسازی شده/تک برگ سند/انقلاب/"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\nهر جا که باشی خانه ای برای تو هست✅\n\n✨واقع در بهترین موقعیت ابتدای مولوی✨\n✨ شخصی ساز✨\n✨فقط ۵ واحد✨\n________________________\n\n✅بسیار خوش نقشه\n✅نور شمال\n✅متریال اعلا\n✅دسترسی عالی\n✅انباری\n✅آسانسور جادار\n✅پارکینگ همکف\n✅۲ خواب نورگیر\n✅کمد دیواری\n✅تراس\n✅جارو مرکزی\n\n\n_________________________\n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید\nمشاورشما در زمینه خرید وفروش: محسن قاسمی\nبا مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر:بین معلم ۱و۳(روبه روی شیرینی مجلسی)",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "120"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049",
+                    "longitude": "60.866039"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/afra/webp_thumbnail/9WvjgM2JkplEtlj-yUa7Ew/54e42e20-ae1d-47c8-b093-69beab6d445e.webp",
+                "name": "تک واحدی/۱۲۰ متر/مولوی",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/تک-واحدی-۱۲۰-متر-مولوی/wZVIv0Ux",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "تک واحدی/۱۲۰ متر/مولوی"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\n⭐محسن قاسمی هستم،همراه شما برای خرید مطمعن⭐\n✅هر جا که باشی خانه ای برای تو هست\n\n✨تاپ لوکیشن دانشگاه،بزرگمهر✨\n✨سازنده به نام✨\n✨قابل معاوضه با خودرو✨\n________________________\n\n⭐️دسترسی زیر یک دقیقه به تمامی امکانات رفاهی\n⭐️معبر اصلی با موقعیت عالی\n⭐️پارکینگ کار شده،همکف\n⭐️آسانسور تاچ\n⭐️پلان تفکیکی\n⭐️کابینت وکیوم چوب\n⭐️دیزاین و نورپردازی حرفه ای\n⭐️تراس قابل چیدمان با ویوی رویایی\n\n\n_________________________\n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید\nبا مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر:بین معلم ۱و۳(روبه روی شیرینی مجلسی)",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "158"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049",
+                    "longitude": "60.866039"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/UXR96_LUb4lcB0_5cTLFSQ/d647dfe7-ed84-431d-be8c-854237858696.webp",
+                "name": "۱۵۸ متر فول دیزاین/۳ خواب/دانشگاه/بزرگمهر",
+                "numberOfRooms": "سه",
+                "url": "https://divar.ir/v/۱۵۸-متر-فول-دیزاین-۳-خواب-دانشگاه-بزرگمهر/wZMd3P1i",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "۱۵۸ متر فول دیزاین/۳ خواب/دانشگاه/بزرگمهر"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\n⭐محسن قاسمی هستم،همراه شما برای خرید مطمعن⭐\n✅هر جا که باشی خانه ای برای تو هست\n\n——————\n✅بهترین موقعیت بزرگمهر و معلم\n✅سازه و نمای متمایز در منطقه\n✅معبر باز و عریض\n————————-\n\n✨دسترسی به ۳ خیابان اصلی \n✨پارکینگ با قابلیت شارژ خودروی الکتریکی\n✨کارشده با متریال اعلا\n✨هال و مهمان خانه بزرگ\n✨فضاها آفتاب گیر\n✨متریال کارشده بهترین\n✨اتاق خواب استاندارد و کمد خور\n—————\n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید\n با مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر:بین معلم ۱و۳(روبه روی شیرینی مجلسی)",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "130"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049",
+                    "longitude": "60.866039"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/j6GZCIkDXp5vvIY2zc6wHA/5fee15ad-b8c1-4e14-bde9-938849fc129e.webp",
+                "name": "۱۳۰ متری ارزنده / سراسر نور / ابتدای بزرگمهر",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/۱۳۰-متری-ارزنده-سراسر-نور-ابتدای-بزرگمهر/wZXVQ4Em",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "۱۳۰ متری ارزنده / سراسر نور / ابتدای بزرگمهر"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "سلام خدمت همشهریان عزیز\nواگذاری آپارتمان داریم \n\nواحد ۱۰۵ متری \nطبقه ۲ رو به نما \nبه صورت خام ، کلید تحویل\nپارکینگ در همکف \nلوکیشن قوی جعفری پناه ۲۸ (علوم پزشکی)\nمجتمع ۹ واحدی \nهر طبقه ۲ واحدی\nجهت خرید و کسب اطلاعات بیشتر تماس بگیرید.\nمشاور شما: شهرکی \nکارگزاری املاک اردیبهشت نبش جعفری پناه ۹",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "105"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.45258829105",
+                    "longitude": "60.859496016764"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/Wr2BE3DiSMXuGVDIniVMVw/df844387-cb05-4b39-b556-64defe373de0.webp",
+                "name": "آپارتمان ۱۰۵ متری علوم پزشکی رو به نما",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/آپارتمان-۱۰۵-متری-علوم-پزشکی-رو-به-نما/wZ2kUB5S",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "آپارتمان ۱۰۵ متری علوم پزشکی رو به نما"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\n⭐محسن قاسمی هستم،همراه شما برای خرید مطمعن⭐\n✅هر جا که باشی خانه ای برای تو هست\n\n________________________________________\n⭐️در این واحد متمایز از تمام زاهدان زندگی کنید⭐️\n________________________\n\n✅طراحی کارآمد\n✅متریال تماما برند\n✅صد در صد فضاها نورگیر\n✅ویو باز\n✅تراس بزرگ\n✅هوشمند\n✅دسترسی به شریان های اصلی شهر\n\n\n❇️ساختمان و سازه با ساخت بسیار اصولی❇️\n______________________________________\n\n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید\nمشاورشما در زمینه خرید وفروش: محسن قاسمی\nبا مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر:بین معلم ۱و۳(روبه روی شیرینی مجلسی)",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "145"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.473352699768",
+                    "longitude": "60.851849043885"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/RZn_bjUQZUgxoAb6RGitDw/eb121e69-f458-413c-8722-a42ae1580e07.webp",
+                "name": "۱۴۵ متر پروژه هوشمند/بزرگمهر",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/۱۴۵-متر-پروژه-هوشمند-بزرگمهر/wZYR2y-o",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "۱۴۵ متر پروژه هوشمند/بزرگمهر"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "House",
+                "accommodationCategory": "خانه و ویلا",
+                "description": "سلام\n_ فروش ویلایی جنوبی  زیباشهر خیابان نصر\n_ با عرصه ۱۷۴ متری\n_  زیر بنای ۱۷۰ متر\n_ دارای ۳ اتاق خواب \n_ پارکینگ با ظرفیت ۱ خوردرو\n_ سیستم گرمایش و سرمایش پکیج\n_ کابینت MDF\n_ کف سرامیک\n_ سال ساخت ۱۳۸۸ \n_ سند تکبرگ\n_ جهت بازدید و مشاوره و کسب اطلاعات بیشتر با      بنده در تماس باشید.\n_ مشاور:زارعی\n کارگزاری املاک اردیبهشت",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "170"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.470049535975",
+                    "longitude": "60.866037687783"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/aaTqikcA5ju_7AhP_k4GIQ/ab355ca3-8bf5-42fd-a046-c72e155cb44a.webp",
+                "name": "ویلایی ۳ خواب جنوبی در خیابان نصر",
+                "numberOfRooms": "سه",
+                "url": "https://divar.ir/v/ویلایی-۳-خواب-جنوبی-در-خیابان-نصر/wZ2kQa1H",
+                "web_info": {
+                    "category_slug_persian": "خانه و ویلا",
+                    "city_persian": "زاهدان",
+                    "title": "ویلایی ۳ خواب جنوبی در خیابان نصر"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\n⭐محسن قاسمی هستم،همراه شما برای خرید مطمعن⭐\n✅هر جا که باشی خانه ای برای تو هست\n\n________________________________________\n⭐️در این واحد متمایز از تمام زاهدان زندگی کنید⭐️\n________________________\n\n✅طراحی کارآمد\n✅متریال تماما برند\n✅صد در صد فضاها نورگیر\n✅ویو باز\n✅تراس بزرگ\n✅هوشمند\n✅دسترسی به شریان های اصلی شهر\n\n\n❇️ساختمان و سازه با ساخت بسیار اصولی❇️\n______________________________________\n\n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید\nمشاورشما در زمینه خرید وفروش: محسن قاسمی\nبا مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر:بین معلم ۱و۳(روبه روی شیرینی مجلسی)",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "225"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.46291323429368",
+                    "longitude": "60.85139316816108"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/QuVWErgVgO_tovLiVq_89A/1b8cb625-8633-4036-9381-312dacc16131.webp",
+                "name": "۲۲۵ متر فوق هوشمند/سازه ای شکوهمند/تک واحدی",
+                "numberOfRooms": "سه",
+                "url": "https://divar.ir/v/۲۲۵-متر-فوق-هوشمند-سازه-ای-شکوهمند-تک-واحدی/wZYF2vDC",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "۲۲۵ متر فوق هوشمند/سازه ای شکوهمند/تک واحدی"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "⚜️کارگزاری املاک ونوس⚜️\n⭐محسن قاسمی هستم،همراه شما برای خرید مطمعن⭐\n✅هر جا که باشی خانه ای برای تو هست\n——————\n⚜️هر چه از یک ساختمان لوکس میخواهید⚜️\n————————-\n\n✨کلید ورودی،طلای ۲۴ عیار\n✨سونا بخار و خشک\n✨متریال درجه ۱ وارداتی\n✨هوشمند سازی کامل\n✨نشیمن وسیع و کاربردی\n✨نور و آفتاب مستقیم\n✨هال خصوصی و عمومی\n✨مستر+کلوزت\n✨سراسر اتاق ها نورگیر\n✨تراس قابل چیدمان‌\n\n—————\n⚜️خرید ایده ال و حرفه ای تجربه کنید⚜️\nموارد بیشتر متناسب با بودجه و سلیقه شما با ما تماس بگیرید\n با مدیریت:آقای شهرکی و آقای یزدان طلب \nآدرس دفتر:بین معلم ۱و۳(روبه روی شیرینی مجلسی)",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "250"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.465025219305126",
+                    "longitude": "60.851554454898626"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/qbTE7csdpO8RrUDI7j345g/d5c71d3f-6d05-4261-a690-5db12562303c.webp",
+                "name": "تک واحدی اعیان نشین/ ۲۵۰ متر/سونا/جیم",
+                "numberOfRooms": "سه",
+                "url": "https://divar.ir/v/تک-واحدی-اعیان-نشین-۲۵۰-متر-سونا-جیم/wZX1hp9-",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "تک واحدی اعیان نشین/ ۲۵۰ متر/سونا/جیم"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "accommodationCategory": "آپارتمان",
+                "description": "درود بر همشهریان عزیز \nاپارتمان منطقه ۱۰ (ویلا) \nمجتمع ۷ واحدی بسیار ارام و ساکت \nمتراژ : ۱۱۵ متر \nدو خواب \nفول امکانات \nکابینت mdf \nپکیج ، شوفاژ \nکاغذ دیواری ، پوستر اتاق کودک \nکمد دیواری \nمشاعات قوی \nخوش نقشه\nپارکینگ در همکف \nسند اماده تک برگ \nبرای اطلاعات بیشتر به کارگذاری املاک اردیبهشت \nنبش جعفری پناه ۹ مراجعه فرمایید\nو یا با بنده تماس بگیرید \nمشاور : شهرکی",
+                "floorSize": {
+                    "@type": "QuantitativeValue",
+                    "unitCode": "MTK",
+                    "value": "115"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "address": "زاهدان",
+                    "latitude": "29.464079300127",
+                    "longitude": "60.882547929885"
+                },
+                "image": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/m7BlJPdaShr_dJD7EjDE5A/eb2ec763-7e55-419f-a274-ef2575f0f159.webp",
+                "name": "اپارتمان ۱۱۵ متر،دو خواب،سند اماده، منطقه ۱۰",
+                "numberOfRooms": "دو",
+                "url": "https://divar.ir/v/اپارتمان-۱۱۵-متر-دو-خواب-سند-اماده-منطقه-۱۰/wZI1VM7n",
+                "web_info": {
+                    "category_slug_persian": "آپارتمان",
+                    "city_persian": "زاهدان",
+                    "title": "اپارتمان ۱۱۵ متر،دو خواب،سند اماده، منطقه ۱۰"
+                }
+            }
+        ]
+    }
+}
