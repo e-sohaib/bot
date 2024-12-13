@@ -39,7 +39,7 @@ class SubscriptionPlan(Base):
     __tablename__ = 'subscription_plans'
     
     id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String(50), nullable=False)
+    name = Column(String(50), unique=True ,nullable=False)
     description = Column(String(20), nullable=True)
     price = Column(Float, nullable=False)
     duration_days = Column(Integer, nullable=False)
@@ -56,8 +56,8 @@ class UserSubscription(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey('users.id'), nullable=False)
     plan_id = Column(Integer, ForeignKey('subscription_plans.id'), nullable=False)
-    start_date = Column(Date, nullable=False)
-    end_date = Column(Date, nullable=False)
+    start_date = Column(DateTime, nullable=False)
+    end_date = Column(DateTime, nullable=False)
     status = Column(Enum('active', 'expired', 'canceled', name='subscription_status'), default='active')
     created_at = Column(DateTime, default=datetime.now())
     updated_at = Column(DateTime, default=datetime.now(), onupdate=datetime.now())
@@ -79,30 +79,30 @@ if __name__ == "__main__":
     create_database()
     free_plan =SubscriptionPlan(
         name = 'Free',
-        description = 'بدون اشتراک',
+        description = 'Free',
         price = 0.0,
         duration_days = 1,
         created_at = datetime.now(),
         )
     one_month =SubscriptionPlan(
         name = 'One month',
-        description = 'یک ماهه',
+        description = 'One month',
         price = 30000.0,
         duration_days = 30,
         created_at = datetime.now(),
         )
     two_month = SubscriptionPlan(
         name = 'Two month',
-        description = 'دو ماهه',
+        description = 'Two month',
         price = 50000.0,
         duration_days = 60,
         created_at = datetime.now(),
         )
     three_month = SubscriptionPlan(
         name = 'Three month',
-        description = 'سه ماهه',
+        description = 'Three month',
         price = 60000.0,
-        duration_days = 60,
+        duration_days = 90,
         created_at = datetime.now(),
         )
     try:

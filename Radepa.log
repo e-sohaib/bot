@@ -1,0 +1,292 @@
+2024-12-13 14:54:04,185 - SELECT DATABASE()
+2024-12-13 14:54:04,186 - [raw sql] {}
+2024-12-13 14:54:04,188 - SELECT @@sql_mode
+2024-12-13 14:54:04,188 - [raw sql] {}
+2024-12-13 14:54:04,190 - SELECT @@lower_case_table_names
+2024-12-13 14:54:04,190 - [raw sql] {}
+2024-12-13 14:54:04,193 - BEGIN (implicit)
+2024-12-13 14:54:04,198 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 14:54:04,201 - [generated in 0.00312s] {'telegram_id_1': '6040165079', 'param_1': 1}
+2024-12-13 14:54:04,204 - COMMIT
+2024-12-13 14:54:05,388 - BEGIN (implicit)
+2024-12-13 14:54:05,392 - INSERT INTO users (telegram_id, phone_number, created_at, transaction_id) VALUES (%(telegram_id)s, %(phone_number)s, %(created_at)s, %(transaction_id)s)
+2024-12-13 14:54:05,392 - [generated in 0.00090s] {'telegram_id': 6040165079, 'phone_number': None, 'created_at': datetime.datetime(2024, 12, 13, 14, 54, 5, 387681), 'transaction_id': None}
+2024-12-13 14:54:05,395 - COMMIT
+2024-12-13 14:54:05,404 - BEGIN (implicit)
+2024-12-13 14:54:05,409 - SELECT subscription_plans.id AS subscription_plans_id, subscription_plans.name AS subscription_plans_name, subscription_plans.description AS subscription_plans_description, subscription_plans.price AS subscription_plans_price, subscription_plans.duration_days AS subscription_plans_duration_days, subscription_plans.created_at AS subscription_plans_created_at, subscription_plans.updated_at AS subscription_plans_updated_at 
+FROM subscription_plans 
+WHERE subscription_plans.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-12-13 14:54:05,411 - [generated in 0.00226s] {'name_1': 'Free', 'param_1': 1}
+2024-12-13 14:54:05,417 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.id = %(pk_1)s
+2024-12-13 14:54:05,419 - [generated in 0.00172s] {'pk_1': 1}
+2024-12-13 14:54:05,541 - bot start nashod : 
+ 'dayse' is an invalid keyword argument for __new__()
+2024-12-13 14:55:04,903 - SELECT DATABASE()
+2024-12-13 14:55:04,904 - [raw sql] {}
+2024-12-13 14:55:04,906 - SELECT @@sql_mode
+2024-12-13 14:55:04,906 - [raw sql] {}
+2024-12-13 14:55:04,907 - SELECT @@lower_case_table_names
+2024-12-13 14:55:04,908 - [raw sql] {}
+2024-12-13 14:55:04,909 - BEGIN (implicit)
+2024-12-13 14:55:04,914 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 14:55:04,915 - [generated in 0.00122s] {'telegram_id_1': '6040165079', 'param_1': 1}
+2024-12-13 14:55:04,917 - COMMIT
+2024-12-13 14:55:10,737 - BEGIN (implicit)
+2024-12-13 14:55:10,740 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 14:55:10,742 - [generated in 0.00183s] {'telegram_id_1': 6040165079, 'param_1': 1}
+2024-12-13 14:55:10,748 - SELECT user_subscriptions.id AS user_subscriptions_id, user_subscriptions.user_id AS user_subscriptions_user_id, user_subscriptions.plan_id AS user_subscriptions_plan_id, user_subscriptions.start_date AS user_subscriptions_start_date, user_subscriptions.end_date AS user_subscriptions_end_date, user_subscriptions.status AS user_subscriptions_status, user_subscriptions.created_at AS user_subscriptions_created_at, user_subscriptions.updated_at AS user_subscriptions_updated_at 
+FROM user_subscriptions 
+WHERE %(param_1)s = user_subscriptions.user_id
+2024-12-13 14:55:10,750 - [generated in 0.00173s] {'param_1': 1}
+2024-12-13 14:55:10,762 - bot start nashod : 
+ max() arg is an empty sequence
+2024-12-13 14:57:10,565 - SELECT DATABASE()
+2024-12-13 14:57:10,566 - [raw sql] {}
+2024-12-13 14:57:10,567 - SELECT @@sql_mode
+2024-12-13 14:57:10,568 - [raw sql] {}
+2024-12-13 14:57:10,569 - SELECT @@lower_case_table_names
+2024-12-13 14:57:10,569 - [raw sql] {}
+2024-12-13 14:57:10,571 - BEGIN (implicit)
+2024-12-13 14:57:10,576 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 14:57:10,579 - [generated in 0.00239s] {'telegram_id_1': 6040165079, 'param_1': 1}
+2024-12-13 14:57:10,585 - SELECT user_subscriptions.id AS user_subscriptions_id, user_subscriptions.user_id AS user_subscriptions_user_id, user_subscriptions.plan_id AS user_subscriptions_plan_id, user_subscriptions.start_date AS user_subscriptions_start_date, user_subscriptions.end_date AS user_subscriptions_end_date, user_subscriptions.status AS user_subscriptions_status, user_subscriptions.created_at AS user_subscriptions_created_at, user_subscriptions.updated_at AS user_subscriptions_updated_at 
+FROM user_subscriptions 
+WHERE %(param_1)s = user_subscriptions.user_id
+2024-12-13 14:57:10,588 - [generated in 0.00245s] {'param_1': 1}
+2024-12-13 14:57:10,601 - bot start nashod : 
+ 'InstrumentedList' object has no attribute 'end_date'
+2024-12-13 15:00:26,526 - SELECT DATABASE()
+2024-12-13 15:00:26,527 - [raw sql] {}
+2024-12-13 15:00:26,529 - SELECT @@sql_mode
+2024-12-13 15:00:26,530 - [raw sql] {}
+2024-12-13 15:00:26,531 - SELECT @@lower_case_table_names
+2024-12-13 15:00:26,531 - [raw sql] {}
+2024-12-13 15:00:26,533 - BEGIN (implicit)
+2024-12-13 15:00:26,537 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:00:26,539 - [generated in 0.00160s] {'telegram_id_1': '6040165079', 'param_1': 1}
+2024-12-13 15:00:26,541 - COMMIT
+2024-12-13 15:00:28,756 - BEGIN (implicit)
+2024-12-13 15:00:28,758 - INSERT INTO users (telegram_id, phone_number, created_at, transaction_id) VALUES (%(telegram_id)s, %(phone_number)s, %(created_at)s, %(transaction_id)s)
+2024-12-13 15:00:28,760 - [generated in 0.00166s] {'telegram_id': 6040165079, 'phone_number': None, 'created_at': datetime.datetime(2024, 12, 13, 15, 0, 28, 755072), 'transaction_id': None}
+2024-12-13 15:00:28,762 - COMMIT
+2024-12-13 15:00:28,770 - BEGIN (implicit)
+2024-12-13 15:00:28,775 - SELECT subscription_plans.id AS subscription_plans_id, subscription_plans.name AS subscription_plans_name, subscription_plans.description AS subscription_plans_description, subscription_plans.price AS subscription_plans_price, subscription_plans.duration_days AS subscription_plans_duration_days, subscription_plans.created_at AS subscription_plans_created_at, subscription_plans.updated_at AS subscription_plans_updated_at 
+FROM subscription_plans 
+WHERE subscription_plans.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:00:28,777 - [generated in 0.00279s] {'name_1': 'Free', 'param_1': 1}
+2024-12-13 15:00:28,786 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.id = %(pk_1)s
+2024-12-13 15:00:28,788 - [generated in 0.00254s] {'pk_1': 2}
+2024-12-13 15:00:28,793 - INSERT INTO user_subscriptions (user_id, plan_id, start_date, end_date, status, created_at, updated_at) VALUES (%(user_id)s, %(plan_id)s, %(start_date)s, %(end_date)s, %(status)s, %(created_at)s, %(updated_at)s)
+2024-12-13 15:00:28,795 - [generated in 0.00208s] {'user_id': 2, 'plan_id': 1, 'start_date': datetime.datetime(2024, 12, 13, 14, 51, 36), 'end_date': datetime.datetime(2024, 12, 14, 14, 51, 36), 'status': 'active', 'created_at': datetime.datetime(2024, 12, 13, 15, 0, 18, 789509), 'updated_at': datetime.datetime(2024, 12, 13, 15, 0, 18, 789509)}
+2024-12-13 15:00:28,799 - COMMIT
+2024-12-13 15:00:37,459 - BEGIN (implicit)
+2024-12-13 15:00:37,461 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:00:37,463 - [generated in 0.00193s] {'telegram_id_1': 6040165079, 'param_1': 1}
+2024-12-13 15:00:37,467 - SELECT user_subscriptions.id AS user_subscriptions_id, user_subscriptions.user_id AS user_subscriptions_user_id, user_subscriptions.plan_id AS user_subscriptions_plan_id, user_subscriptions.start_date AS user_subscriptions_start_date, user_subscriptions.end_date AS user_subscriptions_end_date, user_subscriptions.status AS user_subscriptions_status, user_subscriptions.created_at AS user_subscriptions_created_at, user_subscriptions.updated_at AS user_subscriptions_updated_at 
+FROM user_subscriptions 
+WHERE %(param_1)s = user_subscriptions.user_id
+2024-12-13 15:00:37,470 - [generated in 0.00145s] {'param_1': 2}
+2024-12-13 15:00:37,480 - bot start nashod : 
+ 'InstrumentedList' object has no attribute 'end_date'
+2024-12-13 15:05:15,483 - SELECT DATABASE()
+2024-12-13 15:05:15,484 - [raw sql] {}
+2024-12-13 15:05:15,486 - SELECT @@sql_mode
+2024-12-13 15:05:15,486 - [raw sql] {}
+2024-12-13 15:05:15,487 - SELECT @@lower_case_table_names
+2024-12-13 15:05:15,488 - [raw sql] {}
+2024-12-13 15:05:15,489 - BEGIN (implicit)
+2024-12-13 15:05:15,493 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:05:15,495 - [generated in 0.00142s] {'telegram_id_1': 6040165079, 'param_1': 1}
+2024-12-13 15:05:15,502 - SELECT user_subscriptions.id AS user_subscriptions_id, user_subscriptions.user_id AS user_subscriptions_user_id, user_subscriptions.plan_id AS user_subscriptions_plan_id, user_subscriptions.start_date AS user_subscriptions_start_date, user_subscriptions.end_date AS user_subscriptions_end_date, user_subscriptions.status AS user_subscriptions_status, user_subscriptions.created_at AS user_subscriptions_created_at, user_subscriptions.updated_at AS user_subscriptions_updated_at 
+FROM user_subscriptions 
+WHERE %(param_1)s = user_subscriptions.user_id
+2024-12-13 15:05:15,504 - [generated in 0.00227s] {'param_1': 2}
+2024-12-13 15:05:15,514 - bot start nashod : 
+ can't compare datetime.datetime to datetime.date
+2024-12-13 15:09:34,096 - SELECT DATABASE()
+2024-12-13 15:09:34,097 - [raw sql] {}
+2024-12-13 15:09:34,099 - SELECT @@sql_mode
+2024-12-13 15:09:34,099 - [raw sql] {}
+2024-12-13 15:09:34,100 - SELECT @@lower_case_table_names
+2024-12-13 15:09:34,100 - [raw sql] {}
+2024-12-13 15:09:34,102 - BEGIN (implicit)
+2024-12-13 15:09:34,106 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:09:34,108 - [generated in 0.00218s] {'telegram_id_1': 6040165079, 'param_1': 1}
+2024-12-13 15:09:34,115 - SELECT user_subscriptions.id AS user_subscriptions_id, user_subscriptions.user_id AS user_subscriptions_user_id, user_subscriptions.plan_id AS user_subscriptions_plan_id, user_subscriptions.start_date AS user_subscriptions_start_date, user_subscriptions.end_date AS user_subscriptions_end_date, user_subscriptions.status AS user_subscriptions_status, user_subscriptions.created_at AS user_subscriptions_created_at, user_subscriptions.updated_at AS user_subscriptions_updated_at 
+FROM user_subscriptions 
+WHERE %(param_1)s = user_subscriptions.user_id
+2024-12-13 15:09:34,118 - [generated in 0.00252s] {'param_1': 2}
+2024-12-13 15:09:34,131 - bot start nashod : 
+ can't compare datetime.datetime to datetime.date
+2024-12-13 15:18:17,067 - SELECT DATABASE()
+2024-12-13 15:18:17,068 - [raw sql] {}
+2024-12-13 15:18:17,070 - SELECT @@sql_mode
+2024-12-13 15:18:17,070 - [raw sql] {}
+2024-12-13 15:18:17,071 - SELECT @@lower_case_table_names
+2024-12-13 15:18:17,072 - [raw sql] {}
+2024-12-13 15:18:17,073 - BEGIN (implicit)
+2024-12-13 15:18:17,078 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:18:17,079 - [generated in 0.00139s] {'telegram_id_1': 6040165079, 'param_1': 1}
+2024-12-13 15:18:17,085 - SELECT user_subscriptions.id AS user_subscriptions_id, user_subscriptions.user_id AS user_subscriptions_user_id, user_subscriptions.plan_id AS user_subscriptions_plan_id, user_subscriptions.start_date AS user_subscriptions_start_date, user_subscriptions.end_date AS user_subscriptions_end_date, user_subscriptions.status AS user_subscriptions_status, user_subscriptions.created_at AS user_subscriptions_created_at, user_subscriptions.updated_at AS user_subscriptions_updated_at 
+FROM user_subscriptions 
+WHERE %(param_1)s = user_subscriptions.user_id
+2024-12-13 15:18:17,087 - [generated in 0.00185s] {'param_1': 2}
+2024-12-13 15:18:17,099 - bot start nashod : 
+ can't compare datetime.datetime to datetime.date
+2024-12-13 15:24:45,981 - SELECT DATABASE()
+2024-12-13 15:24:45,983 - [raw sql] {}
+2024-12-13 15:24:45,984 - SELECT @@sql_mode
+2024-12-13 15:24:45,985 - [raw sql] {}
+2024-12-13 15:24:45,986 - SELECT @@lower_case_table_names
+2024-12-13 15:24:45,986 - [raw sql] {}
+2024-12-13 15:24:45,988 - BEGIN (implicit)
+2024-12-13 15:24:45,993 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:24:45,995 - [generated in 0.00200s] {'telegram_id_1': '6040165079', 'param_1': 1}
+2024-12-13 15:24:46,000 - COMMIT
+2024-12-13 15:24:47,276 - BEGIN (implicit)
+2024-12-13 15:24:47,279 - INSERT INTO users (telegram_id, phone_number, created_at, transaction_id) VALUES (%(telegram_id)s, %(phone_number)s, %(created_at)s, %(transaction_id)s)
+2024-12-13 15:24:47,280 - [generated in 0.00081s] {'telegram_id': 6040165079, 'phone_number': None, 'created_at': datetime.datetime(2024, 12, 13, 15, 24, 47, 275339), 'transaction_id': None}
+2024-12-13 15:24:47,282 - COMMIT
+2024-12-13 15:24:47,291 - BEGIN (implicit)
+2024-12-13 15:24:47,294 - SELECT subscription_plans.id AS subscription_plans_id, subscription_plans.name AS subscription_plans_name, subscription_plans.description AS subscription_plans_description, subscription_plans.price AS subscription_plans_price, subscription_plans.duration_days AS subscription_plans_duration_days, subscription_plans.created_at AS subscription_plans_created_at, subscription_plans.updated_at AS subscription_plans_updated_at 
+FROM subscription_plans 
+WHERE subscription_plans.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:24:47,296 - [generated in 0.00276s] {'name_1': 'Free', 'param_1': 1}
+2024-12-13 15:24:47,302 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.id = %(pk_1)s
+2024-12-13 15:24:47,304 - [generated in 0.00184s] {'pk_1': 1}
+2024-12-13 15:24:47,310 - INSERT INTO user_subscriptions (user_id, plan_id, start_date, end_date, status, created_at, updated_at) VALUES (%(user_id)s, %(plan_id)s, %(start_date)s, %(end_date)s, %(status)s, %(created_at)s, %(updated_at)s)
+2024-12-13 15:24:47,311 - [generated in 0.00165s] {'user_id': 1, 'plan_id': 1, 'start_date': datetime.datetime(2024, 12, 13, 15, 24, 47, 306661), 'end_date': datetime.datetime(2024, 12, 14, 15, 24, 47, 306661), 'status': 'active', 'created_at': datetime.datetime(2024, 12, 13, 15, 24, 43, 478796), 'updated_at': datetime.datetime(2024, 12, 13, 15, 24, 43, 478796)}
+2024-12-13 15:24:47,316 - COMMIT
+2024-12-13 15:24:52,853 - BEGIN (implicit)
+2024-12-13 15:24:52,856 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:24:52,857 - [generated in 0.00169s] {'telegram_id_1': 6040165079, 'param_1': 1}
+2024-12-13 15:24:52,862 - SELECT user_subscriptions.id AS user_subscriptions_id, user_subscriptions.user_id AS user_subscriptions_user_id, user_subscriptions.plan_id AS user_subscriptions_plan_id, user_subscriptions.start_date AS user_subscriptions_start_date, user_subscriptions.end_date AS user_subscriptions_end_date, user_subscriptions.status AS user_subscriptions_status, user_subscriptions.created_at AS user_subscriptions_created_at, user_subscriptions.updated_at AS user_subscriptions_updated_at 
+FROM user_subscriptions 
+WHERE %(param_1)s = user_subscriptions.user_id
+2024-12-13 15:24:52,862 - [generated in 0.00132s] {'param_1': 1}
+2024-12-13 15:24:52,875 - bot start nashod : 
+ can't compare datetime.datetime to datetime.date
+2024-12-13 15:26:30,022 - SELECT DATABASE()
+2024-12-13 15:26:30,024 - [raw sql] {}
+2024-12-13 15:26:30,026 - SELECT @@sql_mode
+2024-12-13 15:26:30,026 - [raw sql] {}
+2024-12-13 15:26:30,028 - SELECT @@lower_case_table_names
+2024-12-13 15:26:30,028 - [raw sql] {}
+2024-12-13 15:26:30,032 - BEGIN (implicit)
+2024-12-13 15:26:30,037 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:26:30,039 - [generated in 0.00164s] {'telegram_id_1': '6040165079', 'param_1': 1}
+2024-12-13 15:26:30,046 - COMMIT
+2024-12-13 15:26:31,309 - BEGIN (implicit)
+2024-12-13 15:26:31,312 - INSERT INTO users (telegram_id, phone_number, created_at, transaction_id) VALUES (%(telegram_id)s, %(phone_number)s, %(created_at)s, %(transaction_id)s)
+2024-12-13 15:26:31,313 - [generated in 0.00080s] {'telegram_id': 6040165079, 'phone_number': None, 'created_at': datetime.datetime(2024, 12, 13, 15, 26, 31, 309200), 'transaction_id': None}
+2024-12-13 15:26:31,315 - COMMIT
+2024-12-13 15:26:31,322 - BEGIN (implicit)
+2024-12-13 15:26:31,326 - SELECT subscription_plans.id AS subscription_plans_id, subscription_plans.name AS subscription_plans_name, subscription_plans.description AS subscription_plans_description, subscription_plans.price AS subscription_plans_price, subscription_plans.duration_days AS subscription_plans_duration_days, subscription_plans.created_at AS subscription_plans_created_at, subscription_plans.updated_at AS subscription_plans_updated_at 
+FROM subscription_plans 
+WHERE subscription_plans.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:26:31,328 - [generated in 0.00269s] {'name_1': 'Free', 'param_1': 1}
+2024-12-13 15:26:31,334 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.id = %(pk_1)s
+2024-12-13 15:26:31,335 - [generated in 0.00121s] {'pk_1': 1}
+2024-12-13 15:26:31,339 - INSERT INTO user_subscriptions (user_id, plan_id, start_date, end_date, status, created_at, updated_at) VALUES (%(user_id)s, %(plan_id)s, %(start_date)s, %(end_date)s, %(status)s, %(created_at)s, %(updated_at)s)
+2024-12-13 15:26:31,341 - [generated in 0.00122s] {'user_id': 1, 'plan_id': 1, 'start_date': datetime.datetime(2024, 12, 13, 15, 26, 31, 337844), 'end_date': datetime.datetime(2024, 12, 14, 15, 26, 31, 337844), 'status': 'active', 'created_at': datetime.datetime(2024, 12, 13, 15, 26, 27, 296531), 'updated_at': datetime.datetime(2024, 12, 13, 15, 26, 27, 296531)}
+2024-12-13 15:26:31,345 - COMMIT
+2024-12-13 15:26:35,229 - BEGIN (implicit)
+2024-12-13 15:26:35,231 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:26:35,232 - [generated in 0.00140s] {'telegram_id_1': 6040165079, 'param_1': 1}
+2024-12-13 15:26:35,238 - SELECT user_subscriptions.id AS user_subscriptions_id, user_subscriptions.user_id AS user_subscriptions_user_id, user_subscriptions.plan_id AS user_subscriptions_plan_id, user_subscriptions.start_date AS user_subscriptions_start_date, user_subscriptions.end_date AS user_subscriptions_end_date, user_subscriptions.status AS user_subscriptions_status, user_subscriptions.created_at AS user_subscriptions_created_at, user_subscriptions.updated_at AS user_subscriptions_updated_at 
+FROM user_subscriptions 
+WHERE %(param_1)s = user_subscriptions.user_id
+2024-12-13 15:26:35,239 - [generated in 0.00150s] {'param_1': 1}
+2024-12-13 15:26:35,250 - bot start nashod : 
+ can't compare datetime.datetime to datetime.date
+2024-12-13 15:28:51,303 - SELECT DATABASE()
+2024-12-13 15:28:51,304 - [raw sql] {}
+2024-12-13 15:28:51,305 - SELECT @@sql_mode
+2024-12-13 15:28:51,306 - [raw sql] {}
+2024-12-13 15:28:51,307 - SELECT @@lower_case_table_names
+2024-12-13 15:28:51,308 - [raw sql] {}
+2024-12-13 15:28:51,309 - BEGIN (implicit)
+2024-12-13 15:28:51,313 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:28:51,315 - [generated in 0.00141s] {'telegram_id_1': '6040165079', 'param_1': 1}
+2024-12-13 15:28:51,318 - COMMIT
+2024-12-13 15:28:52,512 - BEGIN (implicit)
+2024-12-13 15:28:52,515 - INSERT INTO users (telegram_id, phone_number, created_at, transaction_id) VALUES (%(telegram_id)s, %(phone_number)s, %(created_at)s, %(transaction_id)s)
+2024-12-13 15:28:52,515 - [generated in 0.00087s] {'telegram_id': 6040165079, 'phone_number': None, 'created_at': datetime.datetime(2024, 12, 13, 15, 28, 52, 511166), 'transaction_id': None}
+2024-12-13 15:28:52,517 - COMMIT
+2024-12-13 15:28:52,526 - BEGIN (implicit)
+2024-12-13 15:28:52,529 - SELECT subscription_plans.id AS subscription_plans_id, subscription_plans.name AS subscription_plans_name, subscription_plans.description AS subscription_plans_description, subscription_plans.price AS subscription_plans_price, subscription_plans.duration_days AS subscription_plans_duration_days, subscription_plans.created_at AS subscription_plans_created_at, subscription_plans.updated_at AS subscription_plans_updated_at 
+FROM subscription_plans 
+WHERE subscription_plans.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:28:52,531 - [generated in 0.00165s] {'name_1': 'Free', 'param_1': 1}
+2024-12-13 15:28:52,535 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.id = %(pk_1)s
+2024-12-13 15:28:52,536 - [generated in 0.00130s] {'pk_1': 1}
+2024-12-13 15:28:52,541 - INSERT INTO user_subscriptions (user_id, plan_id, start_date, end_date, status, created_at, updated_at) VALUES (%(user_id)s, %(plan_id)s, %(start_date)s, %(end_date)s, %(status)s, %(created_at)s, %(updated_at)s)
+2024-12-13 15:28:52,542 - [generated in 0.00095s] {'user_id': 1, 'plan_id': 1, 'start_date': datetime.datetime(2024, 12, 13, 15, 28, 52, 538398), 'end_date': datetime.datetime(2024, 12, 14, 15, 28, 52, 538398), 'status': 'active', 'created_at': datetime.datetime(2024, 12, 13, 15, 28, 45, 763495), 'updated_at': datetime.datetime(2024, 12, 13, 15, 28, 45, 763495)}
+2024-12-13 15:28:52,546 - COMMIT
+2024-12-13 15:28:56,320 - BEGIN (implicit)
+2024-12-13 15:28:56,323 - SELECT users.id AS users_id, users.telegram_id AS users_telegram_id, users.phone_number AS users_phone_number, users.created_at AS users_created_at, users.transaction_id AS users_transaction_id 
+FROM users 
+WHERE users.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2024-12-13 15:28:56,325 - [generated in 0.00252s] {'telegram_id_1': 6040165079, 'param_1': 1}
+2024-12-13 15:28:56,330 - SELECT user_subscriptions.id AS user_subscriptions_id, user_subscriptions.user_id AS user_subscriptions_user_id, user_subscriptions.plan_id AS user_subscriptions_plan_id, user_subscriptions.start_date AS user_subscriptions_start_date, user_subscriptions.end_date AS user_subscriptions_end_date, user_subscriptions.status AS user_subscriptions_status, user_subscriptions.created_at AS user_subscriptions_created_at, user_subscriptions.updated_at AS user_subscriptions_updated_at 
+FROM user_subscriptions 
+WHERE %(param_1)s = user_subscriptions.user_id
+2024-12-13 15:28:56,331 - [generated in 0.00171s] {'param_1': 1}

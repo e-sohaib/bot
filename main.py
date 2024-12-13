@@ -22,7 +22,7 @@ curent_dir = os.getcwd()
 with open('/mnt/txt.txt' , 'r') as d:
     dicti = json.load(d)
 CHANNEL_USERNAME = "@INSTACURL"
-BOT_TOKEN = dicti['bot_token']
+BOT_TOKEN ="7688427632:AAHvOSHnB5fzdLzui5m8bfMFfK6cCY5ge8E" #dicti['bot_token']
 PASS = dicti['mysql']
 MYSQL = f"mysql+pymysql://root:{PASS}@localhost:3306/abzar_database"
 ADMIN_ID = '6040165079'
@@ -85,11 +85,12 @@ def start_handling(message):
             session.add(new_user)
             session.commit()
             default_plan = session.query(SubscriptionPlan).filter_by(name="Free").first()
+            days = int(default_plan.duration_days)
             new_user_plan = UserSubscription(
                 user_id=new_user.id,
                 plan_id=default_plan.id,
-                start_date=default_plan.created_at,
-                end_date=default_plan.created_at + timedelta(dayse = default_plan.duration_days),  # پلن رایگان بدون تاریخ انقضا
+                start_date=datetime.now(),
+                end_date=datetime.now() + timedelta(hours=24),  # پلن رایگان بدون تاریخ انقضا
                 status="active"                
             )
             session.add(new_user_plan)
@@ -155,6 +156,7 @@ def prepare_request(call):
     response = request_to_api(city_number , category_slug)
     result = Analyze_response(response)  
     bot.send_message(call.message.chat.id,result) 
+    time.sleep(3)
 
 def category_mrkup():
     with open(curent_dir + '/category.json' , 'r' , encoding = 'utf-8') as cats:
@@ -182,7 +184,7 @@ def user_register(message):
     session = Session()
     tg_id = message.from_user.id
     user = session.query(User).filter_by(telegram_id = tg_id ).first()
-    latest_subscription = max(user.subscriptions, key=lambda sub: sub.end_date)
+    latest_subscription  = user.subscriptions[0] #0 chon hanooz system register ra nayoftade
     if  latest_subscription.end_date < datetime.now() :
         bot.send_message(user.telegram_id , f"You reached limit")   
         return
