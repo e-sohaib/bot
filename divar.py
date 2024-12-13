@@ -1,6 +1,7 @@
 import requests
 import json
 import datetime
+import time
 
 
 def request_to_api(city_number , category_realname):
@@ -15,10 +16,10 @@ def request_to_api(city_number , category_realname):
     data = json.dumps(raw_data)
     api_address = 'https://api.divar.ir/v8/postlist/w/search'
     response = requests.post(url=api_address , data=data ,headers=raw_header)
+    time.sleep(3)
     return response.text
+    
 
-
-    #with open('hichi.txt' , 'r' ,encoding='utf-8') as r:
          
          
 

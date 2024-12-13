@@ -5,6 +5,8 @@ import datetime
 import pymysql
 import json
 import os
+from datetime import datetime
+
 
 
 
@@ -76,3 +78,39 @@ Session = sessionmaker(bind=engine)
 
 if __name__ == "__main__":
     create_database()
+    free_plan =SubscriptionPlan(
+        name = 'Free',
+        description = 'بدون اشتراک',
+        price = 0.0,
+        duration_days = 1,
+        created_at = datetime.now(),
+        )
+    one_month =SubscriptionPlan(
+        name = 'One month',
+        description = 'یک ماهه',
+        price = 30000.0,
+        duration_days = 30,
+        created_at = datetime.now(),
+        )
+    two_month = SubscriptionPlan(
+        name = 'Two month',
+        description = 'دو ماهه',
+        price = 50000.0,
+        duration_days = 60,
+        created_at = datetime.now(),
+        )
+    three_month = SubscriptionPlan(
+        name = 'Three month',
+        description = 'سه ماهه',
+        price = 60000.0,
+        duration_days = 60,
+        created_at = datetime.now(),
+        )
+    try:
+        session = Session()
+        session.add(free_plan,one_month,two_month,three_month)
+        session.commit()
+    except Exception as e:
+        print("plans are excist")
+    
+

@@ -6,7 +6,7 @@ import time
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import logging
-from database import User
+from database import User ,UserSubscription ,SubscriptionPlan
 from datetime import datetime
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 import lzma
@@ -15,6 +15,7 @@ import instaloader
 from instaloader import TwoFactorAuthRequiredException
 import validators
 import re
+from datetime import timedelta
 from divar import request_to_api 
 
 curent_dir = os.getcwd()
@@ -54,6 +55,7 @@ def create_main_menu_reply(tg_id):
         markup.add(KeyboardButton("Register"))
         
     else:
+        markup.add(KeyboardButton("Divar"))
         markup.add(KeyboardButton("Instagram"))
         
     return markup
@@ -81,6 +83,16 @@ def start_handling(message):
                             created_at = datetime.now(),
                             )
             session.add(new_user)
+            session.commit()
+            default_plan = session.query(SubscriptionPlan).filter_by(name="Free").first()
+            new_user_plan = UserSubscription(
+                user_id=new_user.id,
+                plan_id=default_plan.id,
+                start_date=default_plan.created_at,
+                end_date=default_plan.created_at + timedelta(dayse = default_plan.duration_days),  # پلن رایگان بدون تاریخ انقضا
+                status="active"                
+            )
+            session.add(new_user_plan)
             session.commit()
             bot.send_message(user_tgid , "Welcom!" , reply_markup = create_main_menu_reply(user_tgid))  
         else:
@@ -167,8 +179,14 @@ def divar_markup_citys():
     
 @bot.message_handler(func = lambda message:message.text == "Divar")
 def user_register(message):
+    session = Session()
     tg_id = message.from_user.id
-    bot.send_message(tg_id ,"شهر را انتخاب کنید",reply_markup=divar_markup_citys())
+    user = session.query(User).filter_by(telegram_id = tg_id ).first()
+    if  user.subscriptions.end_date < datetime.now() :
+        bot.send_message(user.telegram_id , f"You reached limit")   
+        return
+    else:
+        bot.send_message(tg_id ,"شهر را انتخاب کنید",reply_markup=divar_markup_citys())
 
 
 """END Divar"""
@@ -317,10 +335,10 @@ def ig_coments(tg_id,post_id):
 def download_ig(message , session):
     t0 = time.time()
     user = session.query(User).filter_by(telegram_id = message.from_user.id ).first()
-    if not user.subscriptions.name:
+    if  user.subscriptions.end_date < datetime.now() :
         bot.send_message(user.telegram_id , f"You reached limit")   
         return
-    elif user.subscriptions.name:
+    else:
         link = message.text
         tg_id = user.telegram_id
         bot.send_message(user.telegram_id , "Wait a moment ...")
