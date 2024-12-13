@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine, Column, Integer, String, Float, Enum, Date, ForeignKey, DateTime, func
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
-import datetime
 import pymysql
 import json
 import os
@@ -29,7 +28,7 @@ class User(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     telegram_id = Column(String(50), unique=True, nullable=False)
     phone_number = Column(String(15), nullable=True)
-    created_at = Column(DateTime, default=datetime.datetime.now())
+    created_at = Column(DateTime, default=datetime.now())
     transaction_id = Column(String(50) , nullable=True)
     
     # ارتباط با جدول اشتراک‌ها
@@ -44,8 +43,8 @@ class SubscriptionPlan(Base):
     description = Column(String(20), nullable=True)
     price = Column(Float, nullable=False)
     duration_days = Column(Integer, nullable=False)
-    created_at = Column(DateTime, default=func.now())
-    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    created_at = Column(DateTime, default=datetime.now())
+    updated_at = Column(DateTime, default=datetime.now(), onupdate=datetime.now())
     
     # ارتباط با جدول اشتراک‌ها
     subscriptions = relationship("UserSubscription", back_populates="plan")
@@ -60,8 +59,8 @@ class UserSubscription(Base):
     start_date = Column(Date, nullable=False)
     end_date = Column(Date, nullable=False)
     status = Column(Enum('active', 'expired', 'canceled', name='subscription_status'), default='active')
-    created_at = Column(DateTime, default=func.now())
-    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    created_at = Column(DateTime, default=datetime.now())
+    updated_at = Column(DateTime, default=datetime.now(), onupdate=datetime.now())
     
     # روابط
     user = relationship("User", back_populates="subscriptions")
