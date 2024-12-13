@@ -338,23 +338,19 @@ def ig_coments(tg_id,post_id):
 def download_ig(message , session):
     t0 = time.time()
     user = session.query(User).filter_by(telegram_id = message.from_user.id ).first()
-    if  user.subscriptions.end_date < datetime.now() :
-        bot.send_message(user.telegram_id , f"You reached limit")   
-        return
-    else:
-        link = message.text
-        tg_id = user.telegram_id
-        bot.send_message(user.telegram_id , "Wait a moment ...")
-        download_instagram_content(link , str(tg_id))
-        #user.daily_requests = user.daily_requests + 1 
-        Bytes = size_meter(tg_id)
-        bot.send_message(user.telegram_id , f'remaing requests {user.subscriptions.duration_days}\nyoure data usage : {Bytes/(1024*1024)} MB')
-        t1 = time.time()
-        bot.send_message(ADMIN_ID , f'time elapsed: {t1 - t0}')
-        clear_user_files(tg_id)
-        session.commit()
-        return
-    
+    link = message.text
+    tg_id = user.telegram_id
+    bot.send_message(user.telegram_id , "Wait a moment ...")
+    download_instagram_content(link , str(tg_id))
+    #user.daily_requests = user.daily_requests + 1 
+    Bytes = size_meter(tg_id)
+    bot.send_message(user.telegram_id , f'remaing requests {user.subscriptions.duration_days}\nyoure data usage : {Bytes/(1024*1024)} MB')
+    t1 = time.time()
+    bot.send_message(ADMIN_ID , f'time elapsed: {t1 - t0}')
+    clear_user_files(tg_id)
+    session.commit()
+    return
+
 #size meter
 def size_meter(tg_id):
     here = os.getcwd()
@@ -377,6 +373,12 @@ def clear_user_files(tg_id):
 def start_handling(message):
     if is_user_member(message.from_user.id):
         session = Session()
+        tg_id = message.from_user.id
+        user = session.query(User).filter_by(telegram_id = tg_id ).first()
+        latest_subscription  = user.subscriptions[0] #0 chon hanooz system register ra nayoftade
+        if  latest_subscription.end_date < datetime.now() :
+            bot.send_message(user.telegram_id , f"You reached limit")   
+            return
         mess =bot.reply_to(message, "send an instagram valid link")
         bot.register_next_step_handler(mess, download_ig ,session)
     else:
