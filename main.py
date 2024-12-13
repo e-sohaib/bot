@@ -22,7 +22,7 @@ curent_dir = os.getcwd()
 with open('/mnt/txt.txt' , 'r') as d:
     dicti = json.load(d)
 CHANNEL_USERNAME = "@INSTACURL"
-BOT_TOKEN ="7688427632:AAHvOSHnB5fzdLzui5m8bfMFfK6cCY5ge8E" #dicti['bot_token']
+BOT_TOKEN =dicti['bot_token']
 PASS = dicti['mysql']
 MYSQL = f"mysql+pymysql://root:{PASS}@localhost:3306/abzar_database"
 ADMIN_ID = '6040165079'
