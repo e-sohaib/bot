@@ -182,7 +182,8 @@ def user_register(message):
     session = Session()
     tg_id = message.from_user.id
     user = session.query(User).filter_by(telegram_id = tg_id ).first()
-    if  user.subscriptions.end_date < datetime.now() :
+    latest_subscription = max(user.subscriptions, key=lambda sub: sub.end_date)
+    if  latest_subscription.end_date < datetime.now() :
         bot.send_message(user.telegram_id , f"You reached limit")   
         return
     else:
