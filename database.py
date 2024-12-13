@@ -110,6 +110,6 @@ if __name__ == "__main__":
         session.add(free_plan,one_month,two_month,three_month)
         session.commit()
     except Exception as e:
-        print("plans are excist")
+        print("plans are excist" ,e)
     
 
