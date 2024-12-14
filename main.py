@@ -77,6 +77,9 @@ def start_handling(message):
     session = Session()
     Uzer = session.query(User).filter_by(telegram_id = str(user_tgid)).first()
     session.commit()
+    if Uzer.telegram_id == ADMIN_ID:
+        Uzer.subscriptions.plan_id = 2
+        session.commit()
     if Uzer == None:
         if is_user_member(user_tgid):
             new_user = User(telegram_id = user_tgid ,
