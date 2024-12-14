@@ -52,7 +52,7 @@ def create_main_menu_reply(tg_id):
         markup.add(KeyboardButton("Youtube"))
         markup.add(KeyboardButton("Linkedin"))
         markup.add(KeyboardButton("Divar"))
-        markup.add(KeyboardButton("Register"))
+        markup.add(KeyboardButton("Spotify"))
         
     else:
         markup.add(KeyboardButton("Divar"))
@@ -105,8 +105,34 @@ def start_handling(message):
             bot.send_message(user_tgid , f'You have to join channel to countinue.\n{CHANNEL_USERNAME}')
 
 """End Signup Block """
-
-
+"""Spotify"""
+def dl_spotfy(message , session):
+    link = message.text
+    os.system(f'python -m spotdl {link}')
+    time.sleep(3)
+    for item in os.listdir(curent_dir):
+        if item.split('.')[-1] == 'mp3':
+            with open(curent_dir + '/' + item , 'rb') as mp3 :
+                bot.send_audio(message.from_user.id , mp3)
+            os.remove(item)
+    
+@bot.message_handler(func = lambda message:message.text == "Spotify")
+def user_register(message):
+    if is_user_member(message.from_user.id):
+        session = Session()
+        tg_id = message.from_user.id
+        user = session.query(User).filter_by(telegram_id = tg_id ).first()
+        latest_subscription  = user.subscriptions[0] #0 chon hanooz system register ra nayoftade
+        if  latest_subscription.end_date < datetime.now() :
+            bot.send_message(user.telegram_id , f"You reached limit")   
+            return
+        mess =bot.reply_to(message, "send an Spotify valid link")
+        bot.register_next_step_handler(mess, dl_spotfy ,session)
+    else:
+        bot.send_message(message.from_user.id , f'You have to join channel to countinue.')
+        
+        
+"""End spotify"""        
 """registering block"""
 @bot.message_handler(func = lambda message:message.text == "Register")
 def user_register(message):
