@@ -56,6 +56,7 @@ def create_main_menu_reply(tg_id):
         markup.add(KeyboardButton("Spotify"))
         
     else:
+        markup.add(KeyboardButton("Spotify"))
         markup.add(KeyboardButton("Divar"))
         markup.add(KeyboardButton("Instagram"))
         
