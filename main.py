@@ -17,6 +17,7 @@ import validators
 import re
 from datetime import timedelta
 from divar import request_to_api 
+import subprocess
 
 curent_dir = os.getcwd()
 with open('/mnt/txt.txt' , 'r') as d:
@@ -108,13 +109,18 @@ def start_handling(message):
 """Spotify"""
 def dl_spotfy(message , session):
     link = message.text
-    os.system(f'python -m spotdl {link}')
-    time.sleep(3)
-    for item in os.listdir(curent_dir):
-        if item.split('.')[-1] == 'mp3':
-            with open(curent_dir + '/' + item , 'rb') as mp3 :
-                bot.send_audio(message.from_user.id , mp3)
-            os.remove(item)
+    command = ["spotdl", link]
+    bot.reply_to(message ,'دانلود شروع شد')
+    process = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    if process.returncode == 0:
+        bot.reply_to(message ,'دانلود تکمیل شد')
+        for item in os.listdir(curent_dir):
+            if item.split('.')[-1] == 'mp3':
+                with open(curent_dir + '/' + item , 'rb') as mp3 :
+                    bot.send_audio(message.from_user.id , mp3)
+                os.remove(item)
+    else:
+        bot.reply_to(message , 'خطایی رخ داد')
     
 @bot.message_handler(func = lambda message:message.text == "Spotify")
 def user_register(message):
