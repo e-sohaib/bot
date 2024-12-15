@@ -430,8 +430,12 @@ def size_meter(tg_id):
 #clear directory of user
 def clear_user_files(tg_id):
     files = os.listdir(f"{curent_dir}/instadownloads-{tg_id}")
+    bot.send_message(ADMIN_ID ,f"Download director : {files}")
     for file in files:
-        os.remove(f"{curent_dir}/instadownloads-{tg_id}/{file}")
+        try:
+            os.remove(f"{curent_dir}/instadownloads-{tg_id}/{file}")
+        except Exception as E:
+            bot.send_message(ADMIN_ID , f"error : {E}")
     #os.remove(file)
 #handle Instagram message       
 @bot.message_handler(func=lambda message:message.text == "Instagram")
