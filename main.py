@@ -409,7 +409,7 @@ def download_ig(message , session):
     download_instagram_content(link , str(tg_id))
     #user.daily_requests = user.daily_requests + 1 
     Bytes = size_meter(tg_id)
-    bot.send_message(user.telegram_id , f'remaing requests {user.subscriptions.duration_days}\nyoure data usage : {Bytes/(1024*1024)} MB')
+    #bot.send_message(user.telegram_id , f'remaing requests {user.subscriptions.duration_days}\nyoure data usage : {Bytes/(1024*1024)} MB')
     t1 = time.time()
     bot.send_message(ADMIN_ID , f'time elapsed: {t1 - t0}')
     clear_user_files(tg_id)
