@@ -165,15 +165,15 @@ def user_register(message):
     tg_id = message.from_user.id
     session = Session()
     user = session.query(User).filter_by (telegram_id= tg_id).first()
-    TIME = user.subscriptions[-1]
-    if  TIME.end_date <= datetime.now() :
+    latest_subscription  = user.subscriptions[0]
+    if  latest_subscription.end_date <= datetime.now() :
         payment_markup = InlineKeyboardMarkup()
         payment_markup.add(InlineKeyboardButton("یک ماهه - 30000 تومن",callback_data="subcription_One month"))
         payment_markup.add(InlineKeyboardButton("دو ماهه - 50000 تومن",callback_data="subcription_Two month"))
         payment_markup.add(InlineKeyboardButton("سه ماهه - 60000 تومن",callback_data="subcription_Three month"))
         bot.send_message(message.from_user.id , "لطفا پلنی که قصد خرید را دارید انتخاب کنید.\nلازم به ذکر است که درصورت هرگونه خرابی ربات مبلغ پرداختی بدون شرط به حساب شما عودت داده خواهد شد.",reply_markup=payment_markup)
         
-    elif TIME.end_date > datetime.now() :
+    elif latest_subscription.end_date > datetime.now() :
         
         bot.send_message(message.from_user.id , f"شما اشتراک فعال دارید و تا تاریخ:\n{ user.subscriptions.end_date} اعتبار دارد.")
         
@@ -248,7 +248,7 @@ def user_register(message):
     tg_id = message.from_user.id
     user = session.query(User).filter_by(telegram_id = tg_id ).first()
     latest_subscription  = user.subscriptions[0] #0 chon hanooz system register ra nayoftade
-    if  latest_subscription.end_date < datetime.now() :
+    if latest_subscription.end_date < datetime.now() :
         bot.send_message(user.telegram_id , f"You reached limit")   
         return
     else:
