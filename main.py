@@ -155,10 +155,11 @@ def plan_selection(call):
     plan_name = call.data.split('_')[1]
     plan = session.query(SubscriptionPlan).filter_by(name=plan_name).first()
     
+    
     payment_method = InlineKeyboardMarkup()
     Crypto = payment_method.add(InlineKeyboardButton("پرداخت با کریپتو-در حال فعال سازی",callback_data="khonsa"))
     Rial = payment_method.add(InlineKeyboardButton("پرداخت ریالی-در حال فعال سازی",callback_data=f"transaction_{plan.price}"))
-    bot.edit_message_text("روش پرداخت را انتخاب کنید" ,call.message.chat.id,call.message.message_id)
+    bot.edit_message_text(f"پلن انتخابی {plan.duration_days} روزه - {plan.price} تومان \nروش پرداخت را انتخاب کنید" ,call.message.chat.id,call.message.message_id,reply_markup=payment_method)
     
 @bot.message_handler(func = lambda message:message.text == "Register")
 def user_register(message):
