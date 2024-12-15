@@ -175,7 +175,7 @@ def user_register(message):
         
     elif latest_subscription.end_date > datetime.now() :
         
-        bot.send_message(message.from_user.id , f"شما اشتراک فعال دارید و تا تاریخ:\n{ user.subscriptions.end_date} اعتبار دارد.")
+        bot.send_message(message.from_user.id , f"شما اشتراک فعال دارید و تا تاریخ:\n{ latest_subscription.end_date} اعتبار دارد.")
         
         print("youre current plan is available still")
     
