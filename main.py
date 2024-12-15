@@ -124,7 +124,7 @@ def dl_spotfy(message , session):
         bot.reply_to(message , 'خطایی رخ داد')
     
 @bot.message_handler(func = lambda message:message.text == "Spotify")
-def user_register(message):
+def spotify(message):
     if is_user_member(message.from_user.id):
         session = Session()
         tg_id = message.from_user.id
@@ -137,16 +137,45 @@ def user_register(message):
         bot.register_next_step_handler(mess, dl_spotfy ,session)
     else:
         bot.send_message(message.from_user.id , f'You have to join channel to countinue.')
-        
-        
+@bot.callback_query_handler(func=lambda call :call.data.startswith("khonsa"))        
+def khonsa(call):
+    pass        
 """End spotify"""        
 """registering block"""
+@bot.callback_query_handler(func=lambda call :call.data.startswith("transaction_"))
+def Payment_rial(call):
+    amount = call.data.split('_')[-1]
+    pass
+    
+    
+    
+@bot.callback_query_handler(func=lambda call :call.data.startswith("subcription_"))
+def plan_selection(call):
+    session = Session()
+    plan_name = call.data.split('_')[1]
+    plan = session.query(SubscriptionPlan).filter_by(name=plan_name).first()
+    
+    payment_method = InlineKeyboardMarkup()
+    Crypto = payment_method.add(InlineKeyboardButton("پرداخت با کریپتو-در حال فعال سازی",callback_data="khonsa"))
+    Rial = payment_method.add(InlineKeyboardButton("پرداخت ریالی-در حال فعال سازی",callback_data=f"transaction_{plan.price}"))
+    bot.edit_message_text("روش پرداخت را انتخاب کنید" ,call.message.chat.id,call.message.message_id)
+    
 @bot.message_handler(func = lambda message:message.text == "Register")
 def user_register(message):
     tg_id = message.from_user.id
     session = Session()
     user = session.query(User).filter_by (telegram_id= tg_id).first()
-    if user.subscriptions :
+    if user.subscriptions.end_date <= datetime.now() :
+        payment_markup = InlineKeyboardMarkup()
+        yekmahe = payment_markup.add(InlineKeyboardButton("یک ماهه - 30000 تومن",callback_data="subcription_One month"))
+        dommahe = payment_markup.add(InlineKeyboardButton("دو ماهه - 50000 تومن",callback_data="subcription_Two month"))
+        semahe = payment_markup.add(InlineKeyboardButton("سه ماهه - 60000 تومن",callback_data="subcription_Three month"))
+        bot.send_message(message.from_user.id , "لطفا پلنی که قصد خرید را دارید انتخاب کنید.\nلازم به ذکر است که درصورت هرگونه خرابی ربات مبلغ پرداختی بدون شرط به حساب شما عودت داده خواهد شد.",reply_markup=payment_markup)
+        
+    elif user.subscriptions.end_date > datetime.now() :
+        
+        bot.send_message(message.from_user.id , f"شما اشتراک فعال دارید و تا تاریخ:\n{ user.subscriptions.end_date} اعتبار دارد.")
+        
         print("youre current plan is available still")
     
 
