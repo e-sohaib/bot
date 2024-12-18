@@ -17,3 +17,15 @@ def request_to_api(city_number , category_realname):
     api_address = 'https://api.divar.ir/v8/postlist/w/search'
     response = requests.post(url=api_address , data=data ,headers=raw_header)
     return response.text
+
+def get_data_by_token(token:str):
+    raw_header = {"Accept": "*/*",
+               "Accept-Encoding": "deflate, gzip",
+               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+               "Host": "api.divar.ir",
+               "Content-Type": "application/json",
+               "Content-Length": "444"}
+    api_url ='https://api.divar.ir/v8/posts-v2/web/'
+    request_url = api_url + token
+    response = requests.get(url=request_url)
+    return response.text

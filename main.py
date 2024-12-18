@@ -16,7 +16,7 @@ from instaloader import TwoFactorAuthRequiredException
 import validators
 import re
 from datetime import timedelta
-from divar import request_to_api 
+from divar import request_to_api , get_data_by_token
 import subprocess
 import urllib.parse
 
@@ -60,12 +60,12 @@ def create_main_menu_reply(tg_id):
         #markup.add(KeyboardButton("Youtube"))
         markup.add(KeyboardButton("Linkedin"))
         markup.add(KeyboardButton("Divar"))
-        #markup.add(KeyboardButton("Spotify"))
+        #markup.add(KeyboardButton("divar VS digikala"))
         markup.add(KeyboardButton("Crypto Charts"))
         
     else:
-        markup.add(KeyboardButton("Register"))
         markup.add(KeyboardButton("Divar"))
+        markup.add(KeyboardButton("Register"))
         
         
     return markup
@@ -159,6 +159,40 @@ def user_register(message):
 
 """end register block """
 """Divar block"""
+def export_device_detailes_from_json(text):
+    dictionary = json.loads(text)
+    categry =dictionary['sections'][4]['widgets'][1]['action_log']['server_side_info']['info']['jli']['category']['value']
+    brand = dictionary['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['brand']
+    model = dictionary['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['model']
+    for item in dictionary['sections'][4]['widgets']:
+        try:
+            if item['data']['title'] == 'قیمت':
+                price = item['data']['value']
+        except:
+            price = None
+            continue
+            
+        try:
+            if item['data']['title'] ==  'مقدار رم':
+                ram = item['data']['value']
+        except:
+            ram = None
+            continue
+        try:
+            if item['data']['title'] ==  'رنگ':
+                color = item['data']['value']
+        except:
+            color = None
+            continue
+        try:    
+            if item['data']['title'] ==  'حافظهٔ داخلی':
+                hard_space = item['data']['value']
+        except:
+            hard_space = None
+            continue
+        return (categry , brand , model , price , ram , color ,hard_space)
+    
+
 def find_city_number(name):
     with open(curent_dir + '/bigcitys.json' , 'r' , encoding='utf-8') as city:
         citys = json.load(city)
@@ -178,6 +212,9 @@ def Analyze_response(response):
     base_url = 'https://divar.ir/v/'
     for post in all_posts:    
         token = post['data']['action']['payload']['token']
+        chizha = get_data_by_token(token)
+        ex = export_device_detailes_from_json(chizha)
+        bot.send_message(ADMIN_ID , ex)
         title = post['data']['action']['payload']['web_info']['title']
         p = urllib.parse.quote(title.encode('utf-8'), safe='')
         url = base_url +  p + '/' + token  
