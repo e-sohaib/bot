@@ -190,7 +190,7 @@ def export_device_detailes_from_json(text):
         except:
             hard_space = None
             continue
-        return (categry , brand , model , price , ram , color ,hard_space)
+    return (categry , brand , model , price , ram , color ,hard_space)
     
 
 def find_city_number(name):
