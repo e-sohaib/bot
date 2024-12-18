@@ -101,7 +101,7 @@ if __name__ == "__main__":
     three_month = SubscriptionPlan(
         name = 'Three month',
         description = 'Three month',
-        price = 60000.0,
+        price = 70000.0,
         duration_days = 90,
         created_at = datetime.now(),
         )
