@@ -105,12 +105,12 @@ def start_handling(message):
             )
             session.add(new_user_plan)
             session.commit()
-            bot.send_message(user_tgid , f"{name} عزیز خوش آمدید." , reply_markup = create_main_menu_reply(user_tgid))  
+            bot.send_message(user_tgid , f"{name} عزیز ;\nخوش آمدید." , reply_markup = create_main_menu_reply(user_tgid))  
         else:
             bot.send_message(user_tgid , f'You have to join channel to countinue.\n{CHANNEL_USERNAME}') 
     else:
         if is_user_member(user_tgid):
-            bot.send_message(user_tgid , f"{name} عزیز خوش آمدید مجدد." , reply_markup = create_main_menu_reply(user_tgid))
+            bot.send_message(user_tgid , f"{name} عزیز;\nمجددا خوش آمدید." , reply_markup = create_main_menu_reply(user_tgid))
         else:
             bot.send_message(user_tgid , f'You have to join channel to countinue.\n{CHANNEL_USERNAME}')
 
