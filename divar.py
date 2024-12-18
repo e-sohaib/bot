@@ -17,13 +17,3 @@ def request_to_api(city_number , category_realname):
     api_address = 'https://api.divar.ir/v8/postlist/w/search'
     response = requests.post(url=api_address , data=data ,headers=raw_header)
     return response.text
-    
-
-         
-         
-
-        
-        
-    
-
-    

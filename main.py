@@ -18,6 +18,7 @@ import re
 from datetime import timedelta
 from divar import request_to_api 
 import subprocess
+import urllib.parse
 
 curent_dir = os.getcwd()
 with open('/mnt/txt.txt' , 'r') as d:
@@ -200,12 +201,20 @@ def Analyze_response(response):
     js = json.loads(response)
     all_posts = js['list_widgets'] #type = list
     TXT = "لیست 24 آگهی اخیر:\n"
+    base_url = 'https://divar.ir/v/'
     for post in all_posts:    
         try:
-            row = post['data']['title'] + " : " +post['data']['middle_description_text'] + '\n'
-            TXT = "".join(TXT + row)
+            row = post['data']['title']
+            token = ['data']['action']['payload']['token']
+            title = ['data']['action']['payload']['web_info']['title']
+            url = base_url +  title + '/' + token
+            p = urllib.parse.quote(url.encode('utf-8'), safe='')
+            Row = f"[{row}]({p}) : {post['data']['middle_description_text']}'\n'"
+            TXT = "".join(TXT + Row)
         except KeyError:
             row_t = post['data']['title'] + ' : ' + "توافقی" + '\n'
+            token = ['data']['action']['payload']['token']
+            title = ['data']['action']['payload']['web_info']['title']
             TXT = "".join(TXT + row_t)
     return TXT
         
