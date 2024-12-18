@@ -202,19 +202,18 @@ def Analyze_response(response):
     TXT = "لیست 24 آگهی اخیر:\n"
     base_url = 'https://divar.ir/v/'
     for post in all_posts:    
+        token = post['data']['action']['payload']['token']
+        title = post['data']['action']['payload']['web_info']['title']
+        p = urllib.parse.quote(title.encode('utf-8'), safe='')
+        url = base_url +  p + '/' + token  
         try:
             row = post['data']['title']
-            token = post['data']['action']['payload']['token']
-            title = post['data']['action']['payload']['web_info']['title']
-            url = base_url +  title + '/' + token
-            p = urllib.parse.quote(url.encode('utf-8'), safe='')
-            Row = f"[{row}]({p}) : {post['data']['middle_description_text']}'\n'"
+            Row = f"[{row}]({url}) : {post['data']['middle_description_text']}\n"
             TXT = "".join(TXT + Row)
         except KeyError:
-            row_t = post['data']['title'] + ' : ' + "توافقی" + '\n'
-            token = post['data']['action']['payload']['token']
-            title = post['data']['action']['payload']['web_info']['title']
-            TXT = "".join(TXT + row_t)
+            row_t = post['data']['title']
+            Row2 = f"[{row_t}]({url}) : {post['data']['middle_description_text']}\n"
+            TXT = "".join(TXT + Row2)
     return TXT
         
 @bot.callback_query_handler(lambda call : call.data.startswith('category_'))
