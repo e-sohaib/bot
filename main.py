@@ -204,16 +204,16 @@ def Analyze_response(response):
     for post in all_posts:    
         try:
             row = post['data']['title']
-            token = ['data']['action']['payload']['token']
-            title = ['data']['action']['payload']['web_info']['title']
+            token = post['data']['action']['payload']['token']
+            title = post['data']['action']['payload']['web_info']['title']
             url = base_url +  title + '/' + token
             p = urllib.parse.quote(url.encode('utf-8'), safe='')
             Row = f"[{row}]({p}) : {post['data']['middle_description_text']}'\n'"
             TXT = "".join(TXT + Row)
         except KeyError:
             row_t = post['data']['title'] + ' : ' + "توافقی" + '\n'
-            token = ['data']['action']['payload']['token']
-            title = ['data']['action']['payload']['web_info']['title']
+            token = post['data']['action']['payload']['token']
+            title = post['data']['action']['payload']['web_info']['title']
             TXT = "".join(TXT + row_t)
     return TXT
         
@@ -228,7 +228,7 @@ def prepare_request(call):
     category_slug = find_slug_cat(category)
     response = request_to_api(city_number , category_slug)
     result = Analyze_response(response)  
-    bot.send_message(call.message.chat.id,result) 
+    bot.send_message(call.message.chat.id,result , parse_mode="Markdown") 
     time.sleep(3)
 
 def category_mrkup():
