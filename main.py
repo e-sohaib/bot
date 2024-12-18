@@ -161,13 +161,34 @@ def user_register(message):
 """Divar block"""
 def export_device_detailes_from_json(text):
     dictionary = json.loads(text)
-    categry =dictionary['sections'][4]['widgets'][1]['action_log']['server_side_info']['info']['jli']['category']['value']
-    brand = dictionary['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['brand']
-    model = dictionary['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['model']
+    result = {'categry':None ,
+              'brand':None,
+              'model':None,
+              'price':None,
+              'ram':None,
+              'color':None,
+              'hard_space':None
+              }
+    try:
+        categry =dictionary['sections'][4]['widgets'][1]['action_log']['server_side_info']['info']['jli']['category']['value']
+        result['categry'] = categry
+    except:
+        categry =None
+    try:
+        brand = dictionary['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['brand']
+        result['brand'] = brand
+    except:
+        brand = None
+    try:
+        model = dictionary['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['model']
+        result['model'] = model
+    except :
+        model = None
     for item in dictionary['sections'][4]['widgets']:
         try:
             if item['data']['title'] == 'قیمت':
                 price = item['data']['value']
+                result['price'] = price
         except:
             price = None
             continue
@@ -175,22 +196,25 @@ def export_device_detailes_from_json(text):
         try:
             if item['data']['title'] ==  'مقدار رم':
                 ram = item['data']['value']
+                result['ram'] = ram
         except:
             ram = None
             continue
         try:
             if item['data']['title'] ==  'رنگ':
                 color = item['data']['value']
+                result['color'] = color
         except:
             color = None
             continue
         try:    
             if item['data']['title'] ==  'حافظهٔ داخلی':
                 hard_space = item['data']['value']
+                result['hard_space']=hard_space
         except:
             hard_space = None
             continue
-    return (categry , brand , model , price , ram , color ,hard_space)
+    return result
     
 
 def find_city_number(name):
