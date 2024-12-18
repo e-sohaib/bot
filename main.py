@@ -110,7 +110,7 @@ def start_handling(message):
             bot.send_message(user_tgid , f'You have to join channel to countinue.\n{CHANNEL_USERNAME}') 
     else:
         if is_user_member(user_tgid):
-            bot.send_message(user_tgid , f"{name} عزیز;\nمجددا خوش آمدید." , reply_markup = create_main_menu_reply(user_tgid))
+            bot.send_message(user_tgid , f"'{name}' عزیز ;\nمجددا خوش آمدید." , reply_markup = create_main_menu_reply(user_tgid))
         else:
             bot.send_message(user_tgid , f'You have to join channel to countinue.\n{CHANNEL_USERNAME}')
 
@@ -233,7 +233,7 @@ def user_register(message):
     user = session.query(User).filter_by(telegram_id = tg_id ).first()
     latest_subscription  = user.subscriptions[0] #0 chon hanooz system register ra nayoftade
     if latest_subscription.end_date < datetime.now() :
-        bot.send_message(user.telegram_id , f"اعتبار شما به پایان رسید!لطفا از طریق منوی Register نسبت به شارژ مجدد حساب خود اقدام فرمایید.")   
+        bot.send_message(user.telegram_id , f"اعتبار شما به پایان رسید!\nلطفا از طریق منوی 'Register' نسبت به شارژ مجدد حساب خود اقدام فرمایید.")   
         return
     else:
         bot.send_message(tg_id ,"شهر را انتخاب کنید",reply_markup=divar_markup_citys())
