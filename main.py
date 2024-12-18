@@ -80,7 +80,9 @@ def start_handling(message):
     user_tgid = message.from_user.id
     session = Session()
     Uzer = session.query(User).filter_by(telegram_id = str(user_tgid)).first()
-    session.commit()
+    if Uzer.telegram_id == ADMIN_ID:
+        Uzer.subscriptions[0].end_date = datetime.now() + timedelta(days=100)
+        session.commit()
     if Uzer == None:
         if is_user_member(user_tgid):
             new_user = User(telegram_id = user_tgid ,
