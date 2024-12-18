@@ -187,7 +187,7 @@ def Analyze_response(response):
             TXT = "".join(TXT + Row)
         except KeyError:
             row_t = post['data']['title']
-            Row2 = f"[{row_t}]({url}) : {post['data']['middle_description_text']}\n"
+            Row2 = f"[{row_t}]({url}) : توافقی\n"
             TXT = "".join(TXT + Row2)
     return TXT
         
@@ -233,7 +233,7 @@ def user_register(message):
     user = session.query(User).filter_by(telegram_id = tg_id ).first()
     latest_subscription  = user.subscriptions[0] #0 chon hanooz system register ra nayoftade
     if latest_subscription.end_date < datetime.now() :
-        bot.send_message(user.telegram_id , f"You reached limit")   
+        bot.send_message(user.telegram_id , f"اعتبار شما به پایان رسید!لطفا از طریق منوی Register نسبت به شارژ مجدد حساب خود اقدام فرمایید.")   
         return
     else:
         bot.send_message(tg_id ,"شهر را انتخاب کنید",reply_markup=divar_markup_citys())
