@@ -180,9 +180,9 @@ def export_device_detailes_from_json(text):
         for category in category_matches:
             result['category'] = category
     brand_model_pattern = r'"brand_model":\s*\{\s*"repeated_string":\s*\{\s*"value":\s*\[\s*"([^"]+)"\s*\]\s*\}'
-    brand_model_matches = re.search(brand_model_pattern, text)        
+    brand_model_matches = re.findall(brand_model_pattern, text)        
     if brand_model_matches:
-        result['model'] = brand_model_matches.group(1)
+        result['model'] = brand_model_matches[1]
     return result
     
 
