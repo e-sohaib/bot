@@ -309,8 +309,6 @@ def Analyze_response_mobile(response):
     base_url = 'https://divar.ir/v/'
     for post in all_posts:    
         token = post['data']['action']['payload']['token']
-        chizha = get_data_by_token(token)
-        ex = export_device_detailes_from_json(chizha)
         title = post['data']['action']['payload']['web_info']['title']
         p = urllib.parse.quote(title.encode('utf-8'), safe='')
         url = base_url +  p + '/' + token  
@@ -322,6 +320,8 @@ def Analyze_response_mobile(response):
             row_t = post['data']['title']
             Row2 = f"[{row_t}]({url}) : توافقی\n"
             TXT = "".join(TXT + Row2)
+        chizha = get_data_by_token(token)
+        ex = export_device_detailes_from_json(chizha)            
         if ex['categry'] == 'mobile-phones':
             serch_param = f"{ex['brand']}{ex['model']}"
             result = serch_in_site_mobie_ir(serch_param).text
@@ -334,7 +334,7 @@ def Analyze_response_mobile(response):
                 else :
                     append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
                     TXT = "".join(TXT + append2)
-                    
+        bot.send_message(ADMIN_ID , TXT)            
         if len(TXT) >= 4000:
             return TXT
 @bot.callback_query_handler(func=lambda call : call.data.startswith("city2_"))
