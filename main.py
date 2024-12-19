@@ -331,8 +331,8 @@ def Analyze_response_mobile(response):
                     link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
                     append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
                     TXT = "".join(TXT + append)
-                    
-    return TXT
+        if len(TXT) > 1000:
+            return TXT
 @bot.callback_query_handler(func=lambda call : call.data.startswith("city2_"))
 def change_city_and_start_analize(call):
     city = call.data.split('_')[1]
@@ -342,7 +342,8 @@ def change_city_and_start_analize(call):
     city_number = find_city_number(city)
     category_slug = "electronic-devices"    
     response = request_to_api(city_number , category_slug)
-    Analyze_response_mobile(response)
+    final_txt = Analyze_response_mobile(response)
+    bot.send_message(call.message.chat.id , text = final_txt)
     
 def divar_VS_mobile_markup_citys():
     with open(curent_dir + '/bigcitys.json' , 'r' , encoding = 'utf-8') as citys:
