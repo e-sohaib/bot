@@ -251,7 +251,7 @@ def Analyze_response(response):
             Row2 = f"[{row_t}]({url}) : توافقی\n"
             TXT = "".join(TXT + Row2)
         if ex['categry'] == 'mobile-phones':
-            serch_param = f"{ex['bran']}{ex['model']}"
+            serch_param = f"{ex['brand']}{ex['model']}"
             result = serch_in_site_mobie_ir(serch_param)
             dics = json.loads(result)
             for item in dics:
