@@ -20,6 +20,7 @@ from divar import request_to_api , get_data_by_token
 from mobile_ir import serch_in_site_mobie_ir
 import subprocess
 import urllib.parse
+import re
 
 curent_dir = os.getcwd()
 with open('/mnt/txt.txt' , 'r') as d:
@@ -161,60 +162,27 @@ def user_register(message):
 """end register block """
 """Divar block"""
 def export_device_detailes_from_json(text):
-    dictionary = json.loads(text)
     result = {'category':None ,
-              'brand':None,
               'model':None,
               'price':None,
               'ram':None,
               'color':None,
               'hard_space':None
               }
-    try:
-        categry =dictionary['sections'][0]['widgets'][0]['data']["parent_items"][0]["action"]["payload"]["search_data"]["form_data"]['data']['category']['str']['value']
-        result['categry'] = categry
-    except:
-        categry =None
-    try:
-        brand = dictionary['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['brand']
-        result['brand'] = brand
-    except:
-        brand = None
-    try:
-        model = dictionary['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['model']
-        result['model'] = model
-    except :
-        model = None
-    for item in dictionary['sections'][4]['widgets']:
-        try:
-            if item['data']['title'] == 'قیمت':
-                price = item['data']['value']
-                result['price'] = price
-        except:
-            price = None
-            continue
-            
-        try:
-            if item['data']['title'] ==  'مقدار رم':
-                ram = item['data']['value']
-                result['ram'] = ram
-        except:
-            ram = None
-            continue
-        try:
-            if item['data']['title'] ==  'رنگ':
-                color = item['data']['value']
-                result['color'] = color
-        except:
-            color = None
-            continue
-        try:    
-            if item['data']['title'] ==  'حافظهٔ داخلی':
-                hard_space = item['data']['value']
-                result['hard_space']=hard_space
-        except:
-            hard_space = None
-            continue
+    price_pattern = r'"title":\s*"قیمت",\s*"value":\s*"([^"]+)"'
+    price_matches = re.findall(price_pattern, text)
+    if price_matches:
+        for price in price_matches:
+            result['price'] = price
+    category_pattern = r'"category":\s*\{\s*"str":\s*\{\s*"value":\s*"([^"]+)"'
+    category_matches = re.findall(category_pattern, text)
+    if category_matches:
+        for category in category_matches:
+            result['category'] = category
+    brand_model_pattern = r'"brand_model":\s*\{\s*"repeated_string":\s*\{\s*"value":\s*\[\s*"([^"]+)"\s*\]\s*\}'
+    brand_model_matches = re.search(brand_model_pattern, text)        
+    if brand_model_matches:
+        result['model'] = brand_model_matches.group(1)
     return result
     
 
@@ -324,7 +292,7 @@ def Analyze_response_mobile(response):
             TXT = "".join(TXT + Row2)
         chizha = get_data_by_token(token)
         ex = export_device_detailes_from_json(chizha)            
-        serch_param = f"{ex['brand']}{ex['model']}"
+        serch_param = ex['model']
         result = serch_in_site_mobie_ir(serch_param).text
         dics = json.loads(result)
         for item in dics:
