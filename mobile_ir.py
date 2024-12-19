@@ -22,9 +22,3 @@ def serch_in_site_mobie_ir(search : str):
     #mobile = f"https://www.mobile.ir/phones/search.aspx?terms={brand}+{model.replace(' ' , '+')}&submit="
     res = requests.get(serch_in_site , headers=head)
     return res
-serch_param = 'iPhone 7 Plus'
-alfa = mobile_ir(serch_param).text
-dics = json.loads(alfa)
-for item in dics:
-    if  serch_param.lower() in item['title'].lower():
-        print("https://www.mobile.ir" + item['url'])
