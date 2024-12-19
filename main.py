@@ -252,7 +252,7 @@ def Analyze_response(response):
             TXT = "".join(TXT + Row2)
         if ex['categry'] == 'mobile-phones':
             serch_param = f"{ex['brand']}{ex['model']}"
-            result = serch_in_site_mobie_ir(serch_param)
+            result = serch_in_site_mobie_ir(serch_param).text
             dics = json.loads(result)
             for item in dics:
                 if  serch_param.lower() in item['title'].lower():
