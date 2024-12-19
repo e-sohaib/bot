@@ -301,7 +301,7 @@ def Analyze_response_mobile(response):
                     link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
                     append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
                     TXT = "".join(TXT + append)
-                    c + 1
+                    c += 1
                     break
             if c == 0 :
                 append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
