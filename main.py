@@ -338,12 +338,11 @@ def change_city_and_start_analize(call):
     city = call.data.split('_')[1]
     bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
     bot.edit_message_text(f"شهر شما : {city}\n",call.message.chat.id,call.message.message_id)
-    bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
     city_number = find_city_number(city)
     category_slug = "electronic-devices"    
     response = request_to_api(city_number , category_slug)
     final_txt = Analyze_response_mobile(response)
-    bot.send_message(call.message.chat.id , text = final_txt)
+    bot.send_message(call.message.chat.id , text = final_txt ,parse_mode='Markdown')
     
 def divar_VS_mobile_markup_citys():
     with open(curent_dir + '/bigcitys.json' , 'r' , encoding = 'utf-8') as citys:
