@@ -162,7 +162,7 @@ def user_register(message):
 """Divar block"""
 def export_device_detailes_from_json(text):
     dictionary = json.loads(text)
-    result = {'categry':None ,
+    result = {'category':None ,
               'brand':None,
               'model':None,
               'price':None,
@@ -322,18 +322,17 @@ def Analyze_response_mobile(response):
             TXT = "".join(TXT + Row2)
         chizha = get_data_by_token(token)
         ex = export_device_detailes_from_json(chizha)            
-        if ex['categry'] == 'mobile-phones':
-            serch_param = f"{ex['brand']}{ex['model']}"
-            result = serch_in_site_mobie_ir(serch_param).text
-            dics = json.loads(result)
-            for item in dics:
-                if  serch_param.lower() in item['title'].lower():
-                    link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
-                    append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
-                    TXT = "".join(TXT + append)
-                else :
-                    append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
-                    TXT = "".join(TXT + append2)
+        serch_param = f"{ex['brand']}{ex['model']}"
+        result = serch_in_site_mobie_ir(serch_param).text
+        dics = json.loads(result)
+        for item in dics:
+            if  serch_param.lower() in item['title'].lower():
+                link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
+                append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
+                TXT = "".join(TXT + append)
+            else :
+                append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
+                TXT = "".join(TXT + append2)
         bot.send_message(ADMIN_ID , ex['categry'] ,parse_mode='Markdown')      
         time.sleep(1)      
         if len(TXT) >= 4000:
