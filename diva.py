@@ -1,9 +1,14 @@
 import json
 import urllib.parse
-with open('agahi.json' , 'r' , encoding='utf-8') as f:
+with open('a.txt' , 'r' , encoding='utf-8') as f:
     di = json.load(f)
-print(di.keys())
-print(di['sections'][4].keys())
+#print(di.keys())
+file = di['data']
+print(file.keys())
+
+print(file['products'][0].keys())
+print(file['filters'])
+          
 
 #for item in di['sections'][4]['widgets']:
 #    try:
@@ -36,4 +41,3 @@ print(di['sections'][4].keys())
 #print('*'*50)
 #print(di['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['brand'])
 #print(di['sections'][4]['widgets'][0]['action_log']['server_side_info']['info']['model'])
-print(di['sections'][4]['widgets'][1]['action_log']['server_side_info']['info']['jli']['category']['value'])

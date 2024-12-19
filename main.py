@@ -236,9 +236,9 @@ def Analyze_response(response):
     base_url = 'https://divar.ir/v/'
     for post in all_posts:    
         token = post['data']['action']['payload']['token']
-        chizha = get_data_by_token(token)
-        ex = export_device_detailes_from_json(chizha)
-        bot.send_message(ADMIN_ID , f"device details :{ex}")
+        #chizha = get_data_by_token(token)
+        #ex = export_device_detailes_from_json(chizha)
+        #bot.send_message(ADMIN_ID , f"device details :{ex}")
         title = post['data']['action']['payload']['web_info']['title']
         p = urllib.parse.quote(title.encode('utf-8'), safe='')
         url = base_url +  p + '/' + token  

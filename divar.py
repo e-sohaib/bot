@@ -3,6 +3,8 @@ import json
 import datetime
 import time
 
+import requests.cookies
+
 
 def request_to_api(city_number , category_realname):
     raw_header = {"Accept": "*/*",
