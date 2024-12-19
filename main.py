@@ -293,16 +293,19 @@ def Analyze_response_mobile(response):
         chizha = get_data_by_token(token)
         ex = export_device_detailes_from_json(chizha)            
         serch_param = ex['model']
-        result = serch_in_site_mobie_ir(serch_param).text
-        dics = json.loads(result)
-        for item in dics:
-            if serch_param.lower() in item['title'].lower():
-                link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
-                append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
-                TXT = "".join(TXT + append)
-            else :
-                append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
-                TXT = "".join(TXT + append2)
+        if ex['model'] != None:
+            result = serch_in_site_mobie_ir(serch_param).text
+            dics = json.loads(result)
+            for item in dics:
+                if serch_param.lower() in item['title'].lower():
+                    link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
+                    append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
+                    TXT = "".join(TXT + append)
+                else :
+                    append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
+                    TXT = "".join(TXT + append2)
+        else:
+            TXT = "".join(TXT + f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n")
         bot.send_message(ADMIN_ID , str(ex))
         bot.send_message(ADMIN_ID , TXT ,parse_mode='Markdown')  
         i = i+1    
