@@ -66,6 +66,7 @@ def create_main_menu_reply(tg_id):
         markup.add(KeyboardButton("Crypto Charts"))
         
     else:
+        markup.add(KeyboardButton("Divar vs mobile.ir"))
         markup.add(KeyboardButton("Divar"))
         markup.add(KeyboardButton("Register"))
         
