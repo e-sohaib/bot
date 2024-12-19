@@ -305,9 +305,11 @@ def user_register(message):
 def Analyze_response_mobile(response):
     js = json.loads(response)
     all_posts = js['list_widgets'] #type = list
-    TXT = "لیست 24 آگهی اخیر:\n"
+    
     base_url = 'https://divar.ir/v/'
-    for post in all_posts:    
+    i = 1
+    for post in all_posts:  
+        TXT = f"{i}"  
         token = post['data']['action']['payload']['token']
         title = post['data']['action']['payload']['web_info']['title']
         p = urllib.parse.quote(title.encode('utf-8'), safe='')
@@ -333,7 +335,8 @@ def Analyze_response_mobile(response):
             else :
                 append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
                 TXT = "".join(TXT + append2)
-        bot.send_message(ADMIN_ID , ex['categry'] ,parse_mode='Markdown')      
+        bot.send_message(ADMIN_ID , TXT ,parse_mode='Markdown')  
+        i = i+1    
         time.sleep(1)      
         if len(TXT) >= 4000:
             return TXT
