@@ -17,6 +17,7 @@ import validators
 import re
 from datetime import timedelta
 from divar import request_to_api , get_data_by_token
+from mobile_ir import serch_in_site_mobie_ir
 import subprocess
 import urllib.parse
 
@@ -236,9 +237,8 @@ def Analyze_response(response):
     base_url = 'https://divar.ir/v/'
     for post in all_posts:    
         token = post['data']['action']['payload']['token']
-        #chizha = get_data_by_token(token)
-        #ex = export_device_detailes_from_json(chizha)
-        #bot.send_message(ADMIN_ID , f"device details :{ex}")
+        chizha = get_data_by_token(token)
+        ex = export_device_detailes_from_json(chizha)
         title = post['data']['action']['payload']['web_info']['title']
         p = urllib.parse.quote(title.encode('utf-8'), safe='')
         url = base_url +  p + '/' + token  
@@ -250,6 +250,16 @@ def Analyze_response(response):
             row_t = post['data']['title']
             Row2 = f"[{row_t}]({url}) : توافقی\n"
             TXT = "".join(TXT + Row2)
+        if ex['categry'] == 'mobile-phones':
+            serch_param = f"{ex['bran']}{ex['model']}"
+            result = serch_in_site_mobie_ir(serch_param)
+            dics = json.loads(result)
+            for item in dics:
+                if  serch_param.lower() in item['title'].lower():
+                    link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
+                    append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
+                    TXT = "".join(TXT + append)
+                    
     return TXT
         
 @bot.callback_query_handler(lambda call : call.data.startswith('category_'))

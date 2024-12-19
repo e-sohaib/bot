@@ -13,12 +13,18 @@ def request_to_digikala(category , model):
     api_url = f"https://api.digikala.com/v1/categories/{category}/search/?q={query}&page=1"
     responce = requests.get(api_url ,headers=head)
     return api_url
-def mobile_ir(brand , model:str):
+def serch_in_site_mobie_ir(search : str):
     head = {"Accept": "*/*",
             "Accept-Encoding": "deflate, gzip",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",}
-    
-    mobile = f"https://www.mobile.ir/phones/search.aspx?terms={brand}+{model.replace(' ' , '+')}&submit="
-    #res = requests.get(mobile , headers=head)
-    return mobile
-print(mobile_ir('apple' , '11 pro max'))
+    query = query = urllib.parse.quote(search.encode('utf-8'),safe='')
+    serch_in_site = f"https://www.mobile.ir/phones/ajaxphonesearch.aspx?q={query}"
+    #mobile = f"https://www.mobile.ir/phones/search.aspx?terms={brand}+{model.replace(' ' , '+')}&submit="
+    res = requests.get(serch_in_site , headers=head)
+    return res
+serch_param = 'iPhone 7 Plus'
+alfa = mobile_ir(serch_param).text
+dics = json.loads(alfa)
+for item in dics:
+    if  serch_param.lower() in item['title'].lower():
+        print("https://www.mobile.ir" + item['url'])
