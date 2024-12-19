@@ -313,6 +313,7 @@ def Analyze_response_mobile(response , chat):
             TXT = "".join(TXT + f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n")
         bot.edit_message_text(f"{tox}{i} از 24" , mes.chat.id , mes.message_id)
         i = i+1
+        time.sleep(0.5)
     return TXT
 @bot.callback_query_handler(func=lambda call : call.data.startswith("city2_"))
 def change_city_and_start_analize(call):
