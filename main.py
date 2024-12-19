@@ -173,7 +173,7 @@ def export_device_detailes_from_json(text):
     price_matches = re.findall(price_pattern, text)
     if price_matches:
         for price in price_matches:
-            result['price'] = price.spilt()[0]
+            result['price'] = price.split()[0]
     category_pattern = r'"category":\s*\{\s*"str":\s*\{\s*"value":\s*"([^"]+)"'
     category_matches = re.findall(category_pattern, text)
     if category_matches:
