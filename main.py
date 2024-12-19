@@ -331,6 +331,10 @@ def Analyze_response_mobile(response):
                     link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
                     append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
                     TXT = "".join(TXT + append)
+                else :
+                    append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
+                    TXT = "".join(TXT + append2)
+                    
         if len(TXT) >= 4000:
             return TXT
 @bot.callback_query_handler(func=lambda call : call.data.startswith("city2_"))
