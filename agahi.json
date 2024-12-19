@@ -1,1 +1,707 @@
-{"sections": [{"section_name": "BREADCRUMB", "widgets": [{"widget_type": "BREADCRUMB", "data": {"@type": "type.googleapis.com/widgets.BreadcrumbData", "parent_items": [{"title": "کالای دیجیتال", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"category": {"str": {"value": "electronic-devices"}}}}}, "source_view": "CATEGORY_BREAD_CRUMB", "source_view_str": "CATEGORY_BREAD_CRUMB"}}}, {"title": "موبایل و تبلت", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"category": {"str": {"value": "mobile-tablet"}}}}}, "source_view": "CATEGORY_BREAD_CRUMB", "source_view_str": "CATEGORY_BREAD_CRUMB"}}}, {"title": "موبایل", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"category": {"str": {"value": "mobile-phones"}}}}}, "source_view": "CATEGORY_BREAD_CRUMB", "source_view_str": "CATEGORY_BREAD_CRUMB"}}}, {"title": "apple", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"brand_model": {"repeated_string": {"value": ["apple"]}}, "category": {"str": {"value": "mobile-phones"}}}}}, "source_view": "CATEGORY_BREAD_CRUMB", "source_view_str": "CATEGORY_BREAD_CRUMB"}}}, {"title": "apple iphone 11", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"brand_model": {"repeated_string": {"value": ["apple iphone 11"]}}, "category": {"str": {"value": "mobile-phones"}}}}}, "source_view": "CATEGORY_BREAD_CRUMB", "source_view_str": "CATEGORY_BREAD_CRUMB"}}}], "current_page_title": "اپل iPhone 11 ۱۲۸ گیگابایت", "padded": true}}]}, {"section_name": "TITLE", "widgets": [{"widget_type": "LEGEND_TITLE_ROW", "data": {"@type": "type.googleapis.com/widgets.LegendTitleRowData", "title": "اپل iPhone 11 ۱۲۸ گیگابایت", "subtitle": "۱ ساعت پیش در تالش", "has_divider": true, "high_level_heading": true}}, {"widget_type": "SELECTOR_ROW", "data": {"@type": "type.googleapis.com/widgets.SelectorRowData", "title": "زنگ خطرهای قبل از معامله", "action": {"type": "LOAD_PAGE", "payload": {"@type": "type.googleapis.com/widgets.LoadPagePayload", "widget_list": [{"widget_type": "BREADCRUMB", "data": {"@type": "type.googleapis.com/widgets.BreadcrumbData", "parent_items": [{"title": "بازگشت به آگهی", "action": {"type": "HISTORY_BACK"}}], "padded": true}}, {"widget_type": "PAGE_TITLE_ROW", "data": {"@type": "type.googleapis.com/widgets.PageTitleRowData", "title": "روش‌های رایج کلاهبرداری"}}, {"widget_type": "DESCRIPTION_ROW", "data": {"@type": "type.googleapis.com/widgets.DescriptionRowData", "text": "- دریافت بیعانه\n- دریافت پول به بهانهٔ هزینهٔ ارسال\n- تحویل کالای تقلبی یا معیوب\n- درخواست اطلاعات بانکی یا هویتی\n- درخواست «کد تأییدِ ۶ رقمی ورود به حساب دیوار»", "is_primary": true, "padded": true}}, {"widget_type": "PAGE_TITLE_ROW", "data": {"@type": "type.googleapis.com/widgets.PageTitleRowData", "title": "در این موارد به شدت احتیاط کنید"}}, {"widget_type": "FEATURE_ROW", "data": {"@type": "type.googleapis.com/widgets.FeatureRowData", "title": "آگهی‌گذار درخواست بیعانه دارد", "icon": {"image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/error_primary/v1/block.png", "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/error_primary/v1/block.png", "icon_name": "BLOCK", "icon_color": "ERROR_PRIMARY"}}}, {"widget_type": "FEATURE_ROW", "data": {"@type": "type.googleapis.com/widgets.FeatureRowData", "title": "قیمت کالا پایین و وسوسه‌کننده‌ است", "icon": {"image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/error_primary/v1/block.png", "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/error_primary/v1/block.png", "icon_name": "BLOCK", "icon_color": "ERROR_PRIMARY"}}}, {"widget_type": "FEATURE_ROW", "data": {"@type": "type.googleapis.com/widgets.FeatureRowData", "title": "آگهی‌گذار معاملهٔ حضوری را رد می‌کند", "icon": {"image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/error_primary/v1/block.png", "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/error_primary/v1/block.png", "icon_name": "BLOCK", "icon_color": "ERROR_PRIMARY"}}}, {"widget_type": "FEATURE_ROW", "data": {"@type": "type.googleapis.com/widgets.FeatureRowData", "title": "آگهی‌گذار به جای چت دیوار، مکالمه در خارج دیوار را پیشنهاد می‌کند", "icon": {"image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/error_primary/v1/block.png", "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/error_primary/v1/block.png", "icon_name": "BLOCK", "icon_color": "ERROR_PRIMARY"}}}, {"widget_type": "PAGE_TITLE_ROW", "data": {"@type": "type.googleapis.com/widgets.PageTitleRowData", "title": "قبل از معامله بخوانید:"}}, {"widget_type": "SELECTOR_ROW", "data": {"@type": "type.googleapis.com/widgets.SelectorRowData", "title": "سامانه استعلام کالای دیجیتال همیاب", "action": {"type": "OPEN_WEB_PAGE", "payload": {"@type": "type.googleapis.com/widgets.OpenWebPagePayload", "link": "https://hamyab24.ir/"}}, "has_divider": true, "icon": {}, "has_arrow": true, "last_notification_date": "0001-01-01T00:00:00Z"}}, {"widget_type": "SECTION_DIVIDER_ROW", "data": {"@type": "type.googleapis.com/widgets.SectionDividerRowData"}}, {"widget_type": "PAGE_TITLE_ROW", "data": {"@type": "type.googleapis.com/widgets.PageTitleRowData", "title": "مشکلی برایتان پیش آمده است؟"}}, {"widget_type": "DESCRIPTION_ROW", "data": {"@type": "type.googleapis.com/widgets.DescriptionRowData", "text": "در صورت بروز مشکل و یا شناسایی نشانه‌های مشکوک، لطفاً آگهی را در صفحهٔ «گزارش کلاهبرداری و رفتار مشکوک» گزارش دهید.", "is_primary": true, "padded": true}}, {"widget_type": "IMAGE_SLIDER_ROW", "data": {"@type": "type.googleapis.com/widgets.ImageSliderRowData", "items": [{"image_url": "https://jobs.divarcdn.com/jobs-fraud-alert.png"}], "background_color": "TRANSPARENT"}}, {"widget_type": "SUBTITLE_ROW", "data": {"@type": "type.googleapis.com/widgets.SubtitleRowData", "text": "آخرین بروزرسانی: شهریور ۱۴۰۲"}}]}}, "has_divider": true, "icon": {"image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/warning.png", "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/warning.png", "icon_name": "WARNING", "icon_color": "ICON_SECONDARY"}, "has_arrow": true, "last_notification_date": "0001-01-01T00:00:00Z"}, "action_log": {"server_side_info": {"item_type": {"type": "POST_WARNING"}, "info": {"@type": "type.googleapis.com/action_log.PostWarningInfo", "post_token": "wZiJ7aKN"}}, "enabled": true}}]}, {"section_name": "DESCRIPTION", "widgets": [{"widget_type": "TITLE_ROW", "data": {"@type": "type.googleapis.com/widgets.TitleRowData", "text": "توضیحات", "text_color": "TEXT_PRIMARY", "text_type": "SECONDARY"}}, {"widget_type": "DESCRIPTION_ROW", "data": {"@type": "type.googleapis.com/widgets.DescriptionRowData", "text": "باسلام کوشی کاملا سالم تضمینی هسش باتری فایریک۸۵درصد هسش دوسیم کارت بذون خطو خش در حد صفر گوشی پلمپ پلمپ تمام لوازم تکمیل", "is_primary": true}}]}, {"section_name": "IMAGE", "widgets": [{"widget_type": "IMAGE_CAROUSEL", "data": {"@type": "type.googleapis.com/widgets.ImageCarouselData", "items": [{"image": {"url": "https://postimage01.divarcdn.com/static/photo/neda/post/Oj0Zu7c5r-qxEORTDUqkhg/0eb6659d-a33b-48a4-aeeb-07428fbc77b2.jpg", "alt": "اپل iPhone 11 ۱۲۸ گیگابایت|موبایل|تالش, |دیوار", "thumbnail_url": "https://postimage01.divarcdn.com/static/photo/neda/thumbnail/o6nWABtBLK6jFRp0QfW43A/0eb6659d-a33b-48a4-aeeb-07428fbc77b2.jpg"}}, {"image": {"url": "https://postimage01.divarcdn.com/static/photo/neda/post/qKcyuOBoJdYby8O8QVH7GQ/328f2b46-1b7f-4b93-bfe0-d214ffb758f7.jpg", "alt": "اپل iPhone 11 ۱۲۸ گیگابایت|موبایل|تالش, |دیوار", "thumbnail_url": "https://postimage01.divarcdn.com/static/photo/neda/thumbnail/N_qw5mCe4xvtLb8O-eKAig/328f2b46-1b7f-4b93-bfe0-d214ffb758f7.jpg"}}, {"image": {"url": "https://postimage01.divarcdn.com/static/photo/neda/post/B5nxFryV1WfktWEBSds8PQ/a137b9a3-bf68-405f-b90f-265701a569f1.jpg", "alt": "اپل iPhone 11 ۱۲۸ گیگابایت|موبایل|تالش, |دیوار", "thumbnail_url": "https://postimage01.divarcdn.com/static/photo/neda/thumbnail/kaqJNWgcx_WRYB_nv0vhQg/a137b9a3-bf68-405f-b90f-265701a569f1.jpg"}}, {"image": {"url": "https://postimage01.divarcdn.com/static/photo/neda/post/h9gQxRY2Ir_oVDCI9-VsyQ/34802a3e-107a-4e73-a82b-1f03c045510d.jpg", "alt": "اپل iPhone 11 ۱۲۸ گیگابایت|موبایل|تالش, |دیوار", "thumbnail_url": "https://postimage01.divarcdn.com/static/photo/neda/thumbnail/cmbQ12UjxOy5ubnp6ZFiqw/34802a3e-107a-4e73-a82b-1f03c045510d.jpg"}}, {"image": {"url": "https://postimage01.divarcdn.com/static/photo/neda/post/x-e-MQXQh5Gi19jDTa2zDQ/eef88e11-667c-445a-9fb5-f448fb8ff5a5.jpg", "alt": "اپل iPhone 11 ۱۲۸ گیگابایت|موبایل|تالش, |دیوار", "thumbnail_url": "https://postimage01.divarcdn.com/static/photo/neda/thumbnail/FCD1K-PKdydWGOFO9pUF7g/eef88e11-667c-445a-9fb5-f448fb8ff5a5.jpg"}}, {"image": {"url": "https://postimage01.divarcdn.com/static/photo/neda/post/FkJhf9lZ9paKkf1qlQYb5w/fec51ace-6376-4c54-9920-07fee6f370b3.jpg", "alt": "اپل iPhone 11 ۱۲۸ گیگابایت|موبایل|تالش, |دیوار", "thumbnail_url": "https://postimage01.divarcdn.com/static/photo/neda/thumbnail/KW5WlRYPYnYM-iyI3XbXtg/fec51ace-6376-4c54-9920-07fee6f370b3.jpg"}}], "image_aspect_ratio": {"dynamic_aspect_ratio": {"height": 3, "width": 4}}, "has_preview": true, "has_thumbnails": true}}]}, {"section_name": "LIST_DATA", "widgets": [{"widget_type": "SELECTOR_ROW", "data": {"@type": "type.googleapis.com/widgets.SelectorRowData", "title": "راهنمای خرید اپل iPhone دست دوم", "action": {"type": "OPEN_WEB_PAGE", "payload": {"@type": "type.googleapis.com/widgets.OpenWebPagePayload", "link": "https://divar.ir/daal/electronic-devic-mobile-tablet/second-hand-iphone-shopping-guide"}}, "has_divider": true, "icon": {"image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/brand_apple.png", "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/brand_apple.png", "icon_name": "BRAND_APPLE", "icon_color": "ICON_SECONDARY"}, "has_arrow": true, "last_notification_date": "0001-01-01T00:00:00Z"}, "action_log": {"server_side_info": {"item_type": {"type": "USED_PHONE_PURCHASE_GUIDE"}, "info": {"@type": "type.googleapis.com/action_log.UsedPhonePurchaseGuideInfo", "brand": "apple", "model": "iphone 11", "post_token": "wZiJ7aKN"}}, "enabled": true}}, {"widget_type": "UNEXPANDABLE_ROW", "data": {"@type": "type.googleapis.com/widgets.UnexpandableRowData", "title": "برند و مدل", "value": "اپل iPhone 11", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"brand_model": {"repeated_string": {"value": ["apple iphone 11"]}}, "category": {"str": {"value": "mobile-phones"}}}}}, "source_view": "POST_VIEW_LIST_DATA_ITEM", "tooltip": "آگهی‌های بیشتر برای اپل iPhone 11", "source_view_str": "POST_VIEW_LIST_DATA_ITEM"}}, "has_divider": true}, "action_log": {"server_side_info": {"item_type": {"type": "POST_VIEW_LIST_DATA_ITEM"}, "info": {"@type": "type.googleapis.com/action_log.PostViewListDataItemInfo", "post_token": "wZiJ7aKN", "jli": {"brand_model": {"value": ["apple iphone 11"]}, "category": {"value": "mobile-phones"}}, "field": "brand_model", "value": "apple iphone 11"}}, "enabled": true}}, {"widget_type": "UNEXPANDABLE_ROW", "data": {"@type": "type.googleapis.com/widgets.UnexpandableRowData", "title": "وضعیت", "value": "در حد نو", "has_divider": true}}, {"widget_type": "UNEXPANDABLE_ROW", "data": {"@type": "type.googleapis.com/widgets.UnexpandableRowData", "title": "اصالت برند", "value": "اصل", "has_divider": true}}, {"widget_type": "UNEXPANDABLE_ROW", "data": {"@type": "type.googleapis.com/widgets.UnexpandableRowData", "title": "تعداد سیم‌کارت", "value": "۲ عدد", "has_divider": true}}, {"widget_type": "UNEXPANDABLE_ROW", "data": {"@type": "type.googleapis.com/widgets.UnexpandableRowData", "title": "حافظهٔ داخلی", "value": "۱۲۸ گیگابایت", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"brand_model": {"repeated_string": {"value": ["apple iphone 11"]}}, "category": {"str": {"value": "mobile-phones"}}, "internal_storage": {"repeated_string": {"value": ["128GB"]}}}}}, "source_view": "POST_VIEW_LIST_DATA_ITEM", "tooltip": "آگهی‌های بیشتر برای اپل iPhone 11 ۱۲۸ گیگابایت", "source_view_str": "POST_VIEW_LIST_DATA_ITEM"}}, "has_divider": true}, "action_log": {"server_side_info": {"item_type": {"type": "POST_VIEW_LIST_DATA_ITEM"}, "info": {"@type": "type.googleapis.com/action_log.PostViewListDataItemInfo", "post_token": "wZiJ7aKN", "jli": {"brand_model": {"value": ["apple iphone 11"]}, "category": {"value": "mobile-phones"}, "internal_storage": {"value": ["128GB"]}}, "field": "internal_storage", "value": "128GB"}}, "enabled": true}}, {"widget_type": "UNEXPANDABLE_ROW", "data": {"@type": "type.googleapis.com/widgets.UnexpandableRowData", "title": "مقدار رم", "value": "۴ گیگابایت", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"brand_model": {"repeated_string": {"value": ["apple iphone 11"]}}, "category": {"str": {"value": "mobile-phones"}}, "ram_memory": {"repeated_string": {"value": ["4GB"]}}}}}, "source_view": "POST_VIEW_LIST_DATA_ITEM", "tooltip": "آگهی‌های بیشتر برای اپل iPhone 11 ۴ گیگابایت", "source_view_str": "POST_VIEW_LIST_DATA_ITEM"}}, "has_divider": true}, "action_log": {"server_side_info": {"item_type": {"type": "POST_VIEW_LIST_DATA_ITEM"}, "info": {"@type": "type.googleapis.com/action_log.PostViewListDataItemInfo", "post_token": "wZiJ7aKN", "jli": {"brand_model": {"value": ["apple iphone 11"]}, "category": {"value": "mobile-phones"}, "ram_memory": {"value": ["4GB"]}}, "field": "ram_memory", "value": "4GB"}}, "enabled": true}}, {"widget_type": "UNEXPANDABLE_ROW", "data": {"@type": "type.googleapis.com/widgets.UnexpandableRowData", "title": "رنگ", "value": "مشکی", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"base_color": {"repeated_string": {"value": ["black"]}}, "brand_model": {"repeated_string": {"value": ["apple iphone 11"]}}, "category": {"str": {"value": "mobile-phones"}}}}}, "source_view": "POST_VIEW_LIST_DATA_ITEM", "tooltip": "آگهی‌های بیشتر برای اپل iPhone 11 مشکی", "source_view_str": "POST_VIEW_LIST_DATA_ITEM"}}, "has_divider": true}, "action_log": {"server_side_info": {"item_type": {"type": "POST_VIEW_LIST_DATA_ITEM"}, "info": {"@type": "type.googleapis.com/action_log.PostViewListDataItemInfo", "post_token": "wZiJ7aKN", "jli": {"base_color": {"value": ["black"]}, "brand_model": {"value": ["apple iphone 11"]}, "category": {"value": "mobile-phones"}}, "field": "base_color", "value": "black"}}, "enabled": true}}, {"widget_type": "UNEXPANDABLE_ROW", "data": {"@type": "type.googleapis.com/widgets.UnexpandableRowData", "title": "مایل به معاوضه", "value": "نیستم", "has_divider": true}}, {"widget_type": "UNEXPANDABLE_ROW", "data": {"@type": "type.googleapis.com/widgets.UnexpandableRowData", "title": "قیمت", "value": "۲۴٬۵۰۰٬۰۰۰ تومان", "has_divider": true}}, {"widget_type": "LAZY_SECTION", "data": {"@type": "type.googleapis.com/widgets.LazySectionData", "rest_request_path": "/v1/open-platform/addons/lazy", "grpc_request_path": "/addons.Addons/GetLazyAddons", "request_data": {"@type": "type.googleapis.com/addons.GetLazyAddonsRequest.RequestData", "token": "wZiJ7aKN", "source": "POST_APPROVED", "category": "mobile-phones", "city_id": 829}}}]}, {"section_name": "TAGS", "widgets": [{"widget_type": "WRAPPER_ROW", "data": {"@type": "type.googleapis.com/widgets.WrapperRowData", "chip_list": {"chips": [{"text": "موبایل", "type": "ACTION", "action": {"type": "OPEN_POSTLIST_PAGE_GRPC", "payload": {"@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload", "search_data": {"form_data": {"data": {"category": {"str": {"value": "mobile-phones"}}}}}, "source_view": "CATEGORY_BREAD_CRUMB", "source_view_str": "CATEGORY_BREAD_CRUMB"}}}]}}}]}, {"section_name": "MESSAGE", "widgets": [{"widget_type": "STATEMENT", "data": {"@type": "type.googleapis.com/widgets.StatementData", "title": "هشدار سامانهٔ همتا:", "description": "در صورت انجام معامله، از فروشنده کد فعال‌سازی را گرفته و حتما در حضور ایشان، دستگاه را از طریق #7777* برای سیمکارت خود فعال‌سازی نمایید.", "link": "http://hmti.ir/06", "type": "OUTLINE", "link_title": "آموزش تصویری"}}]}, {"section_name": "NOTE", "widgets": [{"widget_type": "NOTE", "data": {"@type": "type.googleapis.com/widgets.NoteData", "title": "یادداشت من", "button_title": "ویرایش یادداشت", "post_token": "wZiJ7aKN"}}]}, {"section_name": "STATIC", "widgets": [{"widget_type": "SECTION_DIVIDER_ROW", "data": {"@type": "type.googleapis.com/widgets.SectionDividerRowData", "padded": true}}, {"widget_type": "SELECTOR_ROW", "data": {"@type": "type.googleapis.com/widgets.SelectorRowData", "title": "گزارش آگهی", "action": {"type": "OPEN_SCHEMA_PAGE", "payload": {"@type": "type.googleapis.com/widgets.OpenSchemaPagePayload", "request_path": "/v8/post-quality/feedback-v2", "additional_data": {"@type": "type.googleapis.com/widgets.GetFeedbackPageRequest.AdditionalData", "post_token": "wZiJ7aKN"}, "is_modal": true, "rest_request_path": "/v8/post-quality/feedback-v2", "grpc_request_path": "/post_quality.PostQualityFeedback/GetFeedbackPage"}}, "has_divider": true, "icon": {"image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/report.png", "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/report.png", "icon_name": "REPORT", "icon_color": "ICON_SECONDARY"}, "has_arrow": true, "last_notification_date": "0001-01-01T00:00:00Z"}}]}], "share": {"title": "اپل iPhone 11 ۱۲۸ گیگابایت", "web_url": "https://divar.ir/v/wZiJ7aKN", "image_url": "https://s100.divarcdn.com/static/thumbnails/1734521481/wZiJ7aKN.jpg"}, "seo": {"title": "اپل iPhone 11 ۱۲۸ گیگابایت در تالش - ۲۸ آذر ۱۴۰۳", "description": "آگهی اپل iPhone 11 ۱۲۸ گیگابایت در دیوار تالش", "android_package_name": "ir.divar", "android_app_url": "android-app://ir.divar/http/v/اپل iPhone 11 ۱۲۸ گیگابایت/wZiJ7aKN/", "web_info": {"title": "اپل iPhone 11 ۱۲۸ گیگابایت", "city_persian": "تالش", "category_slug_persian": "موبایل"}, "unavailable_after": "2025-01-18T15:01:21.721058", "bread_crumb": [{"name": "اپل iPhone 11", "search_data": {"form_data": {"data": {"brand_model": {"repeated_string": {"value": ["apple iphone 11"]}}, "category": {"str": {"value": "mobile-phones"}}}}}}, {"name": "موبایل", "search_data": {"form_data": {"data": {"category": {"str": {"value": "mobile-phones"}}}}}}, {"name": "موبایل و تبلت", "search_data": {"form_data": {"data": {"category": {"str": {"value": "mobile-tablet"}}}}}}, {"name": "کالای دیجیتال", "search_data": {"form_data": {"data": {"category": {"str": {"value": "electronic-devices"}}}}}}, {"name": "تالش", "search_data": {"form_data": {}}}, {"name": "دیوار"}], "post_seo_schema": {"@context": "https://schema.org", "@type": "Product", "category": "mobile-phones", "description": "باسلام کوشی کاملا سالم تضمینی هسش باتری فایریک۸۵درصد هسش دوسیم کارت بذون خطو خش در حد صفر گوشی پلمپ پلمپ تمام لوازم تکمیل", "image": "https://postimage01.divarcdn.com/static/photo/neda/manage/cxz2Lfn_NOr_rP3AJE5_Og/0eb6659d-a33b-48a4-aeeb-07428fbc77b2.jpg", "name": "اپل iPhone 11 ۱۲۸ گیگابایت", "offers": {"@type": "Offer", "price": "24500000", "priceCurrency": "IRR"}, "url": "https://divar.ir/v/اپل-iphone-11-۱۲۸-گیگابایت/wZiJ7aKN", "web_info": {"category_slug_persian": "موبایل", "city_persian": "تالش", "district_persian": "", "title": "اپل iPhone 11 ۱۲۸ گیگابایت"}}}, "contact": {"chat_enabled": true, "action_log": {"server_side_info": {"item_type": {"type": "CONTACT_INFO"}, "info": {"@type": "type.googleapis.com/action_log.ContactInfoInfo", "post_token": "wZiJ7aKN", "method_name": "GetContactWeb"}}, "enabled": true}}, "webengage": {"brand_model": "apple iphone 11", "business_ref": "", "business_type": "personal", "cat_1": "electronic-devices", "cat_2": "mobile-tablet", "cat_3": "mobile-phones", "category": "mobile-phones", "city": "talesh", "credit": 0, "district": "", "gender": "", "image_count": 6, "originality": "original", "price": 24500000, "rent": 0, "status": "like-new", "token": "wZiJ7aKN"}, "analytics": {"cat1": "electronic-devices", "cat2": "mobile-tablet", "cat3": "mobile-phones", "city": "talesh"}, "city": {"city_id": "829", "name": "تالش", "parent_id": "0", "second_slug": "talesh"}}
+{
+ "sections": [
+  {
+   "section_name": "BREADCRUMB",
+   "widgets": [
+    {
+     "widget_type": "BREADCRUMB",
+     "data": {
+      "@type": "type.googleapis.com/widgets.BreadcrumbData",
+      "parent_items": [
+       {
+        "title": "کالای دیجیتال",
+        "action": {
+         "type": "OPEN_POSTLIST_PAGE_GRPC",
+         "payload": {
+          "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+          "search_data": {
+           "form_data": {
+            "data": {
+             "category": {
+              "str": {
+               "value": "electronic-devices"
+              }
+             }
+            }
+           }
+          },
+          "source_view": "CATEGORY_BREAD_CRUMB",
+          "source_view_str": "CATEGORY_BREAD_CRUMB"
+         }
+        }
+       },
+       {
+        "title": "موبایل و تبلت",
+        "action": {
+         "type": "OPEN_POSTLIST_PAGE_GRPC",
+         "payload": {
+          "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+          "search_data": {
+           "form_data": {
+            "data": {
+             "category": {
+              "str": {
+               "value": "mobile-tablet"
+              }
+             }
+            }
+           }
+          },
+          "source_view": "CATEGORY_BREAD_CRUMB",
+          "source_view_str": "CATEGORY_BREAD_CRUMB"
+         }
+        }
+       },
+       {
+        "title": "لوازم جانبی موبایل و تبلت",
+        "action": {
+         "type": "OPEN_POSTLIST_PAGE_GRPC",
+         "payload": {
+          "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+          "search_data": {
+           "form_data": {
+            "data": {
+             "category": {
+              "str": {
+               "value": "mobile-tablet-accessories"
+              }
+             }
+            }
+           }
+          },
+          "source_view": "CATEGORY_BREAD_CRUMB",
+          "source_view_str": "CATEGORY_BREAD_CRUMB"
+         }
+        }
+       }
+      ],
+      "current_page_title": "airpod pro2 apple lightening در حد نو",
+      "padded": true
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "TITLE",
+   "widgets": [
+    {
+     "widget_type": "LEGEND_TITLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.LegendTitleRowData",
+      "title": "airpod pro2 apple lightening در حد نو",
+      "subtitle": "۱ روز پیش در کیش",
+      "has_divider": true,
+      "high_level_heading": true
+     }
+    },
+    {
+     "widget_type": "SELECTOR_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.SelectorRowData",
+      "title": "زنگ خطرهای قبل از معامله",
+      "action": {
+       "type": "LOAD_PAGE",
+       "payload": {
+        "@type": "type.googleapis.com/widgets.LoadPagePayload",
+        "widget_list": [
+         {
+          "widget_type": "BREADCRUMB",
+          "data": {
+           "@type": "type.googleapis.com/widgets.BreadcrumbData",
+           "parent_items": [
+            {
+             "title": "بازگشت به آگهی",
+             "action": {
+              "type": "HISTORY_BACK"
+             }
+            }
+           ],
+           "padded": true
+          }
+         },
+         {
+          "widget_type": "PAGE_TITLE_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.PageTitleRowData",
+           "title": "روش‌های رایج کلاهبرداری"
+          }
+         },
+         {
+          "widget_type": "DESCRIPTION_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.DescriptionRowData",
+           "text": "- دریافت بیعانه\n- دریافت پول به بهانهٔ هزینهٔ ارسال\n- تحویل کالای تقلبی یا معیوب\n- درخواست اطلاعات بانکی یا هویتی\n- درخواست «کد تأییدِ ۶ رقمی ورود به حساب دیوار»",
+           "is_primary": true,
+           "padded": true
+          }
+         },
+         {
+          "widget_type": "PAGE_TITLE_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.PageTitleRowData",
+           "title": "در این موارد به شدت احتیاط کنید"
+          }
+         },
+         {
+          "widget_type": "FEATURE_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.FeatureRowData",
+           "title": "آگهی‌گذار درخواست بیعانه دارد",
+           "icon": {
+            "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/error_primary/v1/block.png",
+            "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/error_primary/v1/block.png",
+            "icon_name": "BLOCK",
+            "icon_color": "ERROR_PRIMARY"
+           }
+          }
+         },
+         {
+          "widget_type": "FEATURE_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.FeatureRowData",
+           "title": "قیمت کالا پایین و وسوسه‌کننده‌ است",
+           "icon": {
+            "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/error_primary/v1/block.png",
+            "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/error_primary/v1/block.png",
+            "icon_name": "BLOCK",
+            "icon_color": "ERROR_PRIMARY"
+           }
+          }
+         },
+         {
+          "widget_type": "FEATURE_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.FeatureRowData",
+           "title": "آگهی‌گذار معاملهٔ حضوری را رد می‌کند",
+           "icon": {
+            "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/error_primary/v1/block.png",
+            "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/error_primary/v1/block.png",
+            "icon_name": "BLOCK",
+            "icon_color": "ERROR_PRIMARY"
+           }
+          }
+         },
+         {
+          "widget_type": "FEATURE_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.FeatureRowData",
+           "title": "آگهی‌گذار به جای چت دیوار، مکالمه در خارج دیوار را پیشنهاد می‌کند",
+           "icon": {
+            "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/error_primary/v1/block.png",
+            "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/error_primary/v1/block.png",
+            "icon_name": "BLOCK",
+            "icon_color": "ERROR_PRIMARY"
+           }
+          }
+         },
+         {
+          "widget_type": "PAGE_TITLE_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.PageTitleRowData",
+           "title": "قبل از معامله بخوانید:"
+          }
+         },
+         {
+          "widget_type": "SELECTOR_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.SelectorRowData",
+           "title": "سامانه استعلام کالای دیجیتال همیاب",
+           "action": {
+            "type": "OPEN_WEB_PAGE",
+            "payload": {
+             "@type": "type.googleapis.com/widgets.OpenWebPagePayload",
+             "link": "https://hamyab24.ir/"
+            }
+           },
+           "has_divider": true,
+           "icon": {},
+           "has_arrow": true,
+           "last_notification_date": "0001-01-01T00:00:00Z"
+          }
+         },
+         {
+          "widget_type": "SECTION_DIVIDER_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.SectionDividerRowData"
+          }
+         },
+         {
+          "widget_type": "PAGE_TITLE_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.PageTitleRowData",
+           "title": "مشکلی برایتان پیش آمده است؟"
+          }
+         },
+         {
+          "widget_type": "DESCRIPTION_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.DescriptionRowData",
+           "text": "در صورت بروز مشکل و یا شناسایی نشانه‌های مشکوک، لطفاً آگهی را در صفحهٔ «گزارش کلاهبرداری و رفتار مشکوک» گزارش دهید.",
+           "is_primary": true,
+           "padded": true
+          }
+         },
+         {
+          "widget_type": "IMAGE_SLIDER_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.ImageSliderRowData",
+           "items": [
+            {
+             "image_url": "https://jobs.divarcdn.com/jobs-fraud-alert.png"
+            }
+           ],
+           "background_color": "TRANSPARENT"
+          }
+         },
+         {
+          "widget_type": "SUBTITLE_ROW",
+          "data": {
+           "@type": "type.googleapis.com/widgets.SubtitleRowData",
+           "text": "آخرین بروزرسانی: شهریور ۱۴۰۲"
+          }
+         }
+        ]
+       }
+      },
+      "has_divider": true,
+      "icon": {
+       "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/warning.png",
+       "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/warning.png",
+       "icon_name": "WARNING",
+       "icon_color": "ICON_SECONDARY"
+      },
+      "has_arrow": true,
+      "last_notification_date": "0001-01-01T00:00:00Z"
+     },
+     "action_log": {
+      "server_side_info": {
+       "item_type": {
+        "type": "POST_WARNING"
+       },
+       "info": {
+        "@type": "type.googleapis.com/action_log.PostWarningInfo",
+        "post_token": "wZihvGle"
+       }
+      },
+      "enabled": true
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "DESCRIPTION",
+   "widgets": [
+    {
+     "widget_type": "TITLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.TitleRowData",
+      "text": "توضیحات",
+      "text_color": "TEXT_PRIMARY",
+      "text_type": "SECONDARY"
+     }
+    },
+    {
+     "widget_type": "DESCRIPTION_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.DescriptionRowData",
+      "text": "ایرپاد پرو دو اپل سالم بدون خط و خش",
+      "is_primary": true
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "IMAGE",
+   "widgets": [
+    {
+     "widget_type": "IMAGE_CAROUSEL",
+     "data": {
+      "@type": "type.googleapis.com/widgets.ImageCarouselData",
+      "items": [
+       {
+        "image": {
+         "url": "https://postimage01.divarcdn.com/static/photo/neda/post/t46BY4-0yWmfO5SJdC7vEQ/2c420c1c-c546-4c21-be98-d307ceaeb376.jpg",
+         "alt": "airpod pro2 apple lightening در حد نو|لوازم جانبی موبایل و تبلت|کیش, |دیوار",
+         "thumbnail_url": "https://postimage01.divarcdn.com/static/photo/neda/thumbnail/H5PMiqInU_Xhubmh1QR8Yw/2c420c1c-c546-4c21-be98-d307ceaeb376.jpg"
+        }
+       },
+       {
+        "image": {
+         "url": "https://postimage01.divarcdn.com/static/photo/neda/post/2b3V7V-JfwsVn37DTB9geQ/54708c11-6755-4246-9b97-22eb03ed6df3.jpg",
+         "alt": "airpod pro2 apple lightening در حد نو|لوازم جانبی موبایل و تبلت|کیش, |دیوار",
+         "thumbnail_url": "https://postimage01.divarcdn.com/static/photo/neda/thumbnail/OQFgr6ZgmOJfZXdNUERtfA/54708c11-6755-4246-9b97-22eb03ed6df3.jpg"
+        }
+       },
+       {
+        "image": {
+         "url": "https://postimage01.divarcdn.com/static/photo/neda/post/QdkavVv3mI9If91fnVrilw/7f69575d-9f39-4f18-9a31-332eeb6b962c.jpg",
+         "alt": "airpod pro2 apple lightening در حد نو|لوازم جانبی موبایل و تبلت|کیش, |دیوار",
+         "thumbnail_url": "https://postimage01.divarcdn.com/static/photo/neda/thumbnail/UtVbB-O-0bW-URcjtKJHXA/7f69575d-9f39-4f18-9a31-332eeb6b962c.jpg"
+        }
+       }
+      ],
+      "image_aspect_ratio": {
+       "dynamic_aspect_ratio": {
+        "height": 3,
+        "width": 4
+       }
+      },
+      "has_preview": true,
+      "has_thumbnails": true
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "LIST_DATA",
+   "widgets": [
+    {
+     "widget_type": "UNEXPANDABLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.UnexpandableRowData",
+      "title": "مایل به معاوضه",
+      "value": "نیستم",
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "UNEXPANDABLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.UnexpandableRowData",
+      "title": "قیمت",
+      "value": "۸٬۳۰۰٬۰۰۰ تومان",
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "UNEXPANDABLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.UnexpandableRowData",
+      "title": "نوع کالا",
+      "value": "هندزفری و هدفون",
+      "action": {
+       "type": "OPEN_POSTLIST_PAGE_GRPC",
+       "payload": {
+        "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+        "search_data": {
+         "form_data": {
+          "data": {
+           "category": {
+            "str": {
+             "value": "mobile-tablet-accessories"
+            }
+           },
+           "merchandise-type": {
+            "str": {
+             "value": "handsfree-headset"
+            }
+           }
+          }
+         }
+        },
+        "source_view": "POST_VIEW_LIST_DATA_ITEM",
+        "tooltip": "آگهی‌های بیشتر برای هندزفری و هدفون",
+        "source_view_str": "POST_VIEW_LIST_DATA_ITEM"
+       }
+      },
+      "has_divider": true
+     },
+     "action_log": {
+      "server_side_info": {
+       "item_type": {
+        "type": "POST_VIEW_LIST_DATA_ITEM"
+       },
+       "info": {
+        "@type": "type.googleapis.com/action_log.PostViewListDataItemInfo",
+        "post_token": "wZihvGle",
+        "jli": {
+         "category": {
+          "value": "mobile-tablet-accessories"
+         },
+         "merchandise-type": {
+          "value": [
+           "handsfree-headset"
+          ]
+         }
+        },
+        "field": "merchandise-type",
+        "value": "handsfree-headset"
+       }
+      },
+      "enabled": true
+     }
+    },
+    {
+     "widget_type": "UNEXPANDABLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.UnexpandableRowData",
+      "title": "وضعیت",
+      "value": "کارکرده",
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "LAZY_SECTION",
+     "data": {
+      "@type": "type.googleapis.com/widgets.LazySectionData",
+      "rest_request_path": "/v1/open-platform/addons/lazy",
+      "grpc_request_path": "/addons.Addons/GetLazyAddons",
+      "request_data": {
+       "@type": "type.googleapis.com/addons.GetLazyAddonsRequest.RequestData",
+       "token": "wZihvGle",
+       "source": "POST_APPROVED",
+       "category": "mobile-tablet-accessories",
+       "city_id": 33
+      }
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "TAGS",
+   "widgets": [
+    {
+     "widget_type": "WRAPPER_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.WrapperRowData",
+      "chip_list": {
+       "chips": [
+        {
+         "text": "لوازم جانبی موبایل و تبلت",
+         "type": "ACTION",
+         "action": {
+          "type": "OPEN_POSTLIST_PAGE_GRPC",
+          "payload": {
+           "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+           "search_data": {
+            "form_data": {
+             "data": {
+              "category": {
+               "str": {
+                "value": "mobile-tablet-accessories"
+               }
+              }
+             }
+            }
+           },
+           "source_view": "CATEGORY_BREAD_CRUMB",
+           "source_view_str": "CATEGORY_BREAD_CRUMB"
+          }
+         }
+        },
+        {
+         "text": "ایرپاد",
+         "type": "ACTION",
+         "action": {
+          "type": "OPEN_WEB_PAGE",
+          "payload": {
+           "@type": "type.googleapis.com/widgets.OpenWebPagePayload",
+           "link": "https://divar.ir/s/kish/list/ایرپاد-اپل",
+           "page_type": "SAME_PAGE"
+          }
+         }
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "MESSAGE"
+  },
+  {
+   "section_name": "NOTE",
+   "widgets": [
+    {
+     "widget_type": "NOTE",
+     "data": {
+      "@type": "type.googleapis.com/widgets.NoteData",
+      "title": "یادداشت من",
+      "button_title": "ویرایش یادداشت",
+      "post_token": "wZihvGle"
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "STATIC",
+   "widgets": [
+    {
+     "widget_type": "SECTION_DIVIDER_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.SectionDividerRowData",
+      "padded": true
+     }
+    },
+    {
+     "widget_type": "SELECTOR_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.SelectorRowData",
+      "title": "گزارش آگهی",
+      "action": {
+       "type": "OPEN_SCHEMA_PAGE",
+       "payload": {
+        "@type": "type.googleapis.com/widgets.OpenSchemaPagePayload",
+        "request_path": "/v8/post-quality/feedback-v2",
+        "additional_data": {
+         "@type": "type.googleapis.com/widgets.GetFeedbackPageRequest.AdditionalData",
+         "post_token": "wZihvGle"
+        },
+        "is_modal": true,
+        "rest_request_path": "/v8/post-quality/feedback-v2",
+        "grpc_request_path": "/post_quality.PostQualityFeedback/GetFeedbackPage"
+       }
+      },
+      "has_divider": true,
+      "icon": {
+       "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/report.png",
+       "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/report.png",
+       "icon_name": "REPORT",
+       "icon_color": "ICON_SECONDARY"
+      },
+      "has_arrow": true,
+      "last_notification_date": "0001-01-01T00:00:00Z"
+     }
+    }
+   ]
+  }
+ ],
+ "share": {
+  "title": "airpod pro2 apple lightening در حد نو",
+  "web_url": "https://divar.ir/v/wZihvGle",
+  "image_url": "https://s100.divarcdn.com/static/thumbnails/1734539304/wZihvGle.jpg"
+ },
+ "seo": {
+  "title": "airpod pro2 apple lightening در حد نو در کیش",
+  "description": "آگهی airpod pro2 apple lightening در حد نو در دیوار کیش",
+  "android_package_name": "ir.divar",
+  "android_app_url": "android-app://ir.divar/http/v/airpod pro2 apple lightening در حد نو/wZihvGle/",
+  "web_info": {
+   "title": "airpod pro2 apple lightening در حد نو",
+   "city_persian": "کیش",
+   "category_slug_persian": "لوازم جانبی موبایل و تبلت"
+  },
+  "unavailable_after": "2025-01-18T19:58:24.221313",
+  "bread_crumb": [
+   {
+    "name": "لوازم جانبی موبایل و تبلت",
+    "search_data": {
+     "form_data": {
+      "data": {
+       "category": {
+        "str": {
+         "value": "mobile-tablet-accessories"
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "name": "موبایل و تبلت",
+    "search_data": {
+     "form_data": {
+      "data": {
+       "category": {
+        "str": {
+         "value": "mobile-tablet"
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "name": "کالای دیجیتال",
+    "search_data": {
+     "form_data": {
+      "data": {
+       "category": {
+        "str": {
+         "value": "electronic-devices"
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "name": "کیش",
+    "search_data": {
+     "form_data": {}
+    }
+   },
+   {
+    "name": "دیوار"
+   }
+  ],
+  "post_seo_schema": {
+   "@context": "https://schema.org",
+   "@type": "Product",
+   "category": "mobile-tablet-accessories",
+   "description": "ایرپاد پرو دو اپل سالم بدون خط و خش",
+   "image": "https://postimage01.divarcdn.com/static/photo/neda/manage/IwlySs_ViD3VBWi5C43PUQ/2c420c1c-c546-4c21-be98-d307ceaeb376.jpg",
+   "name": "airpod pro2 apple lightening در حد نو",
+   "offers": {
+    "@type": "Offer",
+    "price": "8300000",
+    "priceCurrency": "IRR"
+   },
+   "url": "https://divar.ir/v/airpod-pro2-apple-lightening-در-حد-نو/wZihvGle",
+   "web_info": {
+    "category_slug_persian": "لوازم جانبی موبایل و تبلت",
+    "city_persian": "کیش",
+    "district_persian": "",
+    "title": "airpod pro2 apple lightening در حد نو"
+   }
+  }
+ },
+ "contact": {
+  "chat_enabled": true,
+  "action_log": {
+   "server_side_info": {
+    "item_type": {
+     "type": "CONTACT_INFO"
+    },
+    "info": {
+     "@type": "type.googleapis.com/action_log.ContactInfoInfo",
+     "post_token": "wZihvGle",
+     "method_name": "GetContactWeb"
+    }
+   },
+   "enabled": true
+  }
+ },
+ "webengage": {
+  "brand_model": "",
+  "business_ref": "",
+  "business_type": "personal",
+  "cat_1": "electronic-devices",
+  "cat_2": "mobile-tablet",
+  "cat_3": "mobile-tablet-accessories",
+  "category": "mobile-tablet-accessories",
+  "city": "kish",
+  "credit": 0,
+  "district": "",
+  "gender": "",
+  "image_count": 3,
+  "originality": "",
+  "price": 8300000,
+  "rent": 0,
+  "status": "used",
+  "token": "wZihvGle"
+ },
+ "analytics": {
+  "cat1": "electronic-devices",
+  "cat2": "mobile-tablet",
+  "cat3": "mobile-tablet-accessories",
+  "city": "kish"
+ },
+ "city": {
+  "city_id": "33",
+  "name": "کیش",
+  "parent_id": "0",
+  "second_slug": "kish"
+ }
+}

@@ -171,7 +171,7 @@ def export_device_detailes_from_json(text):
               'hard_space':None
               }
     try:
-        categry =dictionary['sections'][4]['widgets'][1]['action_log']['server_side_info']['info']['jli']['category']['value']
+        categry =dictionary['sections'][0]['widgets'][0]['data']["parent_items"][0]["action"]["payload"]["search_data"]["form_data"]['data']['category']['str']['value']
         result['categry'] = categry
     except:
         categry =None

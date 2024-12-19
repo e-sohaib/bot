@@ -31,3 +31,4 @@ def get_data_by_token(token:str):
     request_url = api_url + token
     response = requests.get(url=request_url)
     return response.text
+
