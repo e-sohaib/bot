@@ -269,12 +269,16 @@ def user_register(message):
 """END Divar"""
 
 """divar vs mobile.ir"""
-def Analyze_response_mobile(response):
+def Analyze_response_mobile(response , chat):
+    tox = f'درحال برسی ...\n'
+    mes = bot.send_message(chat , tox)
+    
     js = json.loads(response)
     all_posts = js['list_widgets'] #type = list
     
     base_url = 'https://divar.ir/v/'
     TXT = f"" 
+    i = 1
     for post in all_posts:  
         token = post['data']['action']['payload']['token']
         title = post['data']['action']['payload']['web_info']['title']
@@ -307,6 +311,8 @@ def Analyze_response_mobile(response):
                 TXT = "".join(TXT + append2)    
         else:
             TXT = "".join(TXT + f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n")
+        bot.edit_message_text(f"{tox}{i} از 24")
+        i = i+1
     return TXT
 @bot.callback_query_handler(func=lambda call : call.data.startswith("city2_"))
 def change_city_and_start_analize(call):
@@ -316,7 +322,7 @@ def change_city_and_start_analize(call):
     city_number = find_city_number(city)
     category_slug = "mobile-phones"   
     response = request_to_api(city_number , category_slug)
-    final_txt = Analyze_response_mobile(response)
+    final_txt = Analyze_response_mobile(response , call.message.chat.id)
     bot.send_message(call.message.chat.id , text = final_txt ,parse_mode='Markdown')
     
 def divar_VS_mobile_markup_citys():
