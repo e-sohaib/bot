@@ -274,9 +274,8 @@ def Analyze_response_mobile(response):
     all_posts = js['list_widgets'] #type = list
     
     base_url = 'https://divar.ir/v/'
-    i = 1
+    TXT = f"" 
     for post in all_posts:  
-        TXT = f"{i} - "  
         token = post['data']['action']['payload']['token']
         title = post['data']['action']['payload']['web_info']['title']
         p = urllib.parse.quote(title.encode('utf-8'), safe='')
@@ -305,16 +304,10 @@ def Analyze_response_mobile(response):
                     break
             if c == 0 :
                 append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
-                TXT = "".join(TXT + append2)
-            
+                TXT = "".join(TXT + append2)    
         else:
             TXT = "".join(TXT + f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n")
-        bot.send_message(ADMIN_ID , str(ex))
-        bot.send_message(ADMIN_ID , TXT ,parse_mode='Markdown')  
-        i = i+1    
-        time.sleep(1)      
-        if len(TXT) >= 4000:
-            return TXT
+    return TXT
 @bot.callback_query_handler(func=lambda call : call.data.startswith("city2_"))
 def change_city_and_start_analize(call):
     city = call.data.split('_')[1]
