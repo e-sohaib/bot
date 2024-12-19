@@ -173,12 +173,11 @@ def export_device_detailes_from_json(text):
     price_matches = re.findall(price_pattern, text)
     if price_matches:
         for price in price_matches:
-            result['price'] = price
+            result['price'] = price.spilt()[0]
     category_pattern = r'"category":\s*\{\s*"str":\s*\{\s*"value":\s*"([^"]+)"'
     category_matches = re.findall(category_pattern, text)
     if category_matches:
-        for category in category_matches:
-            result['category'] = category
+        result['category'] = category_matches[1]
     brand_model_pattern = r'"brand_model":\s*\{\s*"repeated_string":\s*\{\s*"value":\s*\[\s*"([^"]+)"\s*\]\s*\}'
     brand_model_matches = re.findall(brand_model_pattern, text)        
     if brand_model_matches:
@@ -318,7 +317,7 @@ def change_city_and_start_analize(call):
     bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
     bot.edit_message_text(f"شهر شما : {city}\n",call.message.chat.id,call.message.message_id)
     city_number = find_city_number(city)
-    category_slug = "electronic-devices"    
+    category_slug = "mobile-phones"   
     response = request_to_api(city_number , category_slug)
     final_txt = Analyze_response_mobile(response)
     bot.send_message(call.message.chat.id , text = final_txt ,parse_mode='Markdown')
