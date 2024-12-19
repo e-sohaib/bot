@@ -334,7 +334,7 @@ def Analyze_response_mobile(response):
                 else :
                     append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
                     TXT = "".join(TXT + append2)
-        bot.send_message(ADMIN_ID , TXT ,parse_mode='Markdown')      
+        bot.send_message(ADMIN_ID , ex['categry'] ,parse_mode='Markdown')      
         time.sleep(1)      
         if len(TXT) >= 4000:
             return TXT
