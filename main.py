@@ -309,7 +309,7 @@ def Analyze_response_mobile(response):
     base_url = 'https://divar.ir/v/'
     i = 1
     for post in all_posts:  
-        TXT = f"{i}"  
+        TXT = f"{i} - "  
         token = post['data']['action']['payload']['token']
         title = post['data']['action']['payload']['web_info']['title']
         p = urllib.parse.quote(title.encode('utf-8'), safe='')
@@ -328,13 +328,14 @@ def Analyze_response_mobile(response):
         result = serch_in_site_mobie_ir(serch_param).text
         dics = json.loads(result)
         for item in dics:
-            if  serch_param.lower() in item['title'].lower():
+            if serch_param.lower() in item['title'].lower():
                 link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
                 append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
                 TXT = "".join(TXT + append)
             else :
                 append2 = f"نتیجه ای در سایت موبایل دات آی آر پیدا نشد.\n"
                 TXT = "".join(TXT + append2)
+        bot.sen_message(ADMIN_ID , str(ex))
         bot.send_message(ADMIN_ID , TXT ,parse_mode='Markdown')  
         i = i+1    
         time.sleep(1)      

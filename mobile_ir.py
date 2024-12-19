@@ -17,7 +17,7 @@ def serch_in_site_mobie_ir(search : str):
     head = {"Accept": "*/*",
             "Accept-Encoding": "deflate, gzip",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",}
-    query = query = urllib.parse.quote(search.encode('utf-8'),safe='')
+    query = urllib.parse.quote(search.encode('utf-8'),safe='')
     serch_in_site = f"https://www.mobile.ir/phones/ajaxphonesearch.aspx?q={query}"
     #mobile = f"https://www.mobile.ir/phones/search.aspx?terms={brand}+{model.replace(' ' , '+')}&submit="
     res = requests.get(serch_in_site , headers=head)
