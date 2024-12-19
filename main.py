@@ -58,17 +58,17 @@ def create_main_menu_reply(tg_id):
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
     if str(tg_id) == ADMIN_ID:
         #markup.add(KeyboardButton("Instagram"))
-        markup.add(KeyboardButton("Register"))
+        markup.add(KeyboardButton("تمدید اشتراک"))
         #markup.add(KeyboardButton("Youtube"))
         markup.add(KeyboardButton("Linkedin"))
         markup.add(KeyboardButton("Divar"))
-        markup.add(KeyboardButton("Divar vs mobile.ir"))
+        markup.add(KeyboardButton("مقایسه گوشی"))
         markup.add(KeyboardButton("Crypto Charts"))
         
     else:
-        markup.add(KeyboardButton("Divar vs mobile.ir"))
-        markup.add(KeyboardButton("Divar"))
-        markup.add(KeyboardButton("Register"))
+        markup.add(KeyboardButton("مقایسه گوشی"))
+        markup.add(KeyboardButton("دیوار"))
+        markup.add(KeyboardButton("تمدید اشتراک"))
         
         
     return markup
@@ -139,7 +139,7 @@ def plan_selection(call):
     Rial = payment_method.add(InlineKeyboardButton("پرداخت ریالی-در حال فعال سازی",callback_data=f"transaction_{plan.price}"))
     bot.edit_message_text(f"پلن انتخابی {plan.duration_days} روزه - {plan.price} تومان \nروش پرداخت را انتخاب کنید" ,call.message.chat.id,call.message.message_id,reply_markup=payment_method)
     
-@bot.message_handler(func = lambda message:message.text == "Register")
+@bot.message_handler(func = lambda message:message.text == "تمدید اشتراک")
 def user_register(message):
     tg_id = message.from_user.id
     session = Session()
@@ -254,14 +254,14 @@ def divar_markup_citys():
     markup.add(*buttons)
     return markup
     
-@bot.message_handler(func = lambda message:message.text == "Divar")
+@bot.message_handler(func = lambda message:message.text == "دیوار")
 def user_register(message):
     session = Session()
     tg_id = message.from_user.id
     user = session.query(User).filter_by(telegram_id = tg_id ).first()
     latest_subscription  = user.subscriptions[0] #0 chon hanooz system register ra nayoftade
     if latest_subscription.end_date < datetime.now() :
-        bot.send_message(user.telegram_id , f"اعتبار شما به پایان رسید!\nلطفا از طریق منوی 'Register' نسبت به شارژ مجدد حساب خود اقدام فرمایید.")   
+        bot.send_message(user.telegram_id , f"اعتبار شما به پایان رسید!\nلطفا از طریق منوی 'تمدید اشتراک' نسبت به شارژ مجدد حساب خود اقدام فرمایید.")   
         return
     else:
         bot.send_message(tg_id ,"شهر را انتخاب کنید",reply_markup=divar_markup_citys())
@@ -269,7 +269,7 @@ def user_register(message):
 
 """END Divar"""
 
-"""divar vs mobile.ir"""
+"""مقایسه گوشی"""
 def Analyze_response_mobile(response , chat):
     tox = f'درحال برسی ...\n'
     mes = bot.send_message(chat , tox)
@@ -335,14 +335,14 @@ def divar_VS_mobile_markup_citys():
     markup.add(*buttons)
     return markup
     
-@bot.message_handler(func = lambda message:message.text == "Divar vs mobile.ir")
+@bot.message_handler(func = lambda message:message.text == "مقایسه گوشی")
 def user_register(message):
     session = Session()
     tg_id = message.from_user.id
     user = session.query(User).filter_by(telegram_id = tg_id ).first()
     latest_subscription  = user.subscriptions[0] #0 chon hanooz system register ra nayoftade
     if latest_subscription.end_date < datetime.now() :
-        bot.send_message(user.telegram_id , f"اعتبار شما به پایان رسید!\nلطفا از طریق منوی 'Register' نسبت به شارژ مجدد حساب خود اقدام فرمایید.")   
+        bot.send_message(user.telegram_id , f"اعتبار شما به پایان رسید!\nلطفا از طریق منوی 'تمدید اشتراک' نسبت به شارژ مجدد حساب خود اقدام فرمایید.")   
         return
     else:
         bot.send_message(tg_id ,"شهر را انتخاب کنید",reply_markup=divar_VS_mobile_markup_citys())
