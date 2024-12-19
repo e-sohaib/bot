@@ -61,7 +61,7 @@ def create_main_menu_reply(tg_id):
         #markup.add(KeyboardButton("Youtube"))
         markup.add(KeyboardButton("Linkedin"))
         markup.add(KeyboardButton("Divar"))
-        #markup.add(KeyboardButton("divar VS digikala"))
+        markup.add(KeyboardButton("Divar vs mobile.ir"))
         markup.add(KeyboardButton("Crypto Charts"))
         
     else:
@@ -237,8 +237,6 @@ def Analyze_response(response):
     base_url = 'https://divar.ir/v/'
     for post in all_posts:    
         token = post['data']['action']['payload']['token']
-        chizha = get_data_by_token(token)
-        ex = export_device_detailes_from_json(chizha)
         title = post['data']['action']['payload']['web_info']['title']
         p = urllib.parse.quote(title.encode('utf-8'), safe='')
         url = base_url +  p + '/' + token  
@@ -250,15 +248,6 @@ def Analyze_response(response):
             row_t = post['data']['title']
             Row2 = f"[{row_t}]({url}) : توافقی\n"
             TXT = "".join(TXT + Row2)
-        if ex['categry'] == 'mobile-phones':
-            serch_param = f"{ex['brand']}{ex['model']}"
-            result = serch_in_site_mobie_ir(serch_param).text
-            dics = json.loads(result)
-            for item in dics:
-                if  serch_param.lower() in item['title'].lower():
-                    link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
-                    append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
-                    TXT = "".join(TXT + append)
                     
     return TXT
         
@@ -311,6 +300,69 @@ def user_register(message):
 
 
 """END Divar"""
+
+"""divar vs mobile.ir"""
+def Analyze_response_mobile(response):
+    js = json.loads(response)
+    all_posts = js['list_widgets'] #type = list
+    TXT = "لیست 24 آگهی اخیر:\n"
+    base_url = 'https://divar.ir/v/'
+    for post in all_posts:    
+        token = post['data']['action']['payload']['token']
+        chizha = get_data_by_token(token)
+        ex = export_device_detailes_from_json(chizha)
+        title = post['data']['action']['payload']['web_info']['title']
+        p = urllib.parse.quote(title.encode('utf-8'), safe='')
+        url = base_url +  p + '/' + token  
+        try:
+            row = post['data']['title']
+            Row = f"[{row}]({url}) : {post['data']['middle_description_text']}\n"
+            TXT = "".join(TXT + Row)
+        except KeyError:
+            row_t = post['data']['title']
+            Row2 = f"[{row_t}]({url}) : توافقی\n"
+            TXT = "".join(TXT + Row2)
+        if ex['categry'] == 'mobile-phones':
+            serch_param = f"{ex['brand']}{ex['model']}"
+            result = serch_in_site_mobie_ir(serch_param).text
+            dics = json.loads(result)
+            for item in dics:
+                if  serch_param.lower() in item['title'].lower():
+                    link_of_mobile_ir = ("https://www.mobile.ir" + item['url'])
+                    append = f"مشاهد این گوشی در سایت موبایل دات آی آر : [{serch_param}]({link_of_mobile_ir})\n"
+                    TXT = "".join(TXT + append)
+                    
+    return TXT
+@bot.callback_query_handler(func=lambda call : call.data.startswith("city2_"))
+def change_city_and_start_analize(call):
+    city = call.data.split('_')[1]
+    bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
+    bot.edit_message_text(f"شهر شما : {city}\n",call.message.chat.id,call.message.message_id)
+    bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=None)
+    city_number = find_city_number(city)
+    category_slug = "electronic-devices"    
+    response = request_to_api(city_number , category_slug)
+    Analyze_response_mobile(response)
+    
+def divar_VS_mobile_markup_citys():
+    with open(curent_dir + '/bigcitys.json' , 'r' , encoding = 'utf-8') as citys:
+        bigcitis = json.load(citys)
+    markup = InlineKeyboardMarkup(row_width=3)
+    buttons = [InlineKeyboardButton(item[0], callback_data=f"city2_{item[0]}") for item in bigcitis]
+    markup.add(*buttons)
+    return markup
+    
+@bot.message_handler(func = lambda message:message.text == "Divar vs mobile.ir")
+def user_register(message):
+    session = Session()
+    tg_id = message.from_user.id
+    user = session.query(User).filter_by(telegram_id = tg_id ).first()
+    latest_subscription  = user.subscriptions[0] #0 chon hanooz system register ra nayoftade
+    if latest_subscription.end_date < datetime.now() :
+        bot.send_message(user.telegram_id , f"اعتبار شما به پایان رسید!\nلطفا از طریق منوی 'Register' نسبت به شارژ مجدد حساب خود اقدام فرمایید.")   
+        return
+    else:
+        bot.send_message(tg_id ,"شهر را انتخاب کنید",reply_markup=divar_VS_mobile_markup_citys())
 
 def main():
     try:

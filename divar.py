@@ -5,7 +5,7 @@ import time
 
 import requests.cookies
 
-
+#this function returns 24 last advertice in city and category given to it
 def request_to_api(city_number , category_realname):
     raw_header = {"Accept": "*/*",
                "Accept-Encoding": "deflate, gzip",
